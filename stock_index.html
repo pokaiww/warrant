@@ -1,905 +1,815 @@
 
-            <html><head><meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>🎯 主力權證狙擊網</title>
-            <script>
-                setTimeout(function(){ window.location.href = window.location.pathname + "?" + new Date().getTime(); }, 90000);
-            </script>
+        <html>
+        <head>
+            <meta charset="utf-8">
+            <meta http-equiv="refresh" content="90">
+            <title>權證狙擊系統</title>
             <style>
-                :root { --accent: #2980b9; --warn: #f39c12; --text: #2c3e50; }
-                body { 
-                    margin: 0; padding: 20px; min-height: 100vh;
-                    font-family: "PingFang TC", sans-serif;
-                    display: flex; flex-direction: column; align-items: center;
-                    background-color: #f4f7f6;
-                }
-                body::before {
-                    content: ""; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-                    background-image: url('https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=1920&q=80');
-                    background-size: cover; background-position: center; opacity: 0.15; z-index: -1;
-                }
-                .last-update {
-                    position: fixed; top: 15px; right: 20px; font-size: 11px; color: rgba(0,0,0,0.5);
-                    background: rgba(255,255,255,0.7); padding: 5px 12px; border-radius: 50px;
-                }
-                .container { display: flex; flex-wrap: wrap; gap: 20px; width: 100%; max-width: 1400px; }
-                .card { 
-                    background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(10px);
-                    border-radius: 15px; padding: 20px; box-shadow: 0 8px 25px rgba(0,0,0,0.06); flex: 1; min-width: 320px;
-                }
-                h1 { color: var(--text); font-weight: 800; margin: 15px 0; }
-                h2 { color: var(--accent); border-left: 5px solid var(--accent); padding-left: 10px; font-size: 1.2em; }
-                table { width: 100%; border-collapse: collapse; text-align: center; }
-                th { padding: 12px; color: #888; border-bottom: 2px solid #eee; font-size: 0.85em; }
-                td { padding: 12px 8px; border-bottom: 1px solid #eee; }
-                .amount-cell { padding: 6px; border-radius: 6px; font-weight: 800; color: #c0392b; }
-                .heat-major { background: #e67e22; color: white !important; }
-                .stock-table td:nth-child(3) { color: #2980b9; font-weight: 800; }
-            </style></head>
-            <body>
-                <div class="last-update">最後同步：2026-01-18 22:08:24</div>
-                <h1>🎯 主力權證狙擊網</h1>
-                <div class="container">
-                    <div class="card" style="flex: 2.5;">
-                        <h2>📌 即時認購大單 (萬元)</h2>
-                        <table border="1" class="dataframe stock-table">
+                body { background: #121212; color: #e0e0e0; font-family: "Microsoft JhengHei", sans-serif; padding: 20px; }
+                .stock-table { width: 100%; border-collapse: collapse; margin-top: 10px; background: #1e1e1e; }
+                .stock-table th, .stock-table td { padding: 12px; border: 1px solid #333; text-align: center; }
+                .stock-table th { background: #333333; color: #ffca28; font-size: 1.1em; border-bottom: 2px solid #ffca28; }
+                .amount-cell { font-size: 1.2em; font-weight: bold; color: #4caf50; }
+                .heat-major { background: #b71c1c !important; color: white !important; border-radius: 4px; padding: 5px; }
+                .ratio-tag { color: #03a9f4; font-weight: bold; }
+                .header { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #ffca28; padding-bottom: 10px; }
+            </style>
+        </head>
+        <body>
+            <div class="header">
+                <h1>🚀 權證狙擊監控網</h1>
+                <div>最後更新：2026-01-18 22:28:14</div>
+            </div>
+            <table border="1" class="dataframe stock-table">
   <thead>
     <tr style="text-align: right;">
       <th>初次時間</th>
       <th>代號</th>
-      <th>標的股票</th>
+      <th>標的</th>
       <th>名稱</th>
+      <th>流通率</th>
       <th>金額(萬)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>057922</td>
       <td>台積電</td>
       <td>台積電元大55購01</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">4,800</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>036364</td>
       <td>台達電</td>
       <td>台達電元大54購11</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell heat-major">4,600</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>044483</td>
       <td>大同</td>
       <td>大同元富55購02</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell heat-major">2,700</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>049861</td>
       <td>全新</td>
       <td>全新永豐58購01</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell heat-major">2,300</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>050014</td>
       <td>國巨</td>
       <td>國巨元富5C購02</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">1,600</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>051783</td>
       <td>道瓊銀</td>
       <td>道瓊銀凱基57購02</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">1,400</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>050016</td>
       <td>台積電</td>
       <td>台積電元富56購23</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">1,300</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>051155</td>
       <td>台積電</td>
       <td>台積電凱基61購01</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">1,300</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>702635</td>
       <td>富喬</td>
       <td>富喬元富56購03</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">1,200</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>049073</td>
       <td>世芯</td>
       <td>世芯永豐56購08</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell heat-major">1,100</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>040430</td>
       <td>宇瞻</td>
       <td>宇瞻國票55購02</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell heat-major">1,100</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>041351</td>
       <td>至上</td>
       <td>至上國票55購02</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell heat-major">1,000</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>702330</td>
       <td>弘塑</td>
       <td>弘塑群益56購05</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell heat-major">900</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>050127</td>
       <td>光寶科</td>
       <td>光寶科台新56購01</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell heat-major">900</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>051580</td>
       <td>道瓊銀</td>
       <td>道瓊銀元大59購02</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">900</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>045149</td>
       <td>台積電</td>
       <td>台積電群益55購16</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">800</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>033984</td>
       <td>華城</td>
       <td>華城元大54購16</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell heat-major">800</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>033126</td>
       <td>元黃金</td>
       <td>元黃金元大54購02</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell heat-major">700</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>049304</td>
       <td>台灣</td>
       <td>台灣50元富56購09</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell heat-major">700</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>051122</td>
       <td>群創</td>
       <td>群創元富57購03</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">700</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>051666</td>
       <td>台積電</td>
       <td>台積電元大5A購03</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">700</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>039794</td>
       <td>電子類</td>
       <td>電子類國票54購03</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">600</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>039913</td>
       <td>台積電</td>
       <td>台積電元大54購53</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">600</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>051007</td>
       <td>道瓊銀</td>
       <td>道瓊銀元富57購01</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">600</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>737737</td>
       <td>富喬</td>
       <td>富喬元大54購06</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">600</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>037638</td>
       <td>臺股指</td>
       <td>臺股指群益55購12</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">600</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>037688</td>
       <td>國巨</td>
       <td>國巨永豐56購01</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">600</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>043841</td>
       <td>定穎控</td>
       <td>定穎控富邦58購01</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell heat-major">600</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>045199</td>
       <td>台積電</td>
       <td>台積電凱基55購29</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">600</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>048489</td>
       <td>康舒</td>
       <td>康舒永豐56購03</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">600</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>702876</td>
       <td>凱崴</td>
       <td>凱崴群益57購02</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell heat-major">500</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>038120</td>
       <td>臺股指</td>
       <td>臺股指元大5B購02</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">500</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>038786</td>
       <td>美時</td>
       <td>美時國票56購01</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">500</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>039857</td>
       <td>台積電</td>
       <td>台積電國泰55購02</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">500</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>039903</td>
       <td>T</td>
       <td>T50正2元大54購08</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell heat-major">500</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>041880</td>
       <td>世芯</td>
       <td>世芯群益54購15</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">500</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>050230</td>
       <td>大同</td>
       <td>大同凱基56購04</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">500</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>050828</td>
       <td>大同</td>
       <td>大同元大57購01</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">500</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>050938</td>
       <td>道瓊銀</td>
       <td>道瓊銀元大58購02</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">500</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>051137</td>
       <td>群創</td>
       <td>群創國泰58購05</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">500</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>043684</td>
       <td>台積電</td>
       <td>台積電元大55購15</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">500</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>045378</td>
       <td>電子類</td>
       <td>電子類國票55購04</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">500</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>046558</td>
       <td>臺股指</td>
       <td>臺股指元大5B購06</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">500</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>048093</td>
       <td>電子類</td>
       <td>電子類群益56購01</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">500</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>034303</td>
       <td>光寶科</td>
       <td>光寶科永豐56購01</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">500</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>033007</td>
       <td>台積電</td>
       <td>台積電元大54購26</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">400</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>033946</td>
       <td>國巨</td>
       <td>國巨統一5B購01</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">400</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>036295</td>
       <td>台達電</td>
       <td>台達電中信59購02</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">400</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>036308</td>
       <td>台達電</td>
       <td>台達電永豐54購04</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">400</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>036316</td>
       <td>定穎控</td>
       <td>定穎控永豐55購02</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">400</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>037672</td>
       <td>臺股指</td>
       <td>臺股指凱基54購20</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">400</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>038872</td>
       <td>美時</td>
       <td>美時元大54購01</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">400</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>039912</td>
       <td>台積電</td>
       <td>台積電元大54購52</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">400</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>040100</td>
       <td>亞翔</td>
       <td>亞翔元大54購14</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell heat-major">400</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>040202</td>
       <td>華新</td>
       <td>華新凱基54購06</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell heat-major">400</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>040211</td>
       <td>台積電</td>
       <td>台積電凱基54購26</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">400</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>040983</td>
       <td>台灣</td>
       <td>台灣50中信5A購01</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">400</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>041075</td>
       <td>康舒</td>
       <td>康舒元大5A購01</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">400</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>041930</td>
       <td>國巨</td>
       <td>國巨元富54購08</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">400</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>043256</td>
       <td>華城</td>
       <td>華城兆豐57購01</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">400</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>077085</td>
       <td>臺股指</td>
       <td>臺股指凱基56購04</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">400</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>084411</td>
       <td>南亞科</td>
       <td>南亞科兆豐56購01</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell heat-major">400</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>088964</td>
       <td>台積電</td>
       <td>台積電富邦61購01</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">400</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>702496</td>
       <td>昇達科</td>
       <td>昇達科元大58購01</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell heat-major">400</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>702587</td>
       <td>富喬</td>
       <td>富喬國票56購02</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">400</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>703415</td>
       <td>富喬</td>
       <td>富喬元大57購02</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">400</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>703575</td>
       <td>佶優</td>
       <td>佶優凱基57購01</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell heat-major">400</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>739263</td>
       <td>群聯</td>
       <td>群聯元大57購01</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell heat-major">400</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>044775</td>
       <td>欣興</td>
       <td>欣興統一57購01</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell heat-major">400</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>046152</td>
       <td>康舒</td>
       <td>康舒元大55購02</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">400</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>048459</td>
       <td>台達電</td>
       <td>台達電永豐56購05</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">400</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>048801</td>
       <td>華泰</td>
       <td>華泰群益56購01</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell heat-major">400</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>049310</td>
       <td>大同</td>
       <td>大同元富56購01</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">400</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>049539</td>
       <td>東元</td>
       <td>東元國泰57購01</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell heat-major">400</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>050303</td>
       <td>全新</td>
       <td>全新國泰57購01</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">400</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>051379</td>
       <td>超豐</td>
       <td>超豐富邦57購01</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell heat-major">400</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>052613</td>
       <td>國巨</td>
       <td>國巨元富57購02</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">400</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>071593</td>
       <td>臺股指</td>
       <td>臺股指凱基51購04</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">400</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>049709</td>
       <td>美時</td>
       <td>美時元富59購01</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">300</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>049834</td>
       <td>道瓊銀</td>
       <td>道瓊銀中信66購01</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">300</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>050138</td>
       <td>台灣</td>
       <td>台灣50元大5C購02</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">300</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>050282</td>
       <td>至上</td>
       <td>至上永豐58購02</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">300</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>050286</td>
       <td>道瓊銀</td>
       <td>道瓊銀元富56購01</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">300</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>050541</td>
       <td>道瓊銀</td>
       <td>道瓊銀凱基5C購01</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">300</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>050606</td>
       <td>道瓊銀</td>
       <td>道瓊銀元大57購03</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">300</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>050798</td>
       <td>台積電</td>
       <td>台積電永豐61購03</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">300</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>051263</td>
       <td>群創</td>
       <td>群創統一65購02</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">300</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>051340</td>
       <td>道瓊銀</td>
       <td>道瓊銀群益61購01</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">300</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>051446</td>
       <td>道瓊銀</td>
       <td>道瓊銀元富57購03</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">300</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>051483</td>
       <td>超豐</td>
       <td>超豐元大57購02</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">300</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>051629</td>
       <td>旺宏</td>
       <td>旺宏兆豐61購01</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell heat-major">300</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>051662</td>
       <td>川湖</td>
       <td>川湖元大57購06</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell heat-major">300</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>051812</td>
       <td>台積電</td>
       <td>台積電元大5A購04</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">300</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>051851</td>
       <td>永光</td>
       <td>永光群益57購01</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell heat-major">300</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>052094</td>
       <td>長興</td>
       <td>長興富邦57購01</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell heat-major">300</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>072125</td>
       <td>華城</td>
       <td>華城統一62購01</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell ">300</div></td>
     </tr>
     <tr>
-      <td>22:01:25</td>
+      <td>22:28:14</td>
       <td>077726</td>
       <td>聯電</td>
       <td>聯電統一54購02</td>
+      <td><span class="ratio-tag">N/A</span></td>
       <td><div class="amount-cell heat-major">300</div></td>
     </tr>
   </tbody>
 </table>
-                    </div>
-                    <div class="card" style="flex: 1; max-width: 450px;">
-                        <h2>📊 標的累積排行 (萬元)</h2>
-                        <table border="1" class="dataframe summary-table">
-  <thead>
-    <tr style="text-align: right;">
-      <th>標的</th>
-      <th>金額(萬)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>台積電</td>
-      <td>13,300</td>
-    </tr>
-    <tr>
-      <td>台達電</td>
-      <td>5,800</td>
-    </tr>
-    <tr>
-      <td>道瓊銀</td>
-      <td>5,200</td>
-    </tr>
-    <tr>
-      <td>大同</td>
-      <td>4,100</td>
-    </tr>
-    <tr>
-      <td>國巨</td>
-      <td>3,400</td>
-    </tr>
-    <tr>
-      <td>臺股指</td>
-      <td>2,800</td>
-    </tr>
-    <tr>
-      <td>全新</td>
-      <td>2,700</td>
-    </tr>
-    <tr>
-      <td>富喬</td>
-      <td>2,600</td>
-    </tr>
-    <tr>
-      <td>電子類</td>
-      <td>1,600</td>
-    </tr>
-    <tr>
-      <td>世芯</td>
-      <td>1,600</td>
-    </tr>
-    <tr>
-      <td>華城</td>
-      <td>1,500</td>
-    </tr>
-    <tr>
-      <td>群創</td>
-      <td>1,500</td>
-    </tr>
-    <tr>
-      <td>台灣</td>
-      <td>1,400</td>
-    </tr>
-    <tr>
-      <td>光寶科</td>
-      <td>1,400</td>
-    </tr>
-    <tr>
-      <td>康舒</td>
-      <td>1,400</td>
-    </tr>
-    <tr>
-      <td>至上</td>
-      <td>1,300</td>
-    </tr>
-    <tr>
-      <td>美時</td>
-      <td>1,200</td>
-    </tr>
-    <tr>
-      <td>宇瞻</td>
-      <td>1,100</td>
-    </tr>
-    <tr>
-      <td>定穎控</td>
-      <td>1,000</td>
-    </tr>
-    <tr>
-      <td>弘塑</td>
-      <td>900</td>
-    </tr>
-    <tr>
-      <td>元黃金</td>
-      <td>700</td>
-    </tr>
-    <tr>
-      <td>超豐</td>
-      <td>700</td>
-    </tr>
-    <tr>
-      <td>凱崴</td>
-      <td>500</td>
-    </tr>
-    <tr>
-      <td>T</td>
-      <td>500</td>
-    </tr>
-    <tr>
-      <td>華新</td>
-      <td>400</td>
-    </tr>
-    <tr>
-      <td>亞翔</td>
-      <td>400</td>
-    </tr>
-    <tr>
-      <td>昇達科</td>
-      <td>400</td>
-    </tr>
-    <tr>
-      <td>佶優</td>
-      <td>400</td>
-    </tr>
-    <tr>
-      <td>群聯</td>
-      <td>400</td>
-    </tr>
-    <tr>
-      <td>南亞科</td>
-      <td>400</td>
-    </tr>
-    <tr>
-      <td>欣興</td>
-      <td>400</td>
-    </tr>
-    <tr>
-      <td>華泰</td>
-      <td>400</td>
-    </tr>
-    <tr>
-      <td>東元</td>
-      <td>400</td>
-    </tr>
-    <tr>
-      <td>旺宏</td>
-      <td>300</td>
-    </tr>
-    <tr>
-      <td>川湖</td>
-      <td>300</td>
-    </tr>
-    <tr>
-      <td>永光</td>
-      <td>300</td>
-    </tr>
-    <tr>
-      <td>長興</td>
-      <td>300</td>
-    </tr>
-    <tr>
-      <td>聯電</td>
-      <td>300</td>
-    </tr>
-  </tbody>
-</table>
-                    </div>
-                </div>
-            </body></html>
-            
+        </body>
+        </html>
+        
