@@ -1,8 +1,8 @@
 {
-    "update_time": "2026-01-19 08:26:04",
+    "update_time": "2026-01-19 08:30:50",
     "stocks": [
         {
-            "time": "08:26:04",
+            "time": "08:30:50",
             "code": "057922",
             "target": "台積電",
             "name": "台積電元大55購01()",
@@ -11,130 +11,40 @@
             "circulation": "--"
         },
         {
-            "time": "08:26:04",
+            "time": "08:30:50",
             "code": "036364",
             "target": "台達電",
             "name": "台達電元大54購11()",
             "value": "0.460",
             "is_major": true,
-            "circulation": "查無"
+            "circulation": "待更新"
         },
         {
-            "time": "08:26:04",
+            "time": "08:30:50",
             "code": "044483",
             "target": "大同",
             "name": "大同元富55購02()",
             "value": "0.270",
             "is_major": true,
-            "circulation": "查無"
+            "circulation": "待更新"
         },
         {
-            "time": "08:26:04",
+            "time": "08:30:50",
             "code": "049861",
             "target": "全新",
             "name": "全新永豐58購01()",
             "value": "0.230",
             "is_major": true,
-            "circulation": "查無"
+            "circulation": "待更新"
         },
         {
-            "time": "08:26:04",
+            "time": "08:30:50",
             "code": "050014",
             "target": "國巨",
             "name": "國巨元富5C購02()",
             "value": "0.160",
             "is_major": true,
-            "circulation": "查無"
-        },
-        {
-            "time": "08:26:04",
-            "code": "051783",
-            "target": "道瓊銀",
-            "name": "道瓊銀凱基57購02()",
-            "value": "0.140",
-            "is_major": false,
-            "circulation": "--"
-        },
-        {
-            "time": "08:26:04",
-            "code": "050016",
-            "target": "台積電",
-            "name": "台積電元富56購23()",
-            "value": "0.130",
-            "is_major": false,
-            "circulation": "--"
-        },
-        {
-            "time": "08:26:04",
-            "code": "051155",
-            "target": "台積電",
-            "name": "台積電凱基61購01()",
-            "value": "0.130",
-            "is_major": false,
-            "circulation": "--"
-        },
-        {
-            "time": "08:26:04",
-            "code": "702635",
-            "target": "富喬",
-            "name": "富喬元富56購03()",
-            "value": "0.120",
-            "is_major": true,
-            "circulation": "查無"
-        },
-        {
-            "time": "08:26:04",
-            "code": "049073",
-            "target": "世芯",
-            "name": "世芯永豐56購08()",
-            "value": "0.110",
-            "is_major": true,
-            "circulation": "查無"
-        },
-        {
-            "time": "08:26:04",
-            "code": "040430",
-            "target": "宇瞻國票",
-            "name": "宇瞻國票55購02()",
-            "value": "0.110",
-            "is_major": true,
-            "circulation": "查無"
-        },
-        {
-            "time": "08:26:04",
-            "code": "041351",
-            "target": "至上國票",
-            "name": "至上國票55購02()",
-            "value": "0.100",
-            "is_major": true,
-            "circulation": "查無"
-        },
-        {
-            "time": "08:26:04",
-            "code": "702330",
-            "target": "弘塑",
-            "name": "弘塑群益56購05()",
-            "value": "0.090",
-            "is_major": true,
-            "circulation": "查無"
-        },
-        {
-            "time": "08:26:04",
-            "code": "050127",
-            "target": "光寶科台新",
-            "name": "光寶科台新56購01()",
-            "value": "0.090",
-            "is_major": true,
-            "circulation": "查無"
-        },
-        {
-            "time": "08:26:04",
-            "code": "051580",
-            "target": "道瓊銀",
-            "name": "道瓊銀元大59購02()",
-            "value": "0.090",
-            "is_major": false,
-            "circulation": "--"
+            "circulation": "待更新"
         }
     ]
 }

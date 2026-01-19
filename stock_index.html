@@ -1,39 +1,19 @@
 
-            <html><head><meta charset="UTF-8"><title>🎯 主力權證狙擊網</title>
+            <html><head><meta charset="UTF-8">
             <style>
-                :root { --accent: #2980b9; --warn: #f39c12; --text: #2c3e50; }
-                body { 
-                    margin: 0; padding: 40px 20px; min-height: 100vh;
-                    font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
-                    background-color: #f4f7f6; position: relative;
-                }
-                body::before {
-                    content: ""; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-                    background-image: url('https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=1920&q=80');
-                    background-size: cover; background-position: center; opacity: 0.18; z-index: -1;
-                }
-                .last-update {
-                    position: fixed; top: 15px; right: 20px; font-size: 11px; color: rgba(0,0,0,0.6);
-                    background: rgba(255,255,255,0.6); padding: 5px 12px; border-radius: 50px;
-                }
-                .container { display: flex; gap: 25px; width: 100%; max-width: 1400px; margin: 0 auto; }
-                .card { 
-                    background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px);
-                    border-radius: 20px; padding: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-                }
-                .left-panel { flex: 2.3; } .right-panel { flex: 0.7; }
+                body { font-family: sans-serif; background: #f4f7f6; padding: 20px; }
+                .container { display: flex; gap: 20px; }
+                .card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
                 table { width: 100%; border-collapse: collapse; text-align: center; }
-                th { padding: 15px; color: #7f8c8d; border-bottom: 2px solid #edf2f7; }
-                td { padding: 14px 8px; border-bottom: 1px solid rgba(0,0,0,0.03); }
-                .amount-cell { padding: 8px 0; border-radius: 8px; font-weight: 800; }
-                .heat-major { background: linear-gradient(135deg, #f39c12, #e67e22); color: white !important; }
+                th, td { padding: 10px; border-bottom: 1px solid #eee; }
+                .heat-major { background: #f39c12; color: white; border-radius: 5px; font-weight: bold; }
             </style>
             </head>
             <body>
-                <div class="last-update">最後更新：2026-01-19 08:26:04</div>
-                <h1 style="text-align:center;">🎯 主力權證狙擊網</h1>
+                <h2 style="text-align:center;">🎯 主力權證狙擊網 (前五檔測試版)</h2>
+                <div style="text-align:center; margin-bottom:10px;">最後更新：2026-01-19 08:30:50</div>
                 <div class="container">
-                    <div class="card left-panel"><h2>📌 即時前 15 檔大單 (含快取)</h2><table border="1" class="dataframe stock-table">
+                    <div class="card" style="flex:2;"><h3>📌 大單監控</h3><table border="1" class="dataframe stock-table">
   <thead>
     <tr style="text-align: right;">
       <th>初次時間</th>
@@ -45,113 +25,43 @@
   </thead>
   <tbody>
     <tr>
-      <td>08:26:04</td>
+      <td>08:30:50</td>
       <td>057922</td>
       <td>台積電</td>
       <td>台積電元大55購01()<br><small style='color:#e67e22; font-weight:bold;'>流通比: --</small></td>
       <td><div class="amount-cell ">0.480</div></td>
     </tr>
     <tr>
-      <td>08:26:04</td>
+      <td>08:30:50</td>
       <td>036364</td>
       <td>台達電</td>
-      <td>台達電元大54購11()<br><small style='color:#e67e22; font-weight:bold;'>流通比: 查無</small></td>
+      <td>台達電元大54購11()<br><small style='color:#e67e22; font-weight:bold;'>流通比: 待更新</small></td>
       <td><div class="amount-cell heat-major">0.460</div></td>
     </tr>
     <tr>
-      <td>08:26:04</td>
+      <td>08:30:50</td>
       <td>044483</td>
       <td>大同</td>
-      <td>大同元富55購02()<br><small style='color:#e67e22; font-weight:bold;'>流通比: 查無</small></td>
+      <td>大同元富55購02()<br><small style='color:#e67e22; font-weight:bold;'>流通比: 待更新</small></td>
       <td><div class="amount-cell heat-major">0.270</div></td>
     </tr>
     <tr>
-      <td>08:26:04</td>
+      <td>08:30:50</td>
       <td>049861</td>
       <td>全新</td>
-      <td>全新永豐58購01()<br><small style='color:#e67e22; font-weight:bold;'>流通比: 查無</small></td>
+      <td>全新永豐58購01()<br><small style='color:#e67e22; font-weight:bold;'>流通比: 待更新</small></td>
       <td><div class="amount-cell heat-major">0.230</div></td>
     </tr>
     <tr>
-      <td>08:26:04</td>
+      <td>08:30:50</td>
       <td>050014</td>
       <td>國巨</td>
-      <td>國巨元富5C購02()<br><small style='color:#e67e22; font-weight:bold;'>流通比: 查無</small></td>
+      <td>國巨元富5C購02()<br><small style='color:#e67e22; font-weight:bold;'>流通比: 待更新</small></td>
       <td><div class="amount-cell heat-major">0.160</div></td>
-    </tr>
-    <tr>
-      <td>08:26:04</td>
-      <td>051783</td>
-      <td>道瓊銀</td>
-      <td>道瓊銀凱基57購02()<br><small style='color:#e67e22; font-weight:bold;'>流通比: --</small></td>
-      <td><div class="amount-cell ">0.140</div></td>
-    </tr>
-    <tr>
-      <td>08:26:04</td>
-      <td>050016</td>
-      <td>台積電</td>
-      <td>台積電元富56購23()<br><small style='color:#e67e22; font-weight:bold;'>流通比: --</small></td>
-      <td><div class="amount-cell ">0.130</div></td>
-    </tr>
-    <tr>
-      <td>08:26:04</td>
-      <td>051155</td>
-      <td>台積電</td>
-      <td>台積電凱基61購01()<br><small style='color:#e67e22; font-weight:bold;'>流通比: --</small></td>
-      <td><div class="amount-cell ">0.130</div></td>
-    </tr>
-    <tr>
-      <td>08:26:04</td>
-      <td>702635</td>
-      <td>富喬</td>
-      <td>富喬元富56購03()<br><small style='color:#e67e22; font-weight:bold;'>流通比: 查無</small></td>
-      <td><div class="amount-cell heat-major">0.120</div></td>
-    </tr>
-    <tr>
-      <td>08:26:04</td>
-      <td>049073</td>
-      <td>世芯</td>
-      <td>世芯永豐56購08()<br><small style='color:#e67e22; font-weight:bold;'>流通比: 查無</small></td>
-      <td><div class="amount-cell heat-major">0.110</div></td>
-    </tr>
-    <tr>
-      <td>08:26:04</td>
-      <td>040430</td>
-      <td>宇瞻國票</td>
-      <td>宇瞻國票55購02()<br><small style='color:#e67e22; font-weight:bold;'>流通比: 查無</small></td>
-      <td><div class="amount-cell heat-major">0.110</div></td>
-    </tr>
-    <tr>
-      <td>08:26:04</td>
-      <td>041351</td>
-      <td>至上國票</td>
-      <td>至上國票55購02()<br><small style='color:#e67e22; font-weight:bold;'>流通比: 查無</small></td>
-      <td><div class="amount-cell heat-major">0.100</div></td>
-    </tr>
-    <tr>
-      <td>08:26:04</td>
-      <td>702330</td>
-      <td>弘塑</td>
-      <td>弘塑群益56購05()<br><small style='color:#e67e22; font-weight:bold;'>流通比: 查無</small></td>
-      <td><div class="amount-cell heat-major">0.090</div></td>
-    </tr>
-    <tr>
-      <td>08:26:04</td>
-      <td>050127</td>
-      <td>光寶科台新</td>
-      <td>光寶科台新56購01()<br><small style='color:#e67e22; font-weight:bold;'>流通比: 查無</small></td>
-      <td><div class="amount-cell heat-major">0.090</div></td>
-    </tr>
-    <tr>
-      <td>08:26:04</td>
-      <td>051580</td>
-      <td>道瓊銀</td>
-      <td>道瓊銀元大59購02()<br><small style='color:#e67e22; font-weight:bold;'>流通比: --</small></td>
-      <td><div class="amount-cell ">0.090</div></td>
     </tr>
   </tbody>
 </table></div>
-                    <div class="card right-panel"><h2>📊 標的累積排行</h2><table border="1" class="dataframe summary-table">
+                    <div class="card" style="flex:1;"><h3>📊 標的累積</h3><table border="1" class="dataframe summary-table">
   <thead>
     <tr style="text-align: right;">
       <th>標的</th>
