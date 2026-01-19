@@ -5,7 +5,7 @@
                 <meta charset="UTF-8">
                 <style>
                     body {
-                        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), 
                                     url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1920&q=80');
                         background-size: cover; background-attachment: fixed; color: white; font-family: sans-serif; padding: 40px 20px;
                     }
@@ -13,209 +13,241 @@
                         background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px);
                         border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 24px; padding: 40px; max-width: 1000px; margin: auto;
                     }
-                    h2 { color: #38bdf8; text-align: center; text-shadow: 0 0 20px rgba(56, 189, 248, 0.5); }
-                    .sniper-table { width: 100%; border-collapse: separate; border-spacing: 0 10px; }
+                    h2 { color: #38bdf8; text-align: center; text-shadow: 0 0 20px rgba(56, 189, 248, 0.5); font-size: 28px; }
+                    .sniper-table { width: 100%; border-collapse: separate; border-spacing: 0 10px; margin-top: 20px; }
+                    .sniper-table th { color: #94a3b8; font-size: 0.85em; padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1); }
                     .sniper-table td { background: rgba(255, 255, 255, 0.03); padding: 18px; text-align: center; border-radius: 12px; }
-                    .r-tag { color: #fb7185; background: rgba(251, 113, 133, 0.15); padding: 2px 8px; border-radius: 4px; font-size: 0.85em; font-weight: bold; }
-                    .v-tag { background: rgba(56, 189, 248, 0.2); color: #38bdf8; padding: 5px 12px; border-radius: 6px; font-weight: bold; border: 1px solid rgba(56,189,248,0.3); }
-                    tr:hover td { background: rgba(255,255,255,0.08); transition: 0.3s; }
+                    .s-name { font-weight: bold; color: #f1f5f9; }
+                    .r-tag { color: #fb7185; background: rgba(251, 113, 133, 0.15); padding: 2px 8px; border-radius: 4px; font-size: 0.8em; font-weight: bold; margin-top: 5px; display: inline-block; }
+                    .v-tag { background: rgba(56, 189, 248, 0.2); color: #38bdf8; padding: 5px 12px; border-radius: 6px; font-weight: bold; font-size: 1.1em; }
                 </style>
             </head>
             <body>
                 <div class="glass-container">
-                    <h2>🎯 Sniper Top 30</h2>
-                    <div style="text-align:center; color:#94a3b8; margin-bottom:20px;">
-                        📡 更新時間：2026-01-19 09:21:30 | 追蹤池：30 檔
+                    <h2>🎯 Sniper Ranking (累積萬位排行)</h2>
+                    <div style="text-align:center; color:#94a3b8; font-size: 0.9em;">
+                        📡 更新時間：2026-01-19 09:26:27 | 累積監控數：95
                     </div>
                     <table border="1" class="dataframe sniper-table">
   <thead>
     <tr style="text-align: right;">
-      <th>時間</th>
+      <th>排行</th>
+      <th>初見</th>
       <th>代號</th>
       <th>名稱</th>
-      <th>金額</th>
+      <th>最高金額</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>09:21:30</td>
-      <td>037638</td>
-      <td><div class='s-name'>臺股指群益55購12(037638)</div><div class='r-tag'>流通比 33.24%</div></td>
-      <td><span class='v-tag'>0.060 億</span></td>
-    </tr>
-    <tr>
-      <td>09:21:35</td>
+      <td>1</td>
+      <td>09:26:27</td>
       <td>051666</td>
       <td><div class='s-name'>台積電元大5A購03(051666)</div><div class='r-tag'>流通比 42.86%</div></td>
-      <td><span class='v-tag'>0.060 億</span></td>
+      <td><span class='v-tag'>600 萬</span></td>
     </tr>
     <tr>
-      <td>09:21:40</td>
-      <td>051807</td>
-      <td><div class='s-name'>聯電元大59購03(051807)</div><div class='r-tag'>流通比 6.70%</div></td>
-      <td><span class='v-tag'>0.030 億</span></td>
-    </tr>
-    <tr>
-      <td>09:21:45</td>
-      <td>702041</td>
-      <td><div class='s-name'>臺慶科國泰56購01(702041)</div><div class='r-tag'>流通比 5.33%</div></td>
-      <td><span class='v-tag'>0.030 億</span></td>
-    </tr>
-    <tr>
-      <td>09:21:50</td>
-      <td>703575</td>
-      <td><div class='s-name'>佶優凱基57購01(703575)</div><div class='r-tag'>流通比 26.48%</div></td>
-      <td><span class='v-tag'>0.030 億</span></td>
-    </tr>
-    <tr>
-      <td>09:21:55</td>
-      <td>051445</td>
-      <td><div class='s-name'>可寧衛統一6C購01(051445)</div><div class='r-tag'>流通比 52.06%</div></td>
-      <td><span class='v-tag'>0.020 億</span></td>
-    </tr>
-    <tr>
-      <td>09:22:00</td>
+      <td>2</td>
+      <td>09:26:32</td>
       <td>051783</td>
       <td><div class='s-name'>道瓊銀凱基57購02(051783)</div><div class='r-tag'>流通比 79.88%</div></td>
-      <td><span class='v-tag'>0.020 億</span></td>
+      <td><span class='v-tag'>400 萬</span></td>
     </tr>
     <tr>
-      <td>09:22:06</td>
-      <td>030259</td>
-      <td><div class='s-name'>華新元富52購02(030259)</div><div class='r-tag'>流通比 80.33%</div></td>
-      <td><span class='v-tag'>0.020 億</span></td>
+      <td>3</td>
+      <td>09:26:38</td>
+      <td>046493</td>
+      <td><div class='s-name'>漢翔群益56購01(046493)</div><div class='r-tag'>流通比 98.86%</div></td>
+      <td><span class='v-tag'>300 萬</span></td>
     </tr>
     <tr>
-      <td>09:22:12</td>
-      <td>030607</td>
-      <td><div class='s-name'>愛普統一58購01(030607)</div><div class='r-tag'>流通比 10.52%</div></td>
-      <td><span class='v-tag'>0.020 億</span></td>
+      <td>4</td>
+      <td>09:26:45</td>
+      <td>051807</td>
+      <td><div class='s-name'>聯電元大59購03(051807)</div><div class='r-tag'>流通比 6.70%</div></td>
+      <td><span class='v-tag'>300 萬</span></td>
     </tr>
     <tr>
-      <td>09:22:17</td>
-      <td>032310</td>
-      <td><div class='s-name'>台玻元富52購05(032310)</div><div class='r-tag'>流通比 53.69%</div></td>
-      <td><span class='v-tag'>0.020 億</span></td>
+      <td>5</td>
+      <td>09:26:49</td>
+      <td>037638</td>
+      <td><div class='s-name'>臺股指群益55購12(037638)</div><div class='r-tag'>流通比 33.24%</div></td>
+      <td><span class='v-tag'>300 萬</span></td>
     </tr>
     <tr>
-      <td>09:22:22</td>
-      <td>032415</td>
-      <td><div class='s-name'>台玻群益53購07(032415)</div><div class='r-tag'>流通比 96.20%</div></td>
-      <td><span class='v-tag'>0.020 億</span></td>
-    </tr>
-    <tr>
-      <td>09:22:28</td>
-      <td>037753</td>
-      <td><div class='s-name'>愛普國泰54購02(037753)</div><div class='r-tag'>流通比 33.97%</div></td>
-      <td><span class='v-tag'>0.020 億</span></td>
-    </tr>
-    <tr>
-      <td>09:22:33</td>
-      <td>039105</td>
-      <td><div class='s-name'>大毅元富54購02(039105)</div><div class='r-tag'>流通比 83.00%</div></td>
-      <td><span class='v-tag'>0.020 億</span></td>
-    </tr>
-    <tr>
-      <td>09:22:39</td>
-      <td>040391</td>
-      <td><div class='s-name'>華通元富57購01(040391)</div><div class='r-tag'>流通比 40.64%</div></td>
-      <td><span class='v-tag'>0.020 億</span></td>
-    </tr>
-    <tr>
-      <td>09:22:44</td>
-      <td>043127</td>
-      <td><div class='s-name'>台積電群益55購12(043127)</div><div class='r-tag'>流通比 24.10%</div></td>
-      <td><span class='v-tag'>0.020 億</span></td>
-    </tr>
-    <tr>
-      <td>09:22:49</td>
+      <td>6</td>
+      <td>09:26:54</td>
       <td>043530</td>
       <td><div class='s-name'>愛普元大56購03(043530)</div><div class='r-tag'>流通比 10.61%</div></td>
-      <td><span class='v-tag'>0.020 億</span></td>
+      <td><span class='v-tag'>300 萬</span></td>
     </tr>
     <tr>
-      <td>09:22:54</td>
-      <td>030662</td>
-      <td><div class='s-name'>台玻群益53購04(030662)</div><div class='r-tag'>流通比 6.67%</div></td>
-      <td><span class='v-tag'>0.010 億</span></td>
+      <td>7</td>
+      <td>09:26:59</td>
+      <td>702041</td>
+      <td><div class='s-name'>臺慶科國泰56購01(702041)</div><div class='r-tag'>流通比 5.33%</div></td>
+      <td><span class='v-tag'>300 萬</span></td>
     </tr>
     <tr>
-      <td>09:22:59</td>
-      <td>032364</td>
-      <td><div class='s-name'>台玻富邦54購01(032364)</div><div class='r-tag'>流通比 11.25%</div></td>
-      <td><span class='v-tag'>0.010 億</span></td>
+      <td>8</td>
+      <td>09:27:04</td>
+      <td>703575</td>
+      <td><div class='s-name'>佶優凱基57購01(703575)</div><div class='r-tag'>流通比 26.48%</div></td>
+      <td><span class='v-tag'>300 萬</span></td>
     </tr>
     <tr>
-      <td>09:23:04</td>
-      <td>032696</td>
-      <td><div class='s-name'>金寶永豐52購01(032696)</div><div class='r-tag'>流通比 26.65%</div></td>
-      <td><span class='v-tag'>0.010 億</span></td>
+      <td>9</td>
+      <td>09:27:09</td>
+      <td>702635</td>
+      <td><div class='s-name'>富喬元富56購03(702635)</div><div class='r-tag'>流通比 54.72%</div></td>
+      <td><span class='v-tag'>200 萬</span></td>
     </tr>
     <tr>
-      <td>09:23:09</td>
-      <td>033560</td>
-      <td><div class='s-name'>強茂統一58購01(033560)</div><div class='r-tag'>流通比 34.36%</div></td>
-      <td><span class='v-tag'>0.010 億</span></td>
+      <td>10</td>
+      <td>09:27:14</td>
+      <td>046152</td>
+      <td><div class='s-name'>康舒元大55購02(046152)</div><div class='r-tag'>流通比 9.52%</div></td>
+      <td><span class='v-tag'>200 萬</span></td>
     </tr>
     <tr>
-      <td>09:23:14</td>
+      <td>11</td>
+      <td>09:27:19</td>
+      <td>046239</td>
+      <td><div class='s-name'>中興電國泰56購02(046239)</div><div class='r-tag'>流通比 7.09%</div></td>
+      <td><span class='v-tag'>200 萬</span></td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>09:27:24</td>
+      <td>050014</td>
+      <td><div class='s-name'>國巨元富5C購02(050014)</div><div class='r-tag'>流通比 38.16%</div></td>
+      <td><span class='v-tag'>200 萬</span></td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>09:27:29</td>
+      <td>051379</td>
+      <td><div class='s-name'>超豐富邦57購01(051379)</div><div class='r-tag'>流通比 39.78%</div></td>
+      <td><span class='v-tag'>200 萬</span></td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>09:27:34</td>
+      <td>051445</td>
+      <td><div class='s-name'>可寧衛統一6C購01(051445)</div><div class='r-tag'>流通比 52.06%</div></td>
+      <td><span class='v-tag'>200 萬</span></td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>09:27:39</td>
+      <td>030259</td>
+      <td><div class='s-name'>華新元富52購02(030259)</div><div class='r-tag'>流通比 80.33%</div></td>
+      <td><span class='v-tag'>200 萬</span></td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>09:27:45</td>
+      <td>030607</td>
+      <td><div class='s-name'>愛普統一58購01(030607)</div><div class='r-tag'>流通比 10.52%</div></td>
+      <td><span class='v-tag'>200 萬</span></td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>09:27:50</td>
+      <td>032310</td>
+      <td><div class='s-name'>台玻元富52購05(032310)</div><div class='r-tag'>流通比 53.69%</div></td>
+      <td><span class='v-tag'>200 萬</span></td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>09:27:55</td>
+      <td>032415</td>
+      <td><div class='s-name'>台玻群益53購07(032415)</div><div class='r-tag'>流通比 96.20%</div></td>
+      <td><span class='v-tag'>200 萬</span></td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>09:28:01</td>
       <td>033744</td>
       <td><div class='s-name'>漢翔國泰53購01(033744)</div><div class='r-tag'>流通比 86.62%</div></td>
-      <td><span class='v-tag'>0.010 億</span></td>
+      <td><span class='v-tag'>200 萬</span></td>
     </tr>
     <tr>
-      <td>09:23:20</td>
-      <td>033942</td>
-      <td><div class='s-name'>聯電統一5A購01(033942)</div><div class='r-tag'>流通比 46.35%</div></td>
-      <td><span class='v-tag'>0.010 億</span></td>
+      <td>20</td>
+      <td>09:28:07</td>
+      <td>036308</td>
+      <td><div class='s-name'>台達電永豐54購04(036308)</div><div class='r-tag'>流通比 31.63%</div></td>
+      <td><span class='v-tag'>200 萬</span></td>
     </tr>
     <tr>
-      <td>09:23:25</td>
-      <td>033946</td>
-      <td><div class='s-name'>國巨統一5B購01(033946)</div><div class='r-tag'>流通比 58.92%</div></td>
-      <td><span class='v-tag'>0.010 億</span></td>
+      <td>21</td>
+      <td>09:28:12</td>
+      <td>037753</td>
+      <td><div class='s-name'>愛普國泰54購02(037753)</div><div class='r-tag'>流通比 33.97%</div></td>
+      <td><span class='v-tag'>200 萬</span></td>
     </tr>
     <tr>
-      <td>09:23:30</td>
-      <td>034649</td>
-      <td><div class='s-name'>南電群益54購03(034649)</div><div class='r-tag'>流通比 64.24%</div></td>
-      <td><span class='v-tag'>0.010 億</span></td>
+      <td>22</td>
+      <td>09:28:17</td>
+      <td>039105</td>
+      <td><div class='s-name'>大毅元富54購02(039105)</div><div class='r-tag'>流通比 83.00%</div></td>
+      <td><span class='v-tag'>200 萬</span></td>
     </tr>
     <tr>
-      <td>09:23:36</td>
-      <td>035069</td>
-      <td><div class='s-name'>強茂統一59購01(035069)</div><div class='r-tag'>流通比 28.13%</div></td>
-      <td><span class='v-tag'>0.010 億</span></td>
+      <td>23</td>
+      <td>09:28:23</td>
+      <td>040391</td>
+      <td><div class='s-name'>華通元富57購01(040391)</div><div class='r-tag'>流通比 40.64%</div></td>
+      <td><span class='v-tag'>200 萬</span></td>
     </tr>
     <tr>
-      <td>09:23:41</td>
-      <td>035621</td>
-      <td><div class='s-name'>富世達元大54購15(035621)</div><div class='r-tag'>流通比 52.50%</div></td>
-      <td><span class='v-tag'>0.010 億</span></td>
+      <td>24</td>
+      <td>09:28:28</td>
+      <td>040513</td>
+      <td><div class='s-name'>宇瞻群益56購01(040513)</div><div class='r-tag'>流通比 24.40%</div></td>
+      <td><span class='v-tag'>200 萬</span></td>
     </tr>
     <tr>
-      <td>09:23:46</td>
-      <td>037648</td>
-      <td><div class='s-name'>國巨統一5C購01(037648)</div><div class='r-tag'>流通比 63.32%</div></td>
-      <td><span class='v-tag'>0.010 億</span></td>
+      <td>25</td>
+      <td>09:28:33</td>
+      <td>040626</td>
+      <td><div class='s-name'>景碩統一5A購01(040626)</div><div class='r-tag'>流通比 53.01%</div></td>
+      <td><span class='v-tag'>200 萬</span></td>
     </tr>
     <tr>
-      <td>09:23:52</td>
-      <td>037963</td>
-      <td><div class='s-name'>國巨群益53購08(037963)</div><div class='r-tag'>流通比 26.04%</div></td>
-      <td><span class='v-tag'>0.010 億</span></td>
+      <td>26</td>
+      <td>09:28:38</td>
+      <td>042111</td>
+      <td><div class='s-name'>國巨國票55購02(042111)</div><div class='r-tag'>流通比 20.65%</div></td>
+      <td><span class='v-tag'>200 萬</span></td>
     </tr>
     <tr>
-      <td>09:23:57</td>
-      <td>038165</td>
-      <td><div class='s-name'>富世達永豐56購05(038165)</div><div class='r-tag'>流通比 14.19%</div></td>
-      <td><span class='v-tag'>0.010 億</span></td>
+      <td>27</td>
+      <td>09:28:43</td>
+      <td>030241</td>
+      <td><div class='s-name'>南亞統一62購01(030241)</div><div class='r-tag'>流通比 51.32%</div></td>
+      <td><span class='v-tag'>100 萬</span></td>
     </tr>
     <tr>
-      <td>09:24:02</td>
-      <td>038248</td>
-      <td><div class='s-name'>聯電元大53購04(038248)</div><div class='r-tag'>流通比 38.23%</div></td>
-      <td><span class='v-tag'>0.010 億</span></td>
+      <td>28</td>
+      <td>09:28:48</td>
+      <td>030662</td>
+      <td><div class='s-name'>台玻群益53購04(030662)</div><div class='r-tag'>流通比 6.67%</div></td>
+      <td><span class='v-tag'>100 萬</span></td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>09:28:53</td>
+      <td>030686</td>
+      <td><div class='s-name'>華城兆豐54購02(030686)</div><div class='r-tag'>流通比 35.06%</div></td>
+      <td><span class='v-tag'>100 萬</span></td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>09:28:58</td>
+      <td>032364</td>
+      <td><div class='s-name'>台玻富邦54購01(032364)</div><div class='r-tag'>流通比 11.25%</div></td>
+      <td><span class='v-tag'>100 萬</span></td>
     </tr>
   </tbody>
 </table>
