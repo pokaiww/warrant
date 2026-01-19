@@ -1,50 +1,40 @@
 {
-    "update_time": "2026-01-19 08:37:13",
+    "update": "2026-01-19 08:49:50",
     "stocks": [
         {
-            "time": "08:37:13",
+            "time": "08:49:50",
             "code": "057922",
-            "target": "台積電",
-            "name": "台積電元大55購01()",
+            "name": "台積電元大55購01(057922)",
             "value": "0.480",
-            "is_major": false,
-            "circulation": "一般"
+            "circulation": "待確認"
         },
         {
-            "time": "08:37:13",
+            "time": "08:49:50",
             "code": "036364",
-            "target": "台達電",
-            "name": "台達電元大54購11()",
+            "name": "台達電元大54購11(036364)",
             "value": "0.460",
-            "is_major": true,
-            "circulation": "查無"
+            "circulation": "待確認"
         },
         {
-            "time": "08:37:13",
+            "time": "08:49:50",
             "code": "044483",
-            "target": "大同",
-            "name": "大同元富55購02()",
+            "name": "大同元富55購02(044483)",
             "value": "0.270",
-            "is_major": true,
-            "circulation": "查無"
+            "circulation": "待確認"
         },
         {
-            "time": "08:37:13",
+            "time": "08:49:50",
             "code": "049861",
-            "target": "全新",
-            "name": "全新永豐58購01()",
+            "name": "全新永豐58購01(049861)",
             "value": "0.230",
-            "is_major": true,
-            "circulation": "查無"
+            "circulation": "待確認"
         },
         {
-            "time": "08:37:13",
+            "time": "08:49:50",
             "code": "050014",
-            "target": "國巨",
-            "name": "國巨元富5C購02()",
+            "name": "國巨元富5C購02(050014)",
             "value": "0.160",
-            "is_major": true,
-            "circulation": "查無"
+            "circulation": "待確認"
         }
     ]
 }
