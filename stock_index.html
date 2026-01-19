@@ -1,172 +1,212 @@
 
             <!DOCTYPE html>
-            <html lang="zh-TW">
+            <html>
             <head>
                 <meta charset="UTF-8">
                 <meta http-equiv="refresh" content="60">
                 <style>
                     body {
-                        margin: 0; padding: 40px 20px;
-                        background: url('https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
-                        background-size: cover;
-                        font-family: 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+                        background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), 
+                                    url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1920&q=80');
+                        background-size: cover; background-attachment: fixed; color: #1e293b; font-family: sans-serif; padding: 20px;
                     }
-                    .glass-card {
-                        max-width: 900px; margin: auto;
-                        background: rgba(255, 255, 255, 0.45);
-                        backdrop-filter: blur(20px);
-                        -webkit-backdrop-filter: blur(20px);
-                        border-radius: 30px;
-                        padding: 40px;
-                        box-shadow: 0 25px 50px rgba(0,0,0,0.15);
-                        border: 1px solid rgba(255,255,255,0.4);
+                    .container { max-width: 1400px; margin: auto; display: flex; gap: 20px; flex-wrap: wrap; }
+                    .section { flex: 1; min-width: 500px; background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(20px); 
+                               border-radius: 20px; padding: 25px; border: 1px solid white; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+                    h2 { color: #0369a1; text-align: center; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; }
+                    .sniper-table { width: 100%; border-collapse: separate; border-spacing: 0 8px; }
+                    .sniper-table td { background: rgba(255, 255, 255, 0.4); padding: 12px; text-align: center; border-radius: 10px; }
+                    
+                    /* 亮燈樣式: 占比 > 50% 且 流通 < 20% */
+                    .highlight-row td { 
+                        background: rgba(255, 87, 34, 0.15) !important; 
+                        border: 2px solid #ff5722 !important;
+                        font-weight: bold;
                     }
-                    h1 { color: #1a5f7a; text-align: center; letter-spacing: 4px; margin: 0; }
-                    .time { text-align: center; color: #444; font-size: 0.9em; margin-bottom: 30px; }
-                    table { width: 100%; border-collapse: collapse; }
-                    th { text-align: left; padding: 15px; color: #555; border-bottom: 1.5px solid rgba(0,0,0,0.1); }
-                    td { padding: 18px 15px; border-bottom: 1px solid rgba(0,0,0,0.05); }
-                    .stock-cell { font-weight: 800; color: #004d99; font-size: 1.1em; }
-                    .warrant-cell { color: #2c3e50; }
-                    .price-cell { text-align: right; color: #2c3e50; }
-                    small { color: #666; }
+                    
+                    .s-name { font-weight: 600; font-size: 0.9em; }
+                    .s-name-main { font-weight: 800; color: #0369a1; font-size: 1.2em; }
+                    .v-tag { padding: 5px 10px; border-radius: 6px; font-weight: bold; }
+                    .normal-tag { background: #f0f9ff; color: #0369a1; }
+                    .warning-tag { background: #fff7ed; color: #ea580c; border: 1px solid #fed7aa; }
+                    .v-tag-stock { background: #ffffff; color: #0f172a; padding: 8px 15px; border-radius: 8px; font-weight: 800; border: 1px solid #e2e8f0; }
                 </style>
             </head>
             <body>
-                <div class="glass-card">
-                    <h1>🎯 SNIPER VISION</h1>
-                    <div class="time">LAST UPDATE: 2026-01-19 11:10:52</div>
-                    <table>
-                        <thead>
-                            <tr><th>標的 (4碼)</th><th>權證名稱 (不含代碼)</th><th style="text-align:right">成交金額</th></tr>
-                        </thead>
-                        <tbody>
-                <tr style="">
-                    <td class="stock-cell">國巨</td>
-                    <td class="warrant-cell">國巨元富5C購02</td>
-                    <td class="price-cell"><b>1,600 萬</b><br><small>占比 36%</small></td>
-                </tr>
-                <tr style="background: rgba(255, 80, 80, 0.25);">
-                    <td class="stock-cell">道瓊銀</td>
-                    <td class="warrant-cell">道瓊銀凱基57購02</td>
-                    <td class="price-cell"><b>1,600 萬</b><br><small>占比 80%</small></td>
-                </tr>
-                <tr style="background: rgba(255, 80, 80, 0.25);">
-                    <td class="stock-cell">世芯</td>
-                    <td class="warrant-cell">世芯永豐56購08</td>
-                    <td class="price-cell"><b>1,300 萬</b><br><small>占比 87%</small></td>
-                </tr>
-                <tr style="background: rgba(255, 80, 80, 0.25);">
-                    <td class="stock-cell">大同 (2371)</td>
-                    <td class="warrant-cell">大同元富55購02</td>
-                    <td class="price-cell"><b>1,000 萬</b><br><small>占比 100%</small></td>
-                </tr>
-                <tr style="">
-                    <td class="stock-cell">臺股指</td>
-                    <td class="warrant-cell">臺股指群益56購13</td>
-                    <td class="price-cell"><b>900 萬</b><br><small>占比 36%</small></td>
-                </tr>
-                <tr style="">
-                    <td class="stock-cell">台積電 (2330)</td>
-                    <td class="warrant-cell">台積電元大5A購03</td>
-                    <td class="price-cell"><b>800 萬</b><br><small>占比 40%</small></td>
-                </tr>
-                <tr style="background: rgba(255, 80, 80, 0.25);">
-                    <td class="stock-cell">富喬 (1815)</td>
-                    <td class="warrant-cell">富喬元富56購03</td>
-                    <td class="price-cell"><b>800 萬</b><br><small>占比 73%</small></td>
-                </tr>
-                <tr style="background: rgba(255, 80, 80, 0.25);">
-                    <td class="stock-cell">宇瞻 (8271)</td>
-                    <td class="warrant-cell">宇瞻國票55購02</td>
-                    <td class="price-cell"><b>700 萬</b><br><small>占比 100%</small></td>
-                </tr>
-                <tr style="">
-                    <td class="stock-cell">國巨</td>
-                    <td class="warrant-cell">國巨國票55購02</td>
-                    <td class="price-cell"><b>700 萬</b><br><small>占比 16%</small></td>
-                </tr>
-                <tr style="">
-                    <td class="stock-cell">欣興 (3037)</td>
-                    <td class="warrant-cell">欣興元富57購03</td>
-                    <td class="price-cell"><b>600 萬</b><br><small>占比 35%</small></td>
-                </tr>
-                <tr style="">
-                    <td class="stock-cell">臺股指</td>
-                    <td class="warrant-cell">臺股指群益55購12</td>
-                    <td class="price-cell"><b>600 萬</b><br><small>占比 24%</small></td>
-                </tr>
-                <tr style="background: rgba(255, 80, 80, 0.25);">
-                    <td class="stock-cell">勤凱 (4760)</td>
-                    <td class="warrant-cell">勤凱元大53購01</td>
-                    <td class="price-cell"><b>600 萬</b><br><small>占比 100%</small></td>
-                </tr>
-                <tr style="">
-                    <td class="stock-cell">聯電 (2303)</td>
-                    <td class="warrant-cell">聯電群益57購02</td>
-                    <td class="price-cell"><b>500 萬</b><br><small>占比 38%</small></td>
-                </tr>
-                <tr style="">
-                    <td class="stock-cell">聯電 (2303)</td>
-                    <td class="warrant-cell">聯電統一54購02</td>
-                    <td class="price-cell"><b>500 萬</b><br><small>占比 38%</small></td>
-                </tr>
-                <tr style="background: rgba(255, 80, 80, 0.25);">
-                    <td class="stock-cell">電子類</td>
-                    <td class="warrant-cell">電子類群益56購01</td>
-                    <td class="price-cell"><b>500 萬</b><br><small>占比 100%</small></td>
-                </tr>
-                <tr style="background: rgba(255, 80, 80, 0.25);">
-                    <td class="stock-cell">漢翔 (2634)</td>
-                    <td class="warrant-cell">漢翔群益56購01</td>
-                    <td class="price-cell"><b>400 萬</b><br><small>占比 100%</small></td>
-                </tr>
-                <tr style="">
-                    <td class="stock-cell">南亞 (1303)</td>
-                    <td class="warrant-cell">南亞兆豐5C購01</td>
-                    <td class="price-cell"><b>400 萬</b><br><small>占比 20%</small></td>
-                </tr>
-                <tr style="">
-                    <td class="stock-cell">國巨</td>
-                    <td class="warrant-cell">國巨元富57購02</td>
-                    <td class="price-cell"><b>400 萬</b><br><small>占比 9%</small></td>
-                </tr>
-                <tr style="">
-                    <td class="stock-cell">臺股指</td>
-                    <td class="warrant-cell">臺股指凱基56購04</td>
-                    <td class="price-cell"><b>400 萬</b><br><small>占比 16%</small></td>
-                </tr>
-                <tr style="background: rgba(255, 80, 80, 0.25);">
-                    <td class="stock-cell">奇鋐 (3017)</td>
-                    <td class="warrant-cell">奇鋐群益51購07</td>
-                    <td class="price-cell"><b>400 萬</b><br><small>占比 100%</small></td>
-                </tr>
-                <tr style="background: rgba(255, 80, 80, 0.25);">
-                    <td class="stock-cell">惠特 (6706)</td>
-                    <td class="warrant-cell">惠特元富5A購01</td>
-                    <td class="price-cell"><b>400 萬</b><br><small>占比 57%</small></td>
-                </tr>
-                <tr style="background: rgba(255, 80, 80, 0.25);">
-                    <td class="stock-cell">元金2X</td>
-                    <td class="warrant-cell">元金2X凱基55購02</td>
-                    <td class="price-cell"><b>400 萬</b><br><small>占比 100%</small></td>
-                </tr>
-                <tr style="">
-                    <td class="stock-cell">國巨</td>
-                    <td class="warrant-cell">國巨元富54購14</td>
-                    <td class="price-cell"><b>400 萬</b><br><small>占比 9%</small></td>
-                </tr>
-                <tr style="">
-                    <td class="stock-cell">華城 (1519)</td>
-                    <td class="warrant-cell">華城兆豐57購01</td>
-                    <td class="price-cell"><b>400 萬</b><br><small>占比 44%</small></td>
-                </tr>
-                <tr style="background: rgba(255, 80, 80, 0.25);">
-                    <td class="stock-cell">臺慶科 (3357)</td>
-                    <td class="warrant-cell">臺慶科國泰56購01</td>
-                    <td class="price-cell"><b>400 萬</b><br><small>占比 100%</small></td>
-                </tr></tbody>
-                    </table>
+                <h1 style="text-align:center; color:#0369a1;">🎯 Sniper Dashboard (Focus Mode)</h1>
+                <p style="text-align:center; color:#64748b;">🚨 亮燈提醒：單檔占比 > 50% 且 流通 < 20% | 更新：2026-01-19 11:14:50</p>
+                <div class="container">
+                    <div class="section">
+                        <h2>🔍 權證即時明細</h2>
+                        <table class="sniper-table">
+                            <thead><tr><th>代號</th><th>標的</th><th>名稱/流通</th><th>金額</th></tr></thead>
+                            <tbody><tr class=''><td><code>050014</code></td><td><b>國巨</b></td><td><div class='s-name'>國巨元富5C購02(050014)</div><div class='r-tag'>流通 38.16%</div></td><td><span class='v-tag normal-tag'>1600 萬 <small>(33%)</small></span></td></tr><tr class=''><td><code>051783</code></td><td><b>道瓊銀</b></td><td><div class='s-name'>道瓊銀凱基57購02(051783)</div><div class='r-tag'>流通 79.88%</div></td><td><span class='v-tag warning-tag'>1600 萬 <small>(73%)</small></span></td></tr><tr class=''><td><code>049073</code></td><td><b>世芯</b></td><td><div class='s-name'>世芯永豐56購08(049073)</div><div class='r-tag'>流通 72.68%</div></td><td><span class='v-tag warning-tag'>1400 萬 <small>(88%)</small></span></td></tr><tr class=''><td><code>044483</code></td><td><b>大同</b></td><td><div class='s-name'>大同元富55購02(044483)</div><div class='r-tag'>流通 64.17%</div></td><td><span class='v-tag warning-tag'>1000 萬 <small>(83%)</small></span></td></tr><tr class=''><td><code>049034</code></td><td><b>臺股指</b></td><td><div class='s-name'>臺股指群益56購13(049034)</div><div class='r-tag'>流通 51.80%</div></td><td><span class='v-tag normal-tag'>900 萬 <small>(35%)</small></span></td></tr><tr class=''><td><code>051666</code></td><td><b>台積電</b></td><td><div class='s-name'>台積電元大5A購03(051666)</div><div class='r-tag'>流通 42.86%</div></td><td><span class='v-tag normal-tag'>800 萬 <small>(44%)</small></span></td></tr><tr class=''><td><code>702635</code></td><td><b>富喬</b></td><td><div class='s-name'>富喬元富56購03(702635)</div><div class='r-tag'>流通 54.72%</div></td><td><span class='v-tag normal-tag'>800 萬 <small>(42%)</small></span></td></tr><tr class=''><td><code>040430</code></td><td><b>宇瞻</b></td><td><div class='s-name'>宇瞻國票55購02(040430)</div><div class='r-tag'>流通 95.36%</div></td><td><span class='v-tag warning-tag'>700 萬 <small>(100%)</small></span></td></tr><tr class=''><td><code>042111</code></td><td><b>國巨</b></td><td><div class='s-name'>國巨國票55購02(042111)</div><div class='r-tag'>流通 20.65%</div></td><td><span class='v-tag normal-tag'>700 萬 <small>(14%)</small></span></td></tr><tr class=''><td><code>052337</code></td><td><b>聯電</b></td><td><div class='s-name'>聯電群益57購02(052337)</div><div class='r-tag'>流通 18.74%</div></td><td><span class='v-tag normal-tag'>600 萬 <small>(30%)</small></span></td></tr><tr class=''><td><code>052624</code></td><td><b>欣興</b></td><td><div class='s-name'>欣興元富57購03(052624)</div><div class='r-tag'>流通 0.04%</div></td><td><span class='v-tag normal-tag'>600 萬 <small>(43%)</small></span></td></tr><tr class=''><td><code>037638</code></td><td><b>臺股指</b></td><td><div class='s-name'>臺股指群益55購12(037638)</div><div class='r-tag'>流通 33.24%</div></td><td><span class='v-tag normal-tag'>600 萬 <small>(23%)</small></span></td></tr><tr class=''><td><code>738045</code></td><td><b>勤凱</b></td><td><div class='s-name'>勤凱元大53購01(738045)</div><div class='r-tag'>流通 80.62%</div></td><td><span class='v-tag warning-tag'>600 萬 <small>(100%)</small></span></td></tr><tr class=''><td><code>077726</code></td><td><b>聯電</b></td><td><div class='s-name'>聯電統一54購02(077726)</div><div class='r-tag'>流通 56.34%</div></td><td><span class='v-tag normal-tag'>500 萬 <small>(25%)</small></span></td></tr><tr class=''><td><code>043245</code></td><td><b>欣興</b></td><td><div class='s-name'>欣興永豐57購01(043245)</div><div class='r-tag'>流通 4.10%</div></td><td><span class='v-tag normal-tag'>500 萬 <small>(36%)</small></span></td></tr><tr class='highlight-row'><td><code>043530</code></td><td><b>愛普</b></td><td><div class='s-name'>愛普元大56購03(043530)</div><div class='r-tag'>流通 10.61%</div></td><td><span class='v-tag warning-tag'>500 萬 <small>(50%)</small></span></td></tr><tr class=''><td><code>045582</code></td><td><b>電子類</b></td><td><div class='s-name'>電子類凱基55購03(045582)</div><div class='r-tag'>流通 35.52%</div></td><td><span class='v-tag warning-tag'>500 萬 <small>(50%)</small></span></td></tr><tr class=''><td><code>048093</code></td><td><b>電子類</b></td><td><div class='s-name'>電子類群益56購01(048093)</div><div class='r-tag'>流通 24.10%</div></td><td><span class='v-tag warning-tag'>500 萬 <small>(50%)</small></span></td></tr><tr class=''><td><code>046493</code></td><td><b>漢翔</b></td><td><div class='s-name'>漢翔群益56購01(046493)</div><div class='r-tag'>流通 98.86%</div></td><td><span class='v-tag warning-tag'>400 萬 <small>(100%)</small></span></td></tr><tr class=''><td><code>046805</code></td><td><b>南亞</b></td><td><div class='s-name'>南亞兆豐5C購01(046805)</div><div class='r-tag'>流通 68.84%</div></td><td><span class='v-tag normal-tag'>400 萬 <small>(33%)</small></span></td></tr><tr class=''><td><code>039120</code></td><td><b>惠特</b></td><td><div class='s-name'>惠特元富5A購01(039120)</div><div class='r-tag'>流通 80.51%</div></td><td><span class='v-tag warning-tag'>400 萬 <small>(57%)</small></span></td></tr><tr class=''><td><code>040201</code></td><td><b>元金2X</b></td><td><div class='s-name'>元金2X凱基55購02(040201)</div><div class='r-tag'>流通 52.24%</div></td><td><span class='v-tag warning-tag'>400 萬 <small>(100%)</small></span></td></tr><tr class=''><td><code>041554</code></td><td><b>臺股指</b></td><td><div class='s-name'>臺股指元大54購32(041554)</div><div class='r-tag'>流通 43.72%</div></td><td><span class='v-tag normal-tag'>400 萬 <small>(15%)</small></span></td></tr><tr class=''><td><code>042463</code></td><td><b>國巨</b></td><td><div class='s-name'>國巨元富54購14(042463)</div><div class='r-tag'>流通 69.03%</div></td><td><span class='v-tag normal-tag'>400 萬 <small>(8%)</small></span></td></tr><tr class=''><td><code>043256</code></td><td><b>華城</b></td><td><div class='s-name'>華城兆豐57購01(043256)</div><div class='r-tag'>流通 84.92%</div></td><td><span class='v-tag warning-tag'>400 萬 <small>(57%)</small></span></td></tr><tr class=''><td><code>052613</code></td><td><b>國巨</b></td><td><div class='s-name'>國巨元富57購02(052613)</div><div class='r-tag'>流通 20.76%</div></td><td><span class='v-tag normal-tag'>400 萬 <small>(8%)</small></span></td></tr><tr class=''><td><code>077085</code></td><td><b>臺股指</b></td><td><div class='s-name'>臺股指凱基56購04(077085)</div><div class='r-tag'>流通 3.29%</div></td><td><span class='v-tag normal-tag'>400 萬 <small>(15%)</small></span></td></tr><tr class=''><td><code>088917</code></td><td><b>奇鋐</b></td><td><div class='s-name'>奇鋐群益51購07(088917)</div><div class='r-tag'>流通 97.64%</div></td><td><span class='v-tag warning-tag'>400 萬 <small>(100%)</small></span></td></tr><tr class=''><td><code>034203</code></td><td><b>健策</b></td><td><div class='s-name'>健策國票54購01(034203)</div><div class='r-tag'>流通 39.89%</div></td><td><span class='v-tag warning-tag'>400 萬 <small>(100%)</small></span></td></tr><tr class=''><td><code>037648</code></td><td><b>國巨</b></td><td><div class='s-name'>國巨統一5C購01(037648)</div><div class='r-tag'>流通 63.32%</div></td><td><span class='v-tag normal-tag'>400 萬 <small>(8%)</small></span></td></tr></tbody>
+                        </table>
+                    </div>
+                    <div class="section">
+                        <h2>🏆 今日標的火力累積</h2>
+                        <table border="1" class="dataframe sniper-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>排行</th>
+      <th>標的</th>
+      <th>累積</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><div class='s-name-main'>國巨</div></td>
+      <td><span class='v-tag-stock'>4,900 萬</span></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><div class='s-name-main'>臺股指</div></td>
+      <td><span class='v-tag-stock'>2,600 萬</span></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><div class='s-name-main'>道瓊銀</div></td>
+      <td><span class='v-tag-stock'>2,200 萬</span></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><div class='s-name-main'>聯電</div></td>
+      <td><span class='v-tag-stock'>2,000 萬</span></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td><div class='s-name-main'>富喬</div></td>
+      <td><span class='v-tag-stock'>1,900 萬</span></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td><div class='s-name-main'>台積電</div></td>
+      <td><span class='v-tag-stock'>1,800 萬</span></td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td><div class='s-name-main'>世芯</div></td>
+      <td><span class='v-tag-stock'>1,600 萬</span></td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td><div class='s-name-main'>欣興</div></td>
+      <td><span class='v-tag-stock'>1,400 萬</span></td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td><div class='s-name-main'>大同</div></td>
+      <td><span class='v-tag-stock'>1,200 萬</span></td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td><div class='s-name-main'>南亞</div></td>
+      <td><span class='v-tag-stock'>1,200 萬</span></td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td><div class='s-name-main'>愛普</div></td>
+      <td><span class='v-tag-stock'>1,000 萬</span></td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td><div class='s-name-main'>電子類</div></td>
+      <td><span class='v-tag-stock'>1,000 萬</span></td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td><div class='s-name-main'>宇瞻</div></td>
+      <td><span class='v-tag-stock'>700 萬</span></td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td><div class='s-name-main'>惠特</div></td>
+      <td><span class='v-tag-stock'>700 萬</span></td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td><div class='s-name-main'>華城</div></td>
+      <td><span class='v-tag-stock'>700 萬</span></td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td><div class='s-name-main'>群創</div></td>
+      <td><span class='v-tag-stock'>700 萬</span></td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td><div class='s-name-main'>勤凱</div></td>
+      <td><span class='v-tag-stock'>600 萬</span></td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td><div class='s-name-main'>創見</div></td>
+      <td><span class='v-tag-stock'>600 萬</span></td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td><div class='s-name-main'>金寶</div></td>
+      <td><span class='v-tag-stock'>500 萬</span></td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td><div class='s-name-main'>漢翔</div></td>
+      <td><span class='v-tag-stock'>400 萬</span></td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td><div class='s-name-main'>元金2X</div></td>
+      <td><span class='v-tag-stock'>400 萬</span></td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td><div class='s-name-main'>奇鋐</div></td>
+      <td><span class='v-tag-stock'>400 萬</span></td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td><div class='s-name-main'>健策</div></td>
+      <td><span class='v-tag-stock'>400 萬</span></td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td><div class='s-name-main'>美時</div></td>
+      <td><span class='v-tag-stock'>400 萬</span></td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td><div class='s-name-main'>臺慶科</div></td>
+      <td><span class='v-tag-stock'>400 萬</span></td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td><div class='s-name-main'>佶優</div></td>
+      <td><span class='v-tag-stock'>400 萬</span></td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td><div class='s-name-main'>華通</div></td>
+      <td><span class='v-tag-stock'>400 萬</span></td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td><div class='s-name-main'>金山電</div></td>
+      <td><span class='v-tag-stock'>300 萬</span></td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td><div class='s-name-main'>擎邦</div></td>
+      <td><span class='v-tag-stock'>300 萬</span></td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td><div class='s-name-main'>中探</div></td>
+      <td><span class='v-tag-stock'>300 萬</span></td>
+    </tr>
+  </tbody>
+</table>
+                    </div>
                 </div>
             </body>
             </html>
