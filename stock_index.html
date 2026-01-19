@@ -1,257 +1,260 @@
 
             <html>
-            <head><meta charset='UTF-8'><title>狙擊網絡</title>
-            <style>
-                body { font-family: sans-serif; background-color: #0e1621; color: #fff; text-align: center; padding: 20px; }
-                .container { max-width: 1000px; margin: auto; background: #17212b; padding: 25px; border-radius: 15px; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
-                h2 { color: #52a8ff; border-left: 5px solid #52a8ff; padding-left: 10px; text-align: left; margin-top: 30px; }
-                table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
-                th { background: #242f3d; color: #52a8ff; padding: 12px; border-bottom: 2px solid #0e1621; }
-                td { padding: 12px; border-bottom: 1px solid #242f3d; text-align: center; }
-                .price { color: #2ecc71; font-weight: bold; font-family: monospace; }
-                .badge { background: #34495e; padding: 3px 8px; border-radius: 4px; }
-                tr:hover { background: #1c2733; }
-            </style>
+            <head>
+                <meta charset='UTF-8'>
+                <style>
+                    body { font-family: sans-serif; background-color: #0e1621; color: #fff; padding: 10px; }
+                    .dashboard { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+                    .panel { background: #17212b; padding: 15px; border-radius: 12px; min-width: 450px; flex: 1; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
+                    h1 { text-align: center; color: #52a8ff; }
+                    h2 { border-left: 4px solid #52a8ff; padding-left: 10px; font-size: 1.2em; }
+                    table { width: 100%; border-collapse: collapse; font-size: 0.9em; }
+                    th { background: #242f3d; color: #52a8ff; padding: 10px; }
+                    td { padding: 8px; border-bottom: 1px solid #242f3d; text-align: center; }
+                    .price { color: #2ecc71; font-weight: bold; font-family: monospace; }
+                    .badge { background: #34495e; padding: 2px 6px; border-radius: 4px; }
+                    .badge.high { background: #e74c3c; animation: blink 1s infinite; }
+                    @keyframes blink { 0% { opacity: 1; } 50% { opacity: 0.7; } 100% { opacity: 1; } }
+                </style>
             </head>
             <body>
-                <div class='container'>
-                    <h1>🎯 權證狙擊系統</h1>
-                    <p style='color:#888;'>最後更新：2026-01-19 11:41:48</p>
-                    
-                    <h2>🔥 即時成交大單 (金額由大到小)</h2>
-                    <table border="1" class="dataframe">
+                <h1>🎯 權證狙擊網絡 Sniper Dash</h1>
+                <p style='text-align:center; color:#888;'>更新時間：2026-01-19 11:44:58</p>
+                <div class='dashboard'>
+                    <div class='panel'>
+                        <h2>🔥 即時大單榜 (當前成交)</h2>
+                        <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
-      <th>偵測時間</th>
+      <th>時間</th>
       <th>代號</th>
-      <th>權證名稱</th>
+      <th>名稱</th>
       <th>流通比</th>
-      <th>當前成交(萬)</th>
+      <th>成交(萬)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>11:41:13</td>
+      <td>11:43:31</td>
       <td><code>050014</code></td>
       <td>國巨元富5C購02</td>
-      <td><span class='badge'>38.16%</span></td>
+      <td><span class='badge '>38.16%</span></td>
       <td><span class='price'>1,600</span></td>
     </tr>
     <tr>
-      <td>11:41:17</td>
+      <td>11:43:34</td>
       <td><code>051783</code></td>
       <td>道瓊銀凱基57購02</td>
-      <td><span class='badge'>79.88%</span></td>
+      <td><span class='badge high'>79.88%</span></td>
       <td><span class='price'>1,600</span></td>
     </tr>
     <tr>
-      <td>11:41:20</td>
+      <td>11:43:37</td>
       <td><code>049073</code></td>
       <td>世芯永豐56購08</td>
-      <td><span class='badge'>72.68%</span></td>
+      <td><span class='badge high'>72.68%</span></td>
       <td><span class='price'>1,400</span></td>
     </tr>
     <tr>
-      <td>11:41:24</td>
+      <td>11:43:40</td>
       <td><code>052337</code></td>
       <td>聯電群益57購02</td>
-      <td><span class='badge'>18.74%</span></td>
+      <td><span class='badge '>18.74%</span></td>
       <td><span class='price'>1,200</span></td>
     </tr>
     <tr>
-      <td>11:41:27</td>
+      <td>11:43:43</td>
       <td><code>044483</code></td>
       <td>大同元富55購02</td>
-      <td><span class='badge'>64.17%</span></td>
+      <td><span class='badge high'>64.17%</span></td>
       <td><span class='price'>1,100</span></td>
     </tr>
     <tr>
-      <td>11:41:30</td>
+      <td>11:43:46</td>
       <td><code>049034</code></td>
       <td>臺股指群益56購13</td>
-      <td><span class='badge'>51.80%</span></td>
+      <td><span class='badge '>51.80%</span></td>
       <td><span class='price'>900</span></td>
     </tr>
     <tr>
-      <td>11:41:34</td>
+      <td>11:43:49</td>
       <td><code>702635</code></td>
       <td>富喬元富56購03</td>
-      <td><span class='badge'>54.72%</span></td>
-      <td><span class='price'>800</span></td>
+      <td><span class='badge '>54.72%</span></td>
+      <td><span class='price'>900</span></td>
     </tr>
     <tr>
-      <td>11:41:37</td>
+      <td>11:43:52</td>
       <td><code>051666</code></td>
       <td>台積電元大5A購03</td>
-      <td><span class='badge'>42.86%</span></td>
+      <td><span class='badge '>42.86%</span></td>
       <td><span class='price'>800</span></td>
     </tr>
     <tr>
-      <td>11:41:41</td>
+      <td>11:43:54</td>
       <td><code>077726</code></td>
       <td>聯電統一54購02</td>
-      <td><span class='badge'>56.34%</span></td>
+      <td><span class='badge '>56.34%</span></td>
       <td><span class='price'>700</span></td>
     </tr>
     <tr>
-      <td>11:41:44</td>
+      <td>11:43:57</td>
       <td><code>040430</code></td>
       <td>宇瞻國票55購02</td>
-      <td><span class='badge'>95.36%</span></td>
+      <td><span class='badge high'>95.36%</span></td>
       <td><span class='price'>700</span></td>
     </tr>
     <tr>
-      <td>11:41:48</td>
+      <td>11:44:00</td>
       <td><code>042111</code></td>
       <td>國巨國票55購02</td>
-      <td><span class='badge'>追蹤中</span></td>
+      <td><span class='badge '>20.65%</span></td>
       <td><span class='price'>700</span></td>
     </tr>
     <tr>
-      <td>11:41:48</td>
+      <td>11:44:03</td>
       <td><code>052624</code></td>
       <td>欣興元富57購03</td>
-      <td><span class='badge'>追蹤中</span></td>
+      <td><span class='badge '>0.04%</span></td>
       <td><span class='price'>600</span></td>
     </tr>
     <tr>
-      <td>11:41:48</td>
+      <td>11:44:06</td>
       <td><code>037638</code></td>
       <td>臺股指群益55購12</td>
-      <td><span class='badge'>追蹤中</span></td>
+      <td><span class='badge '>33.24%</span></td>
       <td><span class='price'>600</span></td>
     </tr>
     <tr>
-      <td>11:41:48</td>
+      <td>11:44:09</td>
       <td><code>088917</code></td>
       <td>奇鋐群益51購07</td>
-      <td><span class='badge'>追蹤中</span></td>
+      <td><span class='badge high'>97.64%</span></td>
       <td><span class='price'>600</span></td>
     </tr>
     <tr>
-      <td>11:41:48</td>
+      <td>11:44:12</td>
       <td><code>738045</code></td>
       <td>勤凱元大53購01</td>
-      <td><span class='badge'>追蹤中</span></td>
+      <td><span class='badge high'>80.62%</span></td>
       <td><span class='price'>600</span></td>
     </tr>
     <tr>
-      <td>11:41:48</td>
+      <td>11:44:15</td>
       <td><code>051913</code></td>
       <td>聯電國票58購01</td>
-      <td><span class='badge'>追蹤中</span></td>
+      <td><span class='badge '>1.94%</span></td>
       <td><span class='price'>500</span></td>
     </tr>
     <tr>
-      <td>11:41:48</td>
+      <td>11:44:18</td>
       <td><code>052333</code></td>
       <td>聯電台新57購01</td>
-      <td><span class='badge'>追蹤中</span></td>
+      <td><span class='badge '>待確認</span></td>
       <td><span class='price'>500</span></td>
     </tr>
     <tr>
-      <td>11:41:48</td>
+      <td>11:44:21</td>
       <td><code>041554</code></td>
       <td>臺股指元大54購32</td>
-      <td><span class='badge'>追蹤中</span></td>
+      <td><span class='badge '>43.72%</span></td>
       <td><span class='price'>500</span></td>
     </tr>
     <tr>
-      <td>11:41:48</td>
+      <td>11:44:23</td>
       <td><code>043245</code></td>
       <td>欣興永豐57購01</td>
-      <td><span class='badge'>追蹤中</span></td>
+      <td><span class='badge '>4.10%</span></td>
       <td><span class='price'>500</span></td>
     </tr>
     <tr>
-      <td>11:41:48</td>
+      <td>11:44:26</td>
       <td><code>043530</code></td>
       <td>愛普元大56購03</td>
-      <td><span class='badge'>追蹤中</span></td>
+      <td><span class='badge '>10.61%</span></td>
       <td><span class='price'>500</span></td>
     </tr>
     <tr>
-      <td>11:41:48</td>
+      <td>11:44:29</td>
       <td><code>045582</code></td>
       <td>電子類凱基55購03</td>
-      <td><span class='badge'>追蹤中</span></td>
+      <td><span class='badge '>35.52%</span></td>
       <td><span class='price'>500</span></td>
     </tr>
     <tr>
-      <td>11:41:48</td>
+      <td>11:44:32</td>
       <td><code>046805</code></td>
       <td>南亞兆豐5C購01</td>
-      <td><span class='badge'>追蹤中</span></td>
+      <td><span class='badge high'>68.84%</span></td>
       <td><span class='price'>500</span></td>
     </tr>
     <tr>
-      <td>11:41:48</td>
+      <td>11:44:35</td>
       <td><code>048093</code></td>
       <td>電子類群益56購01</td>
-      <td><span class='badge'>追蹤中</span></td>
+      <td><span class='badge '>24.10%</span></td>
       <td><span class='price'>500</span></td>
     </tr>
     <tr>
-      <td>11:41:48</td>
+      <td>11:44:38</td>
       <td><code>045581</code></td>
       <td>電子類凱基55購02</td>
-      <td><span class='badge'>追蹤中</span></td>
+      <td><span class='badge '>11.87%</span></td>
       <td><span class='price'>400</span></td>
     </tr>
     <tr>
-      <td>11:41:48</td>
+      <td>11:44:41</td>
       <td><code>046493</code></td>
       <td>漢翔群益56購01</td>
-      <td><span class='badge'>追蹤中</span></td>
+      <td><span class='badge high'>98.86%</span></td>
       <td><span class='price'>400</span></td>
     </tr>
     <tr>
-      <td>11:41:48</td>
+      <td>11:44:44</td>
       <td><code>047215</code></td>
       <td>南亞富邦58購02</td>
-      <td><span class='badge'>追蹤中</span></td>
+      <td><span class='badge '>6.08%</span></td>
       <td><span class='price'>400</span></td>
     </tr>
     <tr>
-      <td>11:41:48</td>
+      <td>11:44:47</td>
       <td><code>048992</code></td>
       <td>群創元富58購01</td>
-      <td><span class='badge'>追蹤中</span></td>
+      <td><span class='badge '>42.86%</span></td>
       <td><span class='price'>400</span></td>
     </tr>
     <tr>
-      <td>11:41:48</td>
+      <td>11:44:50</td>
       <td><code>049861</code></td>
       <td>全新永豐58購01</td>
-      <td><span class='badge'>追蹤中</span></td>
+      <td><span class='badge '>50.46%</span></td>
       <td><span class='price'>400</span></td>
     </tr>
     <tr>
-      <td>11:41:48</td>
+      <td>11:44:53</td>
       <td><code>050469</code></td>
       <td>創意國票57購01</td>
-      <td><span class='badge'>追蹤中</span></td>
+      <td><span class='badge '>0.54%</span></td>
       <td><span class='price'>400</span></td>
     </tr>
     <tr>
-      <td>11:41:48</td>
+      <td>11:44:56</td>
       <td><code>050762</code></td>
       <td>台積電元富71購01</td>
-      <td><span class='badge'>追蹤中</span></td>
+      <td><span class='badge '>22.24%</span></td>
       <td><span class='price'>400</span></td>
     </tr>
   </tbody>
 </table>
-                    
-                    <hr style='border:0; border-top:1px solid #242f3d; margin:40px 0;'>
-                    
-                    <h2>🏆 今日累積總榜 (金額累加排序)</h2>
-                    <table border="1" class="dataframe">
+                    </div>
+                    <div class='panel'>
+                        <h2>🏆 累積熱度榜 (今日加總)</h2>
+                        <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th>代號</th>
-      <th>權證名稱</th>
-      <th>累積總成交(萬)</th>
+      <th>名稱</th>
+      <th>累積(萬)</th>
     </tr>
   </thead>
   <tbody>
@@ -288,7 +291,7 @@
     <tr>
       <td><code>702635</code></td>
       <td>富喬元富56購03</td>
-      <td><b style='color:#f1c40f;'>800</b></td>
+      <td><b style='color:#f1c40f;'>900</b></td>
     </tr>
     <tr>
       <td><code>051666</code></td>
@@ -407,6 +410,7 @@
     </tr>
   </tbody>
 </table>
+                    </div>
                 </div>
             </body>
             </html>
