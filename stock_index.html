@@ -4,241 +4,242 @@
                 <meta charset='UTF-8'>
                 <style>
                     body { font-family: sans-serif; background-color: #0e1621; color: #fff; padding: 10px; }
-                    .dashboard { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
-                    .panel { background: #17212b; padding: 15px; border-radius: 12px; min-width: 450px; flex: 1; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
-                    h1 { text-align: center; color: #52a8ff; }
-                    h2 { border-left: 4px solid #52a8ff; padding-left: 10px; font-size: 1.2em; }
-                    table { width: 100%; border-collapse: collapse; font-size: 0.9em; }
-                    th { background: #242f3d; color: #52a8ff; padding: 10px; }
+                    .dashboard { display: flex; gap: 20px; justify-content: center; align-items: flex-start; flex-wrap: wrap; }
+                    .panel { background: #17212b; padding: 15px; border-radius: 12px; flex: 1; min-width: 400px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
+                    h1 { text-align: center; color: #52a8ff; letter-spacing: 2px; }
+                    h2 { border-left: 4px solid #52a8ff; padding-left: 10px; font-size: 1.1em; margin-bottom: 15px; }
+                    table { width: 100%; border-collapse: collapse; font-size: 0.85em; }
+                    th { background: #242f3d; color: #52a8ff; padding: 10px; text-align: center; }
                     td { padding: 8px; border-bottom: 1px solid #242f3d; text-align: center; }
                     .price { color: #2ecc71; font-weight: bold; font-family: monospace; }
                     .badge { background: #34495e; padding: 2px 6px; border-radius: 4px; }
                     .badge.high { background: #e74c3c; animation: blink 1s infinite; }
                     @keyframes blink { 0% { opacity: 1; } 50% { opacity: 0.7; } 100% { opacity: 1; } }
+                    tr:hover { background: #1c2733; }
                 </style>
             </head>
             <body>
                 <h1>🎯 權證狙擊網絡 Sniper Dash</h1>
-                <p style='text-align:center; color:#888;'>更新時間：2026-01-19 11:46:13</p>
+                <p style='text-align:center; color:#888;'>最後更新：2026-01-19 11:48:36</p>
                 <div class='dashboard'>
-                    <div class='panel'>
-                        <h2>🔥 即時大單榜 (當前成交)</h2>
+                    <div class='panel' style='flex: 2;'>
+                        <h2>🔥 即時大單監控 (單筆金額排序)</h2>
                         <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
-      <th>時間</th>
+      <th>偵測時間</th>
       <th>代號</th>
       <th>名稱</th>
       <th>流通比</th>
-      <th>成交(萬)</th>
+      <th>當前(萬)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>11:43:31</td>
+      <td>11:47:09</td>
       <td><code>050014</code></td>
       <td>國巨元富5C購02</td>
       <td><span class='badge '>38.16%</span></td>
       <td><span class='price'>1,600</span></td>
     </tr>
     <tr>
-      <td>11:43:34</td>
+      <td>11:47:12</td>
       <td><code>051783</code></td>
       <td>道瓊銀凱基57購02</td>
       <td><span class='badge high'>79.88%</span></td>
       <td><span class='price'>1,600</span></td>
     </tr>
     <tr>
-      <td>11:43:37</td>
+      <td>11:47:15</td>
       <td><code>049073</code></td>
       <td>世芯永豐56購08</td>
       <td><span class='badge high'>72.68%</span></td>
       <td><span class='price'>1,400</span></td>
     </tr>
     <tr>
-      <td>11:43:40</td>
+      <td>11:47:17</td>
       <td><code>052337</code></td>
       <td>聯電群益57購02</td>
       <td><span class='badge '>18.74%</span></td>
       <td><span class='price'>1,200</span></td>
     </tr>
     <tr>
-      <td>11:43:43</td>
+      <td>11:47:20</td>
       <td><code>044483</code></td>
       <td>大同元富55購02</td>
       <td><span class='badge high'>64.17%</span></td>
       <td><span class='price'>1,100</span></td>
     </tr>
     <tr>
-      <td>11:43:46</td>
+      <td>11:47:23</td>
       <td><code>049034</code></td>
       <td>臺股指群益56購13</td>
       <td><span class='badge '>51.80%</span></td>
       <td><span class='price'>900</span></td>
     </tr>
     <tr>
-      <td>11:43:49</td>
+      <td>11:47:26</td>
       <td><code>702635</code></td>
       <td>富喬元富56購03</td>
       <td><span class='badge '>54.72%</span></td>
       <td><span class='price'>900</span></td>
     </tr>
     <tr>
-      <td>11:43:52</td>
+      <td>11:47:29</td>
       <td><code>051666</code></td>
       <td>台積電元大5A購03</td>
       <td><span class='badge '>42.86%</span></td>
       <td><span class='price'>800</span></td>
     </tr>
     <tr>
-      <td>11:43:54</td>
+      <td>11:47:32</td>
       <td><code>077726</code></td>
       <td>聯電統一54購02</td>
       <td><span class='badge '>56.34%</span></td>
       <td><span class='price'>700</span></td>
     </tr>
     <tr>
-      <td>11:43:57</td>
+      <td>11:47:35</td>
       <td><code>040430</code></td>
       <td>宇瞻國票55購02</td>
       <td><span class='badge high'>95.36%</span></td>
       <td><span class='price'>700</span></td>
     </tr>
     <tr>
-      <td>11:44:00</td>
+      <td>11:47:38</td>
       <td><code>042111</code></td>
       <td>國巨國票55購02</td>
       <td><span class='badge '>20.65%</span></td>
       <td><span class='price'>700</span></td>
     </tr>
     <tr>
-      <td>11:44:15</td>
+      <td>11:47:41</td>
       <td><code>051913</code></td>
       <td>聯電國票58購01</td>
       <td><span class='badge '>1.94%</span></td>
       <td><span class='price'>600</span></td>
     </tr>
     <tr>
-      <td>11:44:03</td>
+      <td>11:47:44</td>
       <td><code>052624</code></td>
       <td>欣興元富57購03</td>
       <td><span class='badge '>0.04%</span></td>
       <td><span class='price'>600</span></td>
     </tr>
     <tr>
-      <td>11:44:06</td>
+      <td>11:47:46</td>
       <td><code>037638</code></td>
       <td>臺股指群益55購12</td>
       <td><span class='badge '>33.24%</span></td>
       <td><span class='price'>600</span></td>
     </tr>
     <tr>
-      <td>11:44:32</td>
+      <td>11:47:49</td>
       <td><code>046805</code></td>
       <td>南亞兆豐5C購01</td>
       <td><span class='badge high'>68.84%</span></td>
       <td><span class='price'>600</span></td>
     </tr>
     <tr>
-      <td>11:44:09</td>
+      <td>11:47:52</td>
       <td><code>088917</code></td>
       <td>奇鋐群益51購07</td>
       <td><span class='badge high'>97.64%</span></td>
       <td><span class='price'>600</span></td>
     </tr>
     <tr>
-      <td>11:44:12</td>
+      <td>11:47:55</td>
       <td><code>738045</code></td>
       <td>勤凱元大53購01</td>
       <td><span class='badge high'>80.62%</span></td>
       <td><span class='price'>600</span></td>
     </tr>
     <tr>
-      <td>11:44:21</td>
+      <td>11:47:58</td>
       <td><code>041554</code></td>
       <td>臺股指元大54購32</td>
       <td><span class='badge '>43.72%</span></td>
       <td><span class='price'>500</span></td>
     </tr>
     <tr>
-      <td>11:44:23</td>
+      <td>11:48:01</td>
       <td><code>043245</code></td>
       <td>欣興永豐57購01</td>
       <td><span class='badge '>4.10%</span></td>
       <td><span class='price'>500</span></td>
     </tr>
     <tr>
-      <td>11:44:26</td>
+      <td>11:48:04</td>
       <td><code>043530</code></td>
       <td>愛普元大56購03</td>
       <td><span class='badge '>10.61%</span></td>
       <td><span class='price'>500</span></td>
     </tr>
     <tr>
-      <td>11:44:18</td>
+      <td>11:48:07</td>
       <td><code>052333</code></td>
       <td>聯電台新57購01</td>
       <td><span class='badge '>待確認</span></td>
       <td><span class='price'>500</span></td>
     </tr>
     <tr>
-      <td>11:44:29</td>
+      <td>11:48:10</td>
       <td><code>045582</code></td>
       <td>電子類凱基55購03</td>
       <td><span class='badge '>35.52%</span></td>
       <td><span class='price'>500</span></td>
     </tr>
     <tr>
-      <td>11:44:35</td>
+      <td>11:48:13</td>
       <td><code>048093</code></td>
       <td>電子類群益56購01</td>
       <td><span class='badge '>24.10%</span></td>
       <td><span class='price'>500</span></td>
     </tr>
     <tr>
-      <td>11:44:38</td>
+      <td>11:48:16</td>
       <td><code>045581</code></td>
       <td>電子類凱基55購02</td>
       <td><span class='badge '>11.87%</span></td>
       <td><span class='price'>400</span></td>
     </tr>
     <tr>
-      <td>11:44:41</td>
+      <td>11:48:18</td>
       <td><code>046493</code></td>
       <td>漢翔群益56購01</td>
       <td><span class='badge high'>98.86%</span></td>
       <td><span class='price'>400</span></td>
     </tr>
     <tr>
-      <td>11:46:10</td>
+      <td>11:48:21</td>
       <td><code>046833</code></td>
       <td>新日興凱基58購01</td>
       <td><span class='badge '>21.35%</span></td>
       <td><span class='price'>400</span></td>
     </tr>
     <tr>
-      <td>11:44:44</td>
+      <td>11:48:25</td>
       <td><code>047215</code></td>
       <td>南亞富邦58購02</td>
       <td><span class='badge '>6.08%</span></td>
       <td><span class='price'>400</span></td>
     </tr>
     <tr>
-      <td>11:44:47</td>
+      <td>11:48:28</td>
       <td><code>048992</code></td>
       <td>群創元富58購01</td>
       <td><span class='badge '>42.86%</span></td>
       <td><span class='price'>400</span></td>
     </tr>
     <tr>
-      <td>11:44:50</td>
+      <td>11:48:31</td>
       <td><code>049861</code></td>
       <td>全新永豐58購01</td>
       <td><span class='badge '>50.46%</span></td>
       <td><span class='price'>400</span></td>
     </tr>
     <tr>
-      <td>11:44:53</td>
+      <td>11:48:33</td>
       <td><code>050469</code></td>
       <td>創意國票57購01</td>
       <td><span class='badge '>0.54%</span></td>
@@ -247,166 +248,135 @@
   </tbody>
 </table>
                     </div>
-                    <div class='panel'>
-                        <h2>🏆 累積熱度榜 (今日加總)</h2>
+                    <div class='panel' style='flex: 1;'>
+                        <h2>🏆 今日標的總榜 (股票累積金額)</h2>
                         <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
-      <th>代號</th>
-      <th>名稱</th>
-      <th>累積(萬)</th>
+      <th>標的名稱</th>
+      <th>今日累積金額(萬)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><code>050014</code></td>
-      <td>國巨元富5C購02</td>
-      <td><b style='color:#f1c40f;'>3,200</b></td>
-    </tr>
-    <tr>
-      <td><code>051783</code></td>
-      <td>道瓊銀凱基57購02</td>
-      <td><b style='color:#f1c40f;'>3,200</b></td>
-    </tr>
-    <tr>
-      <td><code>049073</code></td>
-      <td>世芯永豐56購08</td>
-      <td><b style='color:#f1c40f;'>2,800</b></td>
-    </tr>
-    <tr>
-      <td><code>052337</code></td>
-      <td>聯電群益57購02</td>
-      <td><b style='color:#f1c40f;'>2,400</b></td>
-    </tr>
-    <tr>
-      <td><code>044483</code></td>
-      <td>大同元富55購02</td>
-      <td><b style='color:#f1c40f;'>2,200</b></td>
-    </tr>
-    <tr>
-      <td><code>049034</code></td>
-      <td>臺股指群益56購13</td>
-      <td><b style='color:#f1c40f;'>1,800</b></td>
-    </tr>
-    <tr>
-      <td><code>702635</code></td>
-      <td>富喬元富56購03</td>
-      <td><b style='color:#f1c40f;'>1,800</b></td>
-    </tr>
-    <tr>
-      <td><code>051666</code></td>
-      <td>台積電元大5A購03</td>
+      <td><b style='color:#52a8ff;'>國巨元富5C</b></td>
       <td><b style='color:#f1c40f;'>1,600</b></td>
     </tr>
     <tr>
-      <td><code>077726</code></td>
-      <td>聯電統一54購02</td>
+      <td><b style='color:#52a8ff;'>道瓊銀凱基57</b></td>
+      <td><b style='color:#f1c40f;'>1,600</b></td>
+    </tr>
+    <tr>
+      <td><b style='color:#52a8ff;'>聯電群益57</b></td>
+      <td><b style='color:#f1c40f;'>1,600</b></td>
+    </tr>
+    <tr>
+      <td><b style='color:#52a8ff;'>世芯永豐56</b></td>
       <td><b style='color:#f1c40f;'>1,400</b></td>
     </tr>
     <tr>
-      <td><code>040430</code></td>
-      <td>宇瞻國票55購02</td>
-      <td><b style='color:#f1c40f;'>1,400</b></td>
-    </tr>
-    <tr>
-      <td><code>042111</code></td>
-      <td>國巨國票55購02</td>
-      <td><b style='color:#f1c40f;'>1,400</b></td>
-    </tr>
-    <tr>
-      <td><code>052624</code></td>
-      <td>欣興元富57購03</td>
-      <td><b style='color:#f1c40f;'>1,200</b></td>
-    </tr>
-    <tr>
-      <td><code>037638</code></td>
-      <td>臺股指群益55購12</td>
-      <td><b style='color:#f1c40f;'>1,200</b></td>
-    </tr>
-    <tr>
-      <td><code>088917</code></td>
-      <td>奇鋐群益51購07</td>
-      <td><b style='color:#f1c40f;'>1,200</b></td>
-    </tr>
-    <tr>
-      <td><code>738045</code></td>
-      <td>勤凱元大53購01</td>
-      <td><b style='color:#f1c40f;'>1,200</b></td>
-    </tr>
-    <tr>
-      <td><code>051913</code></td>
-      <td>聯電國票58購01</td>
+      <td><b style='color:#52a8ff;'>大同元富55</b></td>
       <td><b style='color:#f1c40f;'>1,100</b></td>
     </tr>
     <tr>
-      <td><code>046805</code></td>
-      <td>南亞兆豐5C購01</td>
-      <td><b style='color:#f1c40f;'>1,100</b></td>
+      <td><b style='color:#52a8ff;'>臺股指群益56</b></td>
+      <td><b style='color:#f1c40f;'>900</b></td>
     </tr>
     <tr>
-      <td><code>052333</code></td>
-      <td>聯電台新57購01</td>
-      <td><b style='color:#f1c40f;'>1,000</b></td>
+      <td><b style='color:#52a8ff;'>富喬元富56</b></td>
+      <td><b style='color:#f1c40f;'>900</b></td>
     </tr>
     <tr>
-      <td><code>041554</code></td>
-      <td>臺股指元大54購32</td>
-      <td><b style='color:#f1c40f;'>1,000</b></td>
+      <td><b style='color:#52a8ff;'>電子類凱基55</b></td>
+      <td><b style='color:#f1c40f;'>900</b></td>
     </tr>
     <tr>
-      <td><code>043245</code></td>
-      <td>欣興永豐57購01</td>
-      <td><b style='color:#f1c40f;'>1,000</b></td>
-    </tr>
-    <tr>
-      <td><code>043530</code></td>
-      <td>愛普元大56購03</td>
-      <td><b style='color:#f1c40f;'>1,000</b></td>
-    </tr>
-    <tr>
-      <td><code>045582</code></td>
-      <td>電子類凱基55購03</td>
-      <td><b style='color:#f1c40f;'>1,000</b></td>
-    </tr>
-    <tr>
-      <td><code>048093</code></td>
-      <td>電子類群益56購01</td>
-      <td><b style='color:#f1c40f;'>1,000</b></td>
-    </tr>
-    <tr>
-      <td><code>045581</code></td>
-      <td>電子類凱基55購02</td>
+      <td><b style='color:#52a8ff;'>台積電元大5A</b></td>
       <td><b style='color:#f1c40f;'>800</b></td>
     </tr>
     <tr>
-      <td><code>046493</code></td>
-      <td>漢翔群益56購01</td>
-      <td><b style='color:#f1c40f;'>800</b></td>
+      <td><b style='color:#52a8ff;'>聯電統一54</b></td>
+      <td><b style='color:#f1c40f;'>700</b></td>
     </tr>
     <tr>
-      <td><code>047215</code></td>
-      <td>南亞富邦58購02</td>
-      <td><b style='color:#f1c40f;'>800</b></td>
+      <td><b style='color:#52a8ff;'>宇瞻國票55</b></td>
+      <td><b style='color:#f1c40f;'>700</b></td>
     </tr>
     <tr>
-      <td><code>048992</code></td>
-      <td>群創元富58購01</td>
-      <td><b style='color:#f1c40f;'>800</b></td>
+      <td><b style='color:#52a8ff;'>國巨國票55</b></td>
+      <td><b style='color:#f1c40f;'>700</b></td>
     </tr>
     <tr>
-      <td><code>049861</code></td>
-      <td>全新永豐58購01</td>
-      <td><b style='color:#f1c40f;'>800</b></td>
+      <td><b style='color:#52a8ff;'>愛普元大56</b></td>
+      <td><b style='color:#f1c40f;'>700</b></td>
     </tr>
     <tr>
-      <td><code>050469</code></td>
-      <td>創意國票57購01</td>
-      <td><b style='color:#f1c40f;'>800</b></td>
+      <td><b style='color:#52a8ff;'>國巨統一5C</b></td>
+      <td><b style='color:#f1c40f;'>700</b></td>
     </tr>
     <tr>
-      <td><code>050762</code></td>
-      <td>台積電元富71購01</td>
-      <td><b style='color:#f1c40f;'>800</b></td>
+      <td><b style='color:#52a8ff;'>聯電國票58</b></td>
+      <td><b style='color:#f1c40f;'>600</b></td>
+    </tr>
+    <tr>
+      <td><b style='color:#52a8ff;'>欣興元富57</b></td>
+      <td><b style='color:#f1c40f;'>600</b></td>
+    </tr>
+    <tr>
+      <td><b style='color:#52a8ff;'>臺股指群益55</b></td>
+      <td><b style='color:#f1c40f;'>600</b></td>
+    </tr>
+    <tr>
+      <td><b style='color:#52a8ff;'>南亞兆豐5C</b></td>
+      <td><b style='color:#f1c40f;'>600</b></td>
+    </tr>
+    <tr>
+      <td><b style='color:#52a8ff;'>奇鋐群益51</b></td>
+      <td><b style='color:#f1c40f;'>600</b></td>
+    </tr>
+    <tr>
+      <td><b style='color:#52a8ff;'>勤凱元大53</b></td>
+      <td><b style='color:#f1c40f;'>600</b></td>
+    </tr>
+    <tr>
+      <td><b style='color:#52a8ff;'>富喬元大54</b></td>
+      <td><b style='color:#f1c40f;'>600</b></td>
+    </tr>
+    <tr>
+      <td><b style='color:#52a8ff;'>臺股指元大54</b></td>
+      <td><b style='color:#f1c40f;'>500</b></td>
+    </tr>
+    <tr>
+      <td><b style='color:#52a8ff;'>欣興永豐57</b></td>
+      <td><b style='color:#f1c40f;'>500</b></td>
+    </tr>
+    <tr>
+      <td><b style='color:#52a8ff;'>聯電台新57</b></td>
+      <td><b style='color:#f1c40f;'>500</b></td>
+    </tr>
+    <tr>
+      <td><b style='color:#52a8ff;'>電子類群益56</b></td>
+      <td><b style='color:#f1c40f;'>500</b></td>
+    </tr>
+    <tr>
+      <td><b style='color:#52a8ff;'>漢翔群益56</b></td>
+      <td><b style='color:#f1c40f;'>400</b></td>
+    </tr>
+    <tr>
+      <td><b style='color:#52a8ff;'>新日興凱基58</b></td>
+      <td><b style='color:#f1c40f;'>400</b></td>
+    </tr>
+    <tr>
+      <td><b style='color:#52a8ff;'>南亞富邦58</b></td>
+      <td><b style='color:#f1c40f;'>400</b></td>
+    </tr>
+    <tr>
+      <td><b style='color:#52a8ff;'>群創元富58</b></td>
+      <td><b style='color:#f1c40f;'>400</b></td>
+    </tr>
+    <tr>
+      <td><b style='color:#52a8ff;'>全新永豐58</b></td>
+      <td><b style='color:#f1c40f;'>400</b></td>
     </tr>
   </tbody>
 </table>
