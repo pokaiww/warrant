@@ -1,174 +1,42 @@
-
-            <!DOCTYPE html>
-            <html>
-            <head>
-                <meta charset="UTF-8">
-                <style>
-                    body { 
-                        margin: 0; padding: 20px; 
-                        background: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed; 
-                        background-size: cover; font-family: sans-serif; 
-                    }
-                    /* 背景遮罩極淡，讓風景清晰 */
-                    .overlay { background: rgba(255, 255, 255, 0.1); min-height: 100vh; padding: 20px; }
-                    /* 表格容器不透明白 */
-                    .glass-container { 
-                        background: rgba(255, 255, 255, 0.95); /* 接近不透明 */
-                        max-width: 1200px; margin: auto; border-radius: 20px; padding: 30px; 
-                        box-shadow: 0 10px 40px rgba(0,0,0,0.3);
-                    }
-                    .layout { display: flex; gap: 30px; }
-                    h1, h2 { color: #1a5f7a; text-align: center; }
-                    table { width: 100%; border-collapse: collapse; }
-                    /* 表格單元格使用純白背景確保不透明 */
-                    td { padding: 15px; border-bottom: 1px solid #eee; background: #ffffff; }
-                    .stock { font-weight: bold; color: #004d99; }
-                    .w-code { color: #666; font-size: 0.85em; margin: 3px 0; }
-                    .ratio { font-size: 0.75em; background: #f0f0f0; padding: 2px 6px; border-radius: 4px; }
-                    .price { text-align: right; }
-                </style>
-            </head>
-            <body>
-                <div class="overlay">
-                    <div class="glass-container">
-                        <h1>🎯 主力權證追蹤</h1>
-                        <div class="layout">
-                            <div style="flex: 2;">
-                                <h2>🔍 即時明細</h2>
-                                <table>
-                <tr style="">
-                    <td class="stock">國巨</td>
-                    <td><div class="w-name">國巨元富5C購02</div><div class="w-code">050014</div><span class="ratio">流通 38.16%</span></td>
-                    <td class="price"><b>1,600 萬</b><br><small>占比 33%</small></td>
-                </tr>
-                <tr style="background: #fff5f2; border: 2px solid #ff5722;">
-                    <td class="stock">道瓊銀</td>
-                    <td><div class="w-name">道瓊銀凱基57購02</div><div class="w-code">051783</div><span class="ratio">流通 79.88%</span></td>
-                    <td class="price"><b>1,600 萬</b><br><small>占比 67%</small></td>
-                </tr>
-                <tr style="background: #fff5f2; border: 2px solid #ff5722;">
-                    <td class="stock">世芯</td>
-                    <td><div class="w-name">世芯永豐56購08</div><div class="w-code">049073</div><span class="ratio">流通 72.68%</span></td>
-                    <td class="price"><b>1,400 萬</b><br><small>占比 100%</small></td>
-                </tr>
-                <tr style="">
-                    <td class="stock">聯電 (2303)</td>
-                    <td><div class="w-name">聯電群益57購02</div><div class="w-code">052337</div><span class="ratio">流通 18.74%</span></td>
-                    <td class="price"><b>1,200 萬</b><br><small>占比 27%</small></td>
-                </tr>
-                <tr style="background: #fff5f2; border: 2px solid #ff5722;">
-                    <td class="stock">大同 (2371)</td>
-                    <td><div class="w-name">大同元富55購02</div><div class="w-code">044483</div><span class="ratio">流通 64.17%</span></td>
-                    <td class="price"><b>1,100 萬</b><br><small>占比 85%</small></td>
-                </tr>
-                <tr style="">
-                    <td class="stock">臺股指</td>
-                    <td><div class="w-name">臺股指群益56購13</div><div class="w-code">049034</div><span class="ratio">流通 51.80%</span></td>
-                    <td class="price"><b>900 萬</b><br><small>占比 33%</small></td>
-                </tr>
-                <tr style="background: #fff5f2; border: 2px solid #ff5722;">
-                    <td class="stock">富喬 (1815)</td>
-                    <td><div class="w-name">富喬元富56購03</div><div class="w-code">702635</div><span class="ratio">流通 54.72%</span></td>
-                    <td class="price"><b>800 萬</b><br><small>占比 67%</small></td>
-                </tr>
-                <tr style="">
-                    <td class="stock">台積電 (2330)</td>
-                    <td><div class="w-name">台積電元大5A購03</div><div class="w-code">051666</div><span class="ratio">流通 42.86%</span></td>
-                    <td class="price"><b>800 萬</b><br><small>占比 47%</small></td>
-                </tr>
-                <tr style="background: #fff5f2; border: 2px solid #ff5722;">
-                    <td class="stock">宇瞻 (8271)</td>
-                    <td><div class="w-name">宇瞻國票55購02</div><div class="w-code">040430</div><span class="ratio">流通 95.36%</span></td>
-                    <td class="price"><b>700 萬</b><br><small>占比 70%</small></td>
-                </tr>
-                <tr style="">
-                    <td class="stock">國巨</td>
-                    <td><div class="w-name">國巨國票55購02</div><div class="w-code">042111</div><span class="ratio">流通 20.65%</span></td>
-                    <td class="price"><b>700 萬</b><br><small>占比 14%</small></td>
-                </tr>
-                <tr style="">
-                    <td class="stock">欣興 (3037)</td>
-                    <td><div class="w-name">欣興元富57購03</div><div class="w-code">052624</div><span class="ratio">流通 0.04%</span></td>
-                    <td class="price"><b>600 萬</b><br><small>占比 43%</small></td>
-                </tr>
-                <tr style="">
-                    <td class="stock">聯電 (2303)</td>
-                    <td><div class="w-name">聯電統一54購02</div><div class="w-code">077726</div><span class="ratio">流通 56.34%</span></td>
-                    <td class="price"><b>600 萬</b><br><small>占比 13%</small></td>
-                </tr>
-                <tr style="">
-                    <td class="stock">臺股指</td>
-                    <td><div class="w-name">臺股指群益55購12</div><div class="w-code">037638</div><span class="ratio">流通 33.24%</span></td>
-                    <td class="price"><b>600 萬</b><br><small>占比 22%</small></td>
-                </tr>
-                <tr style="background: #fff5f2; border: 2px solid #ff5722;">
-                    <td class="stock">勤凱 (4760)</td>
-                    <td><div class="w-name">勤凱元大53購01</div><div class="w-code">738045</div><span class="ratio">流通 80.62%</span></td>
-                    <td class="price"><b>600 萬</b><br><small>占比 100%</small></td>
-                </tr>
-                <tr style="">
-                    <td class="stock">聯電 (2303)</td>
-                    <td><div class="w-name">聯電國票58購01</div><div class="w-code">051913</div><span class="ratio">流通 1.94%</span></td>
-                    <td class="price"><b>500 萬</b><br><small>占比 11%</small></td>
-                </tr>
-                <tr style="">
-                    <td class="stock">聯電 (2303)</td>
-                    <td><div class="w-name">聯電台新57購01</div><div class="w-code">052333</div><span class="ratio">流通 0%</span></td>
-                    <td class="price"><b>500 萬</b><br><small>占比 11%</small></td>
-                </tr>
-                <tr style="">
-                    <td class="stock">臺股指</td>
-                    <td><div class="w-name">臺股指元大54購32</div><div class="w-code">041554</div><span class="ratio">流通 43.72%</span></td>
-                    <td class="price"><b>500 萬</b><br><small>占比 19%</small></td>
-                </tr>
-                <tr style="">
-                    <td class="stock">欣興 (3037)</td>
-                    <td><div class="w-name">欣興永豐57購01</div><div class="w-code">043245</div><span class="ratio">流通 4.10%</span></td>
-                    <td class="price"><b>500 萬</b><br><small>占比 36%</small></td>
-                </tr>
-                <tr style="">
-                    <td class="stock">愛普</td>
-                    <td><div class="w-name">愛普元大56購03</div><div class="w-code">043530</div><span class="ratio">流通 10.61%</span></td>
-                    <td class="price"><b>500 萬</b><br><small>占比 45%</small></td>
-                </tr>
-                <tr style="">
-                    <td class="stock">電子類</td>
-                    <td><div class="w-name">電子類凱基55購03</div><div class="w-code">045582</div><span class="ratio">流通 35.52%</span></td>
-                    <td class="price"><b>500 萬</b><br><small>占比 36%</small></td>
-                </tr>
-                <tr style="">
-                    <td class="stock">南亞 (1303)</td>
-                    <td><div class="w-name">南亞兆豐5C購01</div><div class="w-code">046805</div><span class="ratio">流通 68.84%</span></td>
-                    <td class="price"><b>500 萬</b><br><small>占比 36%</small></td>
-                </tr>
-                <tr style="">
-                    <td class="stock">電子類</td>
-                    <td><div class="w-name">電子類群益56購01</div><div class="w-code">048093</div><span class="ratio">流通 24.10%</span></td>
-                    <td class="price"><b>500 萬</b><br><small>占比 36%</small></td>
-                </tr>
-                <tr style="">
-                    <td class="stock">電子類</td>
-                    <td><div class="w-name">電子類凱基55購02</div><div class="w-code">045581</div><span class="ratio">流通 11.87%</span></td>
-                    <td class="price"><b>400 萬</b><br><small>占比 29%</small></td>
-                </tr>
-                <tr style="background: #fff5f2; border: 2px solid #ff5722;">
-                    <td class="stock">漢翔 (2634)</td>
-                    <td><div class="w-name">漢翔群益56購01</div><div class="w-code">046493</div><span class="ratio">流通 98.86%</span></td>
-                    <td class="price"><b>400 萬</b><br><small>占比 100%</small></td>
-                </tr>
-                <tr style="">
-                    <td class="stock">南亞 (1303)</td>
-                    <td><div class="w-name">南亞富邦58購02</div><div class="w-code">047215</div><span class="ratio">流通 6.08%</span></td>
-                    <td class="price"><b>400 萬</b><br><small>占比 29%</small></td>
-                </tr></table>
-                            </div>
-                            <div style="flex: 1;">
-                                <h2>🏆 火力排行</h2>
-                                <table><tr><td>1</td><td class='stock'>國巨</td><td class='price'><b>4,900 萬</b></td></tr><tr><td>2</td><td class='stock'>聯電 (2303)</td><td class='price'><b>4,500 萬</b></td></tr><tr><td>3</td><td class='stock'>臺股指</td><td class='price'><b>2,700 萬</b></td></tr><tr><td>4</td><td class='stock'>道瓊銀</td><td class='price'><b>2,400 萬</b></td></tr><tr><td>5</td><td class='stock'>台積電 (2330)</td><td class='price'><b>1,700 萬</b></td></tr><tr><td>6</td><td class='stock'>世芯</td><td class='price'><b>1,400 萬</b></td></tr><tr><td>7</td><td class='stock'>欣興 (3037)</td><td class='price'><b>1,400 萬</b></td></tr><tr><td>8</td><td class='stock'>電子類</td><td class='price'><b>1,400 萬</b></td></tr><tr><td>9</td><td class='stock'>南亞 (1303)</td><td class='price'><b>1,400 萬</b></td></tr><tr><td>10</td><td class='stock'>大同 (2371)</td><td class='price'><b>1,300 萬</b></td></tr><tr><td>11</td><td class='stock'>富喬 (1815)</td><td class='price'><b>1,200 萬</b></td></tr><tr><td>12</td><td class='stock'>愛普</td><td class='price'><b>1,100 萬</b></td></tr><tr><td>13</td><td class='stock'>宇瞻 (8271)</td><td class='price'><b>1,000 萬</b></td></tr><tr><td>14</td><td class='stock'>惠特 (6706)</td><td class='price'><b>700 萬</b></td></tr><tr><td>15</td><td class='stock'>華城 (1519)</td><td class='price'><b>700 萬</b></td></tr></table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </body>
-            </html>
-            
+<html><head><meta charset='UTF-8'></head><body><h2>🎯 權證狙擊網絡</h2><p>更新時間：2026-01-19 11:32:31</p><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>初見時間</th>
+      <th>代號</th>
+      <th>名稱</th>
+      <th>金額(億)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>11:32:31</td>
+      <td>050014</td>
+      <td>國巨元富5C購02(050014)<br><b style='color:red;'>流通比: 38.16%</b></td>
+      <td>0.160</td>
+    </tr>
+    <tr>
+      <td>11:32:36</td>
+      <td>051783</td>
+      <td>道瓊銀凱基57購02(051783)<br><b style='color:red;'>流通比: 79.88%</b></td>
+      <td>0.160</td>
+    </tr>
+    <tr>
+      <td>11:32:43</td>
+      <td>049073</td>
+      <td>世芯永豐56購08(049073)<br><b style='color:red;'>流通比: 72.68%</b></td>
+      <td>0.140</td>
+    </tr>
+    <tr>
+      <td>11:32:50</td>
+      <td>052337</td>
+      <td>聯電群益57購02(052337)<br><b style='color:red;'>流通比: 18.74%</b></td>
+      <td>0.120</td>
+    </tr>
+    <tr>
+      <td>11:32:55</td>
+      <td>044483</td>
+      <td>大同元富55購02(044483)<br><b style='color:red;'>流通比: 64.17%</b></td>
+      <td>0.110</td>
+    </tr>
+  </tbody>
+</table></body></html>
