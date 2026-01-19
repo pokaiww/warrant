@@ -1,878 +1,140 @@
 {
-    "update_time": "2026-01-19 08:08:54",
+    "update_time": "2026-01-19 08:20:01",
     "stocks": [
         {
-            "time": "08:07:10",
+            "time": "08:20:01",
             "code": "057922",
             "target": "台積電",
-            "name": "台積電元大55購01",
+            "name": "台積電元大55購01()",
             "value": "0.480",
             "is_major": false,
-            "circulation": "查詢中"
+            "circulation": "--"
         },
         {
-            "time": "08:07:10",
+            "time": "08:20:01",
             "code": "036364",
             "target": "台達電",
-            "name": "台達電元大54購11",
+            "name": "台達電元大54購11()",
             "value": "0.460",
             "is_major": true,
-            "circulation": "查詢中"
+            "circulation": "查無"
         },
         {
-            "time": "08:07:10",
+            "time": "08:20:01",
             "code": "044483",
             "target": "大同",
-            "name": "大同元富55購02",
+            "name": "大同元富55購02()",
             "value": "0.270",
             "is_major": true,
-            "circulation": "查詢中"
+            "circulation": "查無"
         },
         {
-            "time": "08:07:10",
+            "time": "08:20:01",
             "code": "049861",
             "target": "全新",
-            "name": "全新永豐58購01",
+            "name": "全新永豐58購01()",
             "value": "0.230",
             "is_major": true,
-            "circulation": "查詢中"
+            "circulation": "查無"
         },
         {
-            "time": "08:07:10",
+            "time": "08:20:01",
             "code": "050014",
             "target": "國巨",
-            "name": "國巨元富5C購02",
+            "name": "國巨元富5C購02()",
             "value": "0.160",
             "is_major": true,
-            "circulation": "查詢中"
+            "circulation": "查無"
         },
         {
-            "time": "08:07:10",
+            "time": "08:20:01",
             "code": "051783",
             "target": "道瓊銀",
-            "name": "道瓊銀凱基57購02",
+            "name": "道瓊銀凱基57購02()",
             "value": "0.140",
             "is_major": false,
-            "circulation": "查詢中"
+            "circulation": "--"
         },
         {
-            "time": "08:07:10",
+            "time": "08:20:01",
             "code": "050016",
             "target": "台積電",
-            "name": "台積電元富56購23",
+            "name": "台積電元富56購23()",
             "value": "0.130",
             "is_major": false,
-            "circulation": "查詢中"
+            "circulation": "--"
         },
         {
-            "time": "08:07:10",
+            "time": "08:20:01",
             "code": "051155",
             "target": "台積電",
-            "name": "台積電凱基61購01",
+            "name": "台積電凱基61購01()",
             "value": "0.130",
             "is_major": false,
-            "circulation": "查詢中"
+            "circulation": "--"
         },
         {
-            "time": "08:07:10",
+            "time": "08:20:01",
             "code": "702635",
             "target": "富喬",
-            "name": "富喬元富56購03",
+            "name": "富喬元富56購03()",
             "value": "0.120",
             "is_major": true,
-            "circulation": "查詢中"
+            "circulation": "查無"
         },
         {
-            "time": "08:07:10",
+            "time": "08:20:01",
             "code": "049073",
             "target": "世芯",
-            "name": "世芯永豐56購08",
+            "name": "世芯永豐56購08()",
             "value": "0.110",
             "is_major": true,
-            "circulation": "查詢中"
+            "circulation": "查無"
         },
         {
-            "time": "08:07:10",
+            "time": "08:20:01",
             "code": "040430",
             "target": "宇瞻國票",
-            "name": "宇瞻國票55購02",
+            "name": "宇瞻國票55購02()",
             "value": "0.110",
             "is_major": true,
-            "circulation": "查詢中"
+            "circulation": "查無"
         },
         {
-            "time": "08:07:10",
+            "time": "08:20:01",
             "code": "041351",
             "target": "至上國票",
-            "name": "至上國票55購02",
+            "name": "至上國票55購02()",
             "value": "0.100",
             "is_major": true,
-            "circulation": "查詢中"
+            "circulation": "查無"
         },
         {
-            "time": "08:07:10",
+            "time": "08:20:01",
             "code": "702330",
             "target": "弘塑",
-            "name": "弘塑群益56購05",
+            "name": "弘塑群益56購05()",
             "value": "0.090",
             "is_major": true,
-            "circulation": "查詢中"
+            "circulation": "查無"
         },
         {
-            "time": "08:07:10",
+            "time": "08:20:01",
             "code": "050127",
             "target": "光寶科台新",
-            "name": "光寶科台新56購01",
+            "name": "光寶科台新56購01()",
             "value": "0.090",
             "is_major": true,
-            "circulation": "查詢中"
+            "circulation": "查無"
         },
         {
-            "time": "08:07:10",
+            "time": "08:20:01",
             "code": "051580",
             "target": "道瓊銀",
-            "name": "道瓊銀元大59購02",
+            "name": "道瓊銀元大59購02()",
             "value": "0.090",
             "is_major": false,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "045149",
-            "target": "台積電",
-            "name": "台積電群益55購16",
-            "value": "0.080",
-            "is_major": false,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "033984",
-            "target": "華城",
-            "name": "華城元大54購16",
-            "value": "0.080",
-            "is_major": true,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "033126",
-            "target": "元黃金",
-            "name": "元黃金元大54購02",
-            "value": "0.070",
-            "is_major": true,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "049304",
-            "target": "台灣",
-            "name": "台灣50元富56購09",
-            "value": "0.070",
-            "is_major": true,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "051122",
-            "target": "群創",
-            "name": "群創元富57購03",
-            "value": "0.070",
-            "is_major": true,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "051666",
-            "target": "台積電",
-            "name": "台積電元大5A購03",
-            "value": "0.070",
-            "is_major": false,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "039794",
-            "target": "電子類國票",
-            "name": "電子類國票54購03",
-            "value": "0.060",
-            "is_major": true,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "039913",
-            "target": "台積電",
-            "name": "台積電元大54購53",
-            "value": "0.060",
-            "is_major": false,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "051007",
-            "target": "道瓊銀",
-            "name": "道瓊銀元富57購01",
-            "value": "0.060",
-            "is_major": false,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "737737",
-            "target": "富喬",
-            "name": "富喬元大54購06",
-            "value": "0.060",
-            "is_major": false,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "037638",
-            "target": "臺股指",
-            "name": "臺股指群益55購12",
-            "value": "0.060",
-            "is_major": false,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "037688",
-            "target": "國巨",
-            "name": "國巨永豐56購01",
-            "value": "0.060",
-            "is_major": false,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "043841",
-            "target": "定穎控",
-            "name": "定穎控富邦58購01",
-            "value": "0.060",
-            "is_major": true,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "045199",
-            "target": "台積電",
-            "name": "台積電凱基55購29",
-            "value": "0.060",
-            "is_major": false,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "048489",
-            "target": "康舒",
-            "name": "康舒永豐56購03",
-            "value": "0.060",
-            "is_major": false,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "702876",
-            "target": "凱崴",
-            "name": "凱崴群益57購02",
-            "value": "0.050",
-            "is_major": true,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "038120",
-            "target": "臺股指",
-            "name": "臺股指元大5B購02",
-            "value": "0.050",
-            "is_major": false,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "038786",
-            "target": "美時國票",
-            "name": "美時國票56購01",
-            "value": "0.050",
-            "is_major": true,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "039857",
-            "target": "台積電",
-            "name": "台積電國泰55購02",
-            "value": "0.050",
-            "is_major": false,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "039903",
-            "target": "T",
-            "name": "T50正2元大54購08",
-            "value": "0.050",
-            "is_major": true,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "041880",
-            "target": "世芯",
-            "name": "世芯群益54購15",
-            "value": "0.050",
-            "is_major": false,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "050230",
-            "target": "大同",
-            "name": "大同凱基56購04",
-            "value": "0.050",
-            "is_major": false,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "050828",
-            "target": "大同",
-            "name": "大同元大57購01",
-            "value": "0.050",
-            "is_major": false,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "050938",
-            "target": "道瓊銀",
-            "name": "道瓊銀元大58購02",
-            "value": "0.050",
-            "is_major": false,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "051137",
-            "target": "群創",
-            "name": "群創國泰58購05",
-            "value": "0.050",
-            "is_major": false,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "043684",
-            "target": "台積電",
-            "name": "台積電元大55購15",
-            "value": "0.050",
-            "is_major": false,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "045378",
-            "target": "電子類國票",
-            "name": "電子類國票55購04",
-            "value": "0.050",
-            "is_major": false,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "046558",
-            "target": "臺股指",
-            "name": "臺股指元大5B購06",
-            "value": "0.050",
-            "is_major": false,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "048093",
-            "target": "電子類",
-            "name": "電子類群益56購01",
-            "value": "0.050",
-            "is_major": true,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "034303",
-            "target": "光寶科",
-            "name": "光寶科永豐56購01",
-            "value": "0.050",
-            "is_major": true,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "033007",
-            "target": "台積電",
-            "name": "台積電元大54購26",
-            "value": "0.040",
-            "is_major": false,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "033946",
-            "target": "國巨統一",
-            "name": "國巨統一5B購01",
-            "value": "0.040",
-            "is_major": true,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "036295",
-            "target": "台達電中信",
-            "name": "台達電中信59購02",
-            "value": "0.040",
-            "is_major": true,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "036308",
-            "target": "台達電",
-            "name": "台達電永豐54購04",
-            "value": "0.040",
-            "is_major": false,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "036316",
-            "target": "定穎控",
-            "name": "定穎控永豐55購02",
-            "value": "0.040",
-            "is_major": false,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "037672",
-            "target": "臺股指",
-            "name": "臺股指凱基54購20",
-            "value": "0.040",
-            "is_major": false,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "038872",
-            "target": "美時",
-            "name": "美時元大54購01",
-            "value": "0.040",
-            "is_major": true,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "039912",
-            "target": "台積電",
-            "name": "台積電元大54購52",
-            "value": "0.040",
-            "is_major": false,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "040100",
-            "target": "亞翔",
-            "name": "亞翔元大54購14",
-            "value": "0.040",
-            "is_major": true,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "040202",
-            "target": "華新",
-            "name": "華新凱基54購06",
-            "value": "0.040",
-            "is_major": true,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "040211",
-            "target": "台積電",
-            "name": "台積電凱基54購26",
-            "value": "0.040",
-            "is_major": false,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "040983",
-            "target": "台灣",
-            "name": "台灣50中信5A購01",
-            "value": "0.040",
-            "is_major": false,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "041075",
-            "target": "康舒",
-            "name": "康舒元大5A購01",
-            "value": "0.040",
-            "is_major": false,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "041930",
-            "target": "國巨",
-            "name": "國巨元富54購08",
-            "value": "0.040",
-            "is_major": false,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "043256",
-            "target": "華城兆豐",
-            "name": "華城兆豐57購01",
-            "value": "0.040",
-            "is_major": true,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "077085",
-            "target": "臺股指",
-            "name": "臺股指凱基56購04",
-            "value": "0.040",
-            "is_major": false,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "084411",
-            "target": "南亞科兆豐",
-            "name": "南亞科兆豐56購01",
-            "value": "0.040",
-            "is_major": true,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "088964",
-            "target": "台積電",
-            "name": "台積電富邦61購01",
-            "value": "0.040",
-            "is_major": false,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "702496",
-            "target": "昇達科",
-            "name": "昇達科元大58購01",
-            "value": "0.040",
-            "is_major": true,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "702587",
-            "target": "富喬國票",
-            "name": "富喬國票56購02",
-            "value": "0.040",
-            "is_major": true,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "703415",
-            "target": "富喬",
-            "name": "富喬元大57購02",
-            "value": "0.040",
-            "is_major": false,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "703575",
-            "target": "佶優",
-            "name": "佶優凱基57購01",
-            "value": "0.040",
-            "is_major": true,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "739263",
-            "target": "群聯",
-            "name": "群聯元大57購01",
-            "value": "0.040",
-            "is_major": true,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "044775",
-            "target": "欣興統一",
-            "name": "欣興統一57購01",
-            "value": "0.040",
-            "is_major": true,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "046152",
-            "target": "康舒",
-            "name": "康舒元大55購02",
-            "value": "0.040",
-            "is_major": false,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "048459",
-            "target": "台達電",
-            "name": "台達電永豐56購05",
-            "value": "0.040",
-            "is_major": false,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "048801",
-            "target": "華泰",
-            "name": "華泰群益56購01",
-            "value": "0.040",
-            "is_major": true,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "049310",
-            "target": "大同",
-            "name": "大同元富56購01",
-            "value": "0.040",
-            "is_major": false,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "049539",
-            "target": "東元",
-            "name": "東元國泰57購01",
-            "value": "0.040",
-            "is_major": true,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "050303",
-            "target": "全新",
-            "name": "全新國泰57購01",
-            "value": "0.040",
-            "is_major": false,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "051379",
-            "target": "超豐",
-            "name": "超豐富邦57購01",
-            "value": "0.040",
-            "is_major": true,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "052613",
-            "target": "國巨",
-            "name": "國巨元富57購02",
-            "value": "0.040",
-            "is_major": false,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "071593",
-            "target": "臺股指",
-            "name": "臺股指凱基51購04",
-            "value": "0.040",
-            "is_major": false,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "049709",
-            "target": "美時",
-            "name": "美時元富59購01",
-            "value": "0.030",
-            "is_major": false,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "049834",
-            "target": "道瓊銀中信",
-            "name": "道瓊銀中信66購01",
-            "value": "0.030",
-            "is_major": true,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "050138",
-            "target": "台灣",
-            "name": "台灣50元大5C購02",
-            "value": "0.030",
-            "is_major": false,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "050282",
-            "target": "至上",
-            "name": "至上永豐58購02",
-            "value": "0.030",
-            "is_major": true,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "050286",
-            "target": "道瓊銀",
-            "name": "道瓊銀元富56購01",
-            "value": "0.030",
-            "is_major": false,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "050541",
-            "target": "道瓊銀",
-            "name": "道瓊銀凱基5C購01",
-            "value": "0.030",
-            "is_major": false,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "050606",
-            "target": "道瓊銀",
-            "name": "道瓊銀元大57購03",
-            "value": "0.030",
-            "is_major": false,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "050798",
-            "target": "台積電",
-            "name": "台積電永豐61購03",
-            "value": "0.030",
-            "is_major": false,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "051263",
-            "target": "群創統一",
-            "name": "群創統一65購02",
-            "value": "0.030",
-            "is_major": true,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "051340",
-            "target": "道瓊銀",
-            "name": "道瓊銀群益61購01",
-            "value": "0.030",
-            "is_major": false,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "051446",
-            "target": "道瓊銀",
-            "name": "道瓊銀元富57購03",
-            "value": "0.030",
-            "is_major": false,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "051483",
-            "target": "超豐",
-            "name": "超豐元大57購02",
-            "value": "0.030",
-            "is_major": false,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "051629",
-            "target": "旺宏兆豐",
-            "name": "旺宏兆豐61購01",
-            "value": "0.030",
-            "is_major": true,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "051662",
-            "target": "川湖",
-            "name": "川湖元大57購06",
-            "value": "0.030",
-            "is_major": true,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "051812",
-            "target": "台積電",
-            "name": "台積電元大5A購04",
-            "value": "0.030",
-            "is_major": false,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "051851",
-            "target": "永光",
-            "name": "永光群益57購01",
-            "value": "0.030",
-            "is_major": true,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "052094",
-            "target": "長興",
-            "name": "長興富邦57購01",
-            "value": "0.030",
-            "is_major": true,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "072125",
-            "target": "華城統一",
-            "name": "華城統一62購01",
-            "value": "0.030",
-            "is_major": true,
-            "circulation": "查詢中"
-        },
-        {
-            "time": "08:07:10",
-            "code": "077726",
-            "target": "聯電統一",
-            "name": "聯電統一54購02",
-            "value": "0.030",
-            "is_major": true,
-            "circulation": "查詢中"
+            "circulation": "--"
         }
     ]
 }
