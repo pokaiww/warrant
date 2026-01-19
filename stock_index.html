@@ -5,24 +5,26 @@
                 <meta charset="UTF-8">
                 <style>
                     body { background-color: #020617; color: #f8fafc; font-family: sans-serif; padding: 30px; }
-                    .container { max-width: 900px; margin: auto; }
-                    h2 { color: #38bdf8; text-shadow: 0 0 10px rgba(56,189,248,0.5); border-left: 4px solid #38bdf8; padding-left: 15px; }
-                    .update-time { color: #64748b; margin-bottom: 20px; font-size: 0.9em; }
-                    .sniper-table { width: 100%; border-collapse: separate; border-spacing: 0 10px; }
-                    .sniper-table td { background: #0f172a; padding: 20px; text-align: center; border-radius: 10px; }
+                    .container { max-width: 950px; margin: auto; }
+                    h2 { color: #38bdf8; text-shadow: 0 0 15px rgba(56,189,248,0.4); border-left: 5px solid #38bdf8; padding-left: 15px; }
+                    .update-info { color: #64748b; font-size: 0.9em; margin-bottom: 20px; }
+                    .sniper-table { width: 100%; border-collapse: separate; border-spacing: 0 8px; }
+                    .sniper-table th { color: #94a3b8; padding: 12px; border-bottom: 1px solid #1e293b; }
+                    .sniper-table td { background: #0f172a; padding: 15px; text-align: center; border-radius: 8px; }
                     .s-name { font-weight: bold; color: #f1f5f9; }
-                    .r-tag { color: #fb7185; font-weight: bold; font-size: 0.85em; }
-                    .v-tag { background: #075985; color: white; padding: 5px 12px; border-radius: 6px; font-weight: bold; }
+                    .r-tag { color: #f43f5e; font-weight: bold; background: rgba(244,63,94,0.1); padding: 2px 6px; border-radius: 4px; display: inline-block; margin-top: 5px; }
+                    .v-tag { background: #075985; color: white; padding: 4px 10px; border-radius: 6px; font-weight: bold; }
+                    tr:hover td { background: #1e293b; transition: 0.2s; }
                 </style>
             </head>
             <body>
                 <div class="container">
-                    <h2>🎯 權證狙擊系統 (自動化流通監控)</h2>
-                    <div class="update-time">最後掃描：2026-01-19 08:58:34 | 目前追蹤數：5</div>
+                    <h2>🎯 權證狙擊網絡 (全量深度巡檢)</h2>
+                    <div class="update-info">📡 更新時間：2026-01-19 09:00:08 | 監控中標的：97 檔</div>
                     <table border="1" class="dataframe sniper-table">
   <thead>
     <tr style="text-align: right;">
-      <th>初見</th>
+      <th>時間</th>
       <th>代號</th>
       <th>名稱</th>
       <th>金額</th>
@@ -30,34 +32,586 @@
   </thead>
   <tbody>
     <tr>
-      <td>08:58:34</td>
+      <td>09:00:08</td>
       <td>057922</td>
       <td><div class='stock-box'><span class='s-name'>台積電元大55購01(057922)</span><br><span class='r-tag'>流通比: 9.42%</span></div></td>
       <td><span class='v-tag'>0.480 億</span></td>
     </tr>
     <tr>
-      <td>08:58:39</td>
+      <td>09:00:14</td>
       <td>036364</td>
       <td><div class='stock-box'><span class='s-name'>台達電元大54購11(036364)</span><br><span class='r-tag'>流通比: 18.50%</span></div></td>
       <td><span class='v-tag'>0.460 億</span></td>
     </tr>
     <tr>
-      <td>08:58:45</td>
+      <td>09:00:19</td>
       <td>044483</td>
       <td><div class='stock-box'><span class='s-name'>大同元富55購02(044483)</span><br><span class='r-tag'>流通比: 64.17%</span></div></td>
       <td><span class='v-tag'>0.270 億</span></td>
     </tr>
     <tr>
-      <td>08:58:52</td>
+      <td>09:00:26</td>
       <td>049861</td>
       <td><div class='stock-box'><span class='s-name'>全新永豐58購01(049861)</span><br><span class='r-tag'>流通比: 50.46%</span></div></td>
       <td><span class='v-tag'>0.230 億</span></td>
     </tr>
     <tr>
-      <td>08:58:57</td>
+      <td>09:00:31</td>
       <td>050014</td>
       <td><div class='stock-box'><span class='s-name'>國巨元富5C購02(050014)</span><br><span class='r-tag'>流通比: 38.16%</span></div></td>
       <td><span class='v-tag'>0.160 億</span></td>
+    </tr>
+    <tr>
+      <td>09:00:37</td>
+      <td>051783</td>
+      <td><div class='stock-box'><span class='s-name'>道瓊銀凱基57購02(051783)</span><br><span class='r-tag'>流通比: 79.88%</span></div></td>
+      <td><span class='v-tag'>0.140 億</span></td>
+    </tr>
+    <tr>
+      <td>09:00:43</td>
+      <td>050016</td>
+      <td><div class='stock-box'><span class='s-name'>台積電元富56購23(050016)</span><br><span class='r-tag'>流通比: 1.32%</span></div></td>
+      <td><span class='v-tag'>0.130 億</span></td>
+    </tr>
+    <tr>
+      <td>09:00:49</td>
+      <td>051155</td>
+      <td><div class='stock-box'><span class='s-name'>台積電凱基61購01(051155)</span><br><span class='r-tag'>流通比: 12.00%</span></div></td>
+      <td><span class='v-tag'>0.130 億</span></td>
+    </tr>
+    <tr>
+      <td>09:00:55</td>
+      <td>702635</td>
+      <td><div class='stock-box'><span class='s-name'>富喬元富56購03(702635)</span><br><span class='r-tag'>流通比: 54.72%</span></div></td>
+      <td><span class='v-tag'>0.120 億</span></td>
+    </tr>
+    <tr>
+      <td>09:01:01</td>
+      <td>049073</td>
+      <td><div class='stock-box'><span class='s-name'>世芯永豐56購08(049073)</span><br><span class='r-tag'>流通比: 72.68%</span></div></td>
+      <td><span class='v-tag'>0.110 億</span></td>
+    </tr>
+    <tr>
+      <td>09:01:08</td>
+      <td>040430</td>
+      <td><div class='stock-box'><span class='s-name'>宇瞻國票55購02(040430)</span><br><span class='r-tag'>流通比: 95.36%</span></div></td>
+      <td><span class='v-tag'>0.110 億</span></td>
+    </tr>
+    <tr>
+      <td>09:01:14</td>
+      <td>041351</td>
+      <td><div class='stock-box'><span class='s-name'>至上國票55購02(041351)</span><br><span class='r-tag'>流通比: 12.38%</span></div></td>
+      <td><span class='v-tag'>0.100 億</span></td>
+    </tr>
+    <tr>
+      <td>09:01:20</td>
+      <td>702330</td>
+      <td><div class='stock-box'><span class='s-name'>弘塑群益56購05(702330)</span><br><span class='r-tag'>流通比: 78.54%</span></div></td>
+      <td><span class='v-tag'>0.090 億</span></td>
+    </tr>
+    <tr>
+      <td>09:01:27</td>
+      <td>050127</td>
+      <td><div class='stock-box'><span class='s-name'>光寶科台新56購01(050127)</span><br><span class='r-tag'>流通比: 23.12%</span></div></td>
+      <td><span class='v-tag'>0.090 億</span></td>
+    </tr>
+    <tr>
+      <td>09:01:32</td>
+      <td>051580</td>
+      <td><div class='stock-box'><span class='s-name'>道瓊銀元大59購02(051580)</span><br><span class='r-tag'>流通比: 29.48%</span></div></td>
+      <td><span class='v-tag'>0.090 億</span></td>
+    </tr>
+    <tr>
+      <td>09:01:38</td>
+      <td>045149</td>
+      <td><div class='stock-box'><span class='s-name'>台積電群益55購16(045149)</span><br><span class='r-tag'>流通比: 10.64%</span></div></td>
+      <td><span class='v-tag'>0.080 億</span></td>
+    </tr>
+    <tr>
+      <td>09:01:43</td>
+      <td>033984</td>
+      <td><div class='stock-box'><span class='s-name'>華城元大54購16(033984)</span><br><span class='r-tag'>流通比: 70.26%</span></div></td>
+      <td><span class='v-tag'>0.080 億</span></td>
+    </tr>
+    <tr>
+      <td>09:01:50</td>
+      <td>033126</td>
+      <td><div class='stock-box'><span class='s-name'>元黃金元大54購02(033126)</span><br><span class='r-tag'>流通比: 3.82%</span></div></td>
+      <td><span class='v-tag'>0.070 億</span></td>
+    </tr>
+    <tr>
+      <td>09:01:56</td>
+      <td>049304</td>
+      <td><div class='stock-box'><span class='s-name'>台灣50元富56購09(049304)</span><br><span class='r-tag'>流通比: 7.12%</span></div></td>
+      <td><span class='v-tag'>0.070 億</span></td>
+    </tr>
+    <tr>
+      <td>09:02:02</td>
+      <td>051122</td>
+      <td><div class='stock-box'><span class='s-name'>群創元富57購03(051122)</span><br><span class='r-tag'>流通比: 18.00%</span></div></td>
+      <td><span class='v-tag'>0.070 億</span></td>
+    </tr>
+    <tr>
+      <td>09:02:07</td>
+      <td>051666</td>
+      <td><div class='stock-box'><span class='s-name'>台積電元大5A購03(051666)</span><br><span class='r-tag'>流通比: 42.86%</span></div></td>
+      <td><span class='v-tag'>0.070 億</span></td>
+    </tr>
+    <tr>
+      <td>09:02:13</td>
+      <td>039794</td>
+      <td><div class='stock-box'><span class='s-name'>電子類國票54購03(039794)</span><br><span class='r-tag'>流通比: 20.40%</span></div></td>
+      <td><span class='v-tag'>0.060 億</span></td>
+    </tr>
+    <tr>
+      <td>09:02:18</td>
+      <td>039913</td>
+      <td><div class='stock-box'><span class='s-name'>台積電元大54購53(039913)</span><br><span class='r-tag'>流通比: 29.65%</span></div></td>
+      <td><span class='v-tag'>0.060 億</span></td>
+    </tr>
+    <tr>
+      <td>09:02:24</td>
+      <td>051007</td>
+      <td><div class='stock-box'><span class='s-name'>道瓊銀元富57購01(051007)</span><br><span class='r-tag'>流通比: 29.92%</span></div></td>
+      <td><span class='v-tag'>0.060 億</span></td>
+    </tr>
+    <tr>
+      <td>09:02:29</td>
+      <td>737737</td>
+      <td><div class='stock-box'><span class='s-name'>富喬元大54購06(737737)</span><br><span class='r-tag'>流通比: 61.51%</span></div></td>
+      <td><span class='v-tag'>0.060 億</span></td>
+    </tr>
+    <tr>
+      <td>09:02:36</td>
+      <td>037638</td>
+      <td><div class='stock-box'><span class='s-name'>臺股指群益55購12(037638)</span><br><span class='r-tag'>流通比: 33.24%</span></div></td>
+      <td><span class='v-tag'>0.060 億</span></td>
+    </tr>
+    <tr>
+      <td>09:02:42</td>
+      <td>037688</td>
+      <td><div class='stock-box'><span class='s-name'>國巨永豐56購01(037688)</span><br><span class='r-tag'>流通比: 97.08%</span></div></td>
+      <td><span class='v-tag'>0.060 億</span></td>
+    </tr>
+    <tr>
+      <td>09:02:48</td>
+      <td>043841</td>
+      <td><div class='stock-box'><span class='s-name'>定穎控富邦58購01(043841)</span><br><span class='r-tag'>流通比: 46.85%</span></div></td>
+      <td><span class='v-tag'>0.060 億</span></td>
+    </tr>
+    <tr>
+      <td>09:02:54</td>
+      <td>045199</td>
+      <td><div class='stock-box'><span class='s-name'>台積電凱基55購29(045199)</span><br><span class='r-tag'>流通比: 3.79%</span></div></td>
+      <td><span class='v-tag'>0.060 億</span></td>
+    </tr>
+    <tr>
+      <td>09:02:59</td>
+      <td>048489</td>
+      <td><div class='stock-box'><span class='s-name'>康舒永豐56購03(048489)</span><br><span class='r-tag'>流通比: 7.30%</span></div></td>
+      <td><span class='v-tag'>0.060 億</span></td>
+    </tr>
+    <tr>
+      <td>09:03:05</td>
+      <td>702876</td>
+      <td><div class='stock-box'><span class='s-name'>凱崴群益57購02(702876)</span><br><span class='r-tag'>流通比: 23.56%</span></div></td>
+      <td><span class='v-tag'>0.050 億</span></td>
+    </tr>
+    <tr>
+      <td>09:03:10</td>
+      <td>038120</td>
+      <td><div class='stock-box'><span class='s-name'>臺股指元大5B購02(038120)</span><br><span class='r-tag'>流通比: 0.02%</span></div></td>
+      <td><span class='v-tag'>0.050 億</span></td>
+    </tr>
+    <tr>
+      <td>09:03:16</td>
+      <td>038786</td>
+      <td><div class='stock-box'><span class='s-name'>美時國票56購01(038786)</span><br><span class='r-tag'>流通比: 65.28%</span></div></td>
+      <td><span class='v-tag'>0.050 億</span></td>
+    </tr>
+    <tr>
+      <td>09:03:23</td>
+      <td>039857</td>
+      <td><div class='stock-box'><span class='s-name'>台積電國泰55購02(039857)</span><br><span class='r-tag'>流通比: 5.05%</span></div></td>
+      <td><span class='v-tag'>0.050 億</span></td>
+    </tr>
+    <tr>
+      <td>09:03:28</td>
+      <td>039903</td>
+      <td><div class='stock-box'><span class='s-name'>T50正2元大54購08(039903)</span><br><span class='r-tag'>流通比: 17.94%</span></div></td>
+      <td><span class='v-tag'>0.050 億</span></td>
+    </tr>
+    <tr>
+      <td>09:03:34</td>
+      <td>041880</td>
+      <td><div class='stock-box'><span class='s-name'>世芯群益54購15(041880)</span><br><span class='r-tag'>流通比: 61.86%</span></div></td>
+      <td><span class='v-tag'>0.050 億</span></td>
+    </tr>
+    <tr>
+      <td>09:03:40</td>
+      <td>050230</td>
+      <td><div class='stock-box'><span class='s-name'>大同凱基56購04(050230)</span><br><span class='r-tag'>流通比: 18.92%</span></div></td>
+      <td><span class='v-tag'>0.050 億</span></td>
+    </tr>
+    <tr>
+      <td>09:03:46</td>
+      <td>050828</td>
+      <td><div class='stock-box'><span class='s-name'>大同元大57購01(050828)</span><br><span class='r-tag'>流通比: 15.64%</span></div></td>
+      <td><span class='v-tag'>0.050 億</span></td>
+    </tr>
+    <tr>
+      <td>09:03:51</td>
+      <td>050938</td>
+      <td><div class='stock-box'><span class='s-name'>道瓊銀元大58購02(050938)</span><br><span class='r-tag'>流通比: 61.04%</span></div></td>
+      <td><span class='v-tag'>0.050 億</span></td>
+    </tr>
+    <tr>
+      <td>09:03:58</td>
+      <td>051137</td>
+      <td><div class='stock-box'><span class='s-name'>群創國泰58購05(051137)</span><br><span class='r-tag'>流通比: 0.14%</span></div></td>
+      <td><span class='v-tag'>0.050 億</span></td>
+    </tr>
+    <tr>
+      <td>09:04:04</td>
+      <td>043684</td>
+      <td><div class='stock-box'><span class='s-name'>台積電元大55購15(043684)</span><br><span class='r-tag'>流通比: 8.28%</span></div></td>
+      <td><span class='v-tag'>0.050 億</span></td>
+    </tr>
+    <tr>
+      <td>09:04:09</td>
+      <td>045378</td>
+      <td><div class='stock-box'><span class='s-name'>電子類國票55購04(045378)</span><br><span class='r-tag'>流通比: 45.71%</span></div></td>
+      <td><span class='v-tag'>0.050 億</span></td>
+    </tr>
+    <tr>
+      <td>09:04:15</td>
+      <td>046558</td>
+      <td><div class='stock-box'><span class='s-name'>臺股指元大5B購06(046558)</span><br><span class='r-tag'>流通比: 31.97%</span></div></td>
+      <td><span class='v-tag'>0.050 億</span></td>
+    </tr>
+    <tr>
+      <td>09:04:20</td>
+      <td>048093</td>
+      <td><div class='stock-box'><span class='s-name'>電子類群益56購01(048093)</span><br><span class='r-tag'>流通比: 24.10%</span></div></td>
+      <td><span class='v-tag'>0.050 億</span></td>
+    </tr>
+    <tr>
+      <td>09:04:26</td>
+      <td>034303</td>
+      <td><div class='stock-box'><span class='s-name'>光寶科永豐56購01(034303)</span><br><span class='r-tag'>流通比: 40.91%</span></div></td>
+      <td><span class='v-tag'>0.050 億</span></td>
+    </tr>
+    <tr>
+      <td>09:04:31</td>
+      <td>033007</td>
+      <td><div class='stock-box'><span class='s-name'>台積電元大54購26(033007)</span><br><span class='r-tag'>流通比: 10.31%</span></div></td>
+      <td><span class='v-tag'>0.040 億</span></td>
+    </tr>
+    <tr>
+      <td>09:04:37</td>
+      <td>033946</td>
+      <td><div class='stock-box'><span class='s-name'>國巨統一5B購01(033946)</span><br><span class='r-tag'>流通比: 58.92%</span></div></td>
+      <td><span class='v-tag'>0.040 億</span></td>
+    </tr>
+    <tr>
+      <td>09:04:42</td>
+      <td>036295</td>
+      <td><div class='stock-box'><span class='s-name'>台達電中信59購02(036295)</span><br><span class='r-tag'>流通比: 29.58%</span></div></td>
+      <td><span class='v-tag'>0.040 億</span></td>
+    </tr>
+    <tr>
+      <td>09:04:47</td>
+      <td>036308</td>
+      <td><div class='stock-box'><span class='s-name'>台達電永豐54購04(036308)</span><br><span class='r-tag'>流通比: 31.63%</span></div></td>
+      <td><span class='v-tag'>0.040 億</span></td>
+    </tr>
+    <tr>
+      <td>09:04:53</td>
+      <td>036316</td>
+      <td><div class='stock-box'><span class='s-name'>定穎控永豐55購02(036316)</span><br><span class='r-tag'>流通比: 100.00%</span></div></td>
+      <td><span class='v-tag'>0.040 億</span></td>
+    </tr>
+    <tr>
+      <td>09:05:00</td>
+      <td>037672</td>
+      <td><div class='stock-box'><span class='s-name'>臺股指凱基54購20(037672)</span><br><span class='r-tag'>流通比: 1.44%</span></div></td>
+      <td><span class='v-tag'>0.040 億</span></td>
+    </tr>
+    <tr>
+      <td>09:05:06</td>
+      <td>038872</td>
+      <td><div class='stock-box'><span class='s-name'>美時元大54購01(038872)</span><br><span class='r-tag'>流通比: 81.78%</span></div></td>
+      <td><span class='v-tag'>0.040 億</span></td>
+    </tr>
+    <tr>
+      <td>09:05:13</td>
+      <td>039912</td>
+      <td><div class='stock-box'><span class='s-name'>台積電元大54購52(039912)</span><br><span class='r-tag'>流通比: 17.18%</span></div></td>
+      <td><span class='v-tag'>0.040 億</span></td>
+    </tr>
+    <tr>
+      <td>09:05:18</td>
+      <td>040100</td>
+      <td><div class='stock-box'><span class='s-name'>亞翔元大54購14(040100)</span><br><span class='r-tag'>流通比: 44.35%</span></div></td>
+      <td><span class='v-tag'>0.040 億</span></td>
+    </tr>
+    <tr>
+      <td>09:05:24</td>
+      <td>040202</td>
+      <td><div class='stock-box'><span class='s-name'>華新凱基54購06(040202)</span><br><span class='r-tag'>流通比: 65.70%</span></div></td>
+      <td><span class='v-tag'>0.040 億</span></td>
+    </tr>
+    <tr>
+      <td>09:05:30</td>
+      <td>040211</td>
+      <td><div class='stock-box'><span class='s-name'>台積電凱基54購26(040211)</span><br><span class='r-tag'>流通比: 30.08%</span></div></td>
+      <td><span class='v-tag'>0.040 億</span></td>
+    </tr>
+    <tr>
+      <td>09:05:36</td>
+      <td>040983</td>
+      <td><div class='stock-box'><span class='s-name'>台灣50中信5A購01(040983)</span><br><span class='r-tag'>流通比: 18.01%</span></div></td>
+      <td><span class='v-tag'>0.040 億</span></td>
+    </tr>
+    <tr>
+      <td>09:05:42</td>
+      <td>041075</td>
+      <td><div class='stock-box'><span class='s-name'>康舒元大5A購01(041075)</span><br><span class='r-tag'>流通比: 41.17%</span></div></td>
+      <td><span class='v-tag'>0.040 億</span></td>
+    </tr>
+    <tr>
+      <td>09:05:47</td>
+      <td>041930</td>
+      <td><div class='stock-box'><span class='s-name'>國巨元富54購08(041930)</span><br><span class='r-tag'>流通比: 16.92%</span></div></td>
+      <td><span class='v-tag'>0.040 億</span></td>
+    </tr>
+    <tr>
+      <td>09:05:53</td>
+      <td>043256</td>
+      <td><div class='stock-box'><span class='s-name'>華城兆豐57購01(043256)</span><br><span class='r-tag'>流通比: 84.92%</span></div></td>
+      <td><span class='v-tag'>0.040 億</span></td>
+    </tr>
+    <tr>
+      <td>09:05:59</td>
+      <td>077085</td>
+      <td><div class='stock-box'><span class='s-name'>臺股指凱基56購04(077085)</span><br><span class='r-tag'>流通比: 3.29%</span></div></td>
+      <td><span class='v-tag'>0.040 億</span></td>
+    </tr>
+    <tr>
+      <td>09:06:05</td>
+      <td>084411</td>
+      <td><div class='stock-box'><span class='s-name'>南亞科兆豐56購01(084411)</span><br><span class='r-tag'>流通比: 3.60%</span></div></td>
+      <td><span class='v-tag'>0.040 億</span></td>
+    </tr>
+    <tr>
+      <td>09:06:10</td>
+      <td>088964</td>
+      <td><div class='stock-box'><span class='s-name'>台積電富邦61購01(088964)</span><br><span class='r-tag'>流通比: 4.01%</span></div></td>
+      <td><span class='v-tag'>0.040 億</span></td>
+    </tr>
+    <tr>
+      <td>09:06:16</td>
+      <td>702496</td>
+      <td><div class='stock-box'><span class='s-name'>昇達科元大58購01(702496)</span><br><span class='r-tag'>流通比: 48.02%</span></div></td>
+      <td><span class='v-tag'>0.040 億</span></td>
+    </tr>
+    <tr>
+      <td>09:06:21</td>
+      <td>702587</td>
+      <td><div class='stock-box'><span class='s-name'>富喬國票56購02(702587)</span><br><span class='r-tag'>流通比: 19.20%</span></div></td>
+      <td><span class='v-tag'>0.040 億</span></td>
+    </tr>
+    <tr>
+      <td>09:06:27</td>
+      <td>703415</td>
+      <td><div class='stock-box'><span class='s-name'>富喬元大57購02(703415)</span><br><span class='r-tag'>流通比: 33.33%</span></div></td>
+      <td><span class='v-tag'>0.040 億</span></td>
+    </tr>
+    <tr>
+      <td>09:06:32</td>
+      <td>703575</td>
+      <td><div class='stock-box'><span class='s-name'>佶優凱基57購01(703575)</span><br><span class='r-tag'>流通比: 26.48%</span></div></td>
+      <td><span class='v-tag'>0.040 億</span></td>
+    </tr>
+    <tr>
+      <td>09:06:38</td>
+      <td>739263</td>
+      <td><div class='stock-box'><span class='s-name'>群聯元大57購01(739263)</span><br><span class='r-tag'>流通比: 90.62%</span></div></td>
+      <td><span class='v-tag'>0.040 億</span></td>
+    </tr>
+    <tr>
+      <td>09:06:44</td>
+      <td>044775</td>
+      <td><div class='stock-box'><span class='s-name'>欣興統一57購01(044775)</span><br><span class='r-tag'>流通比: 60.76%</span></div></td>
+      <td><span class='v-tag'>0.040 億</span></td>
+    </tr>
+    <tr>
+      <td>09:06:51</td>
+      <td>046152</td>
+      <td><div class='stock-box'><span class='s-name'>康舒元大55購02(046152)</span><br><span class='r-tag'>流通比: 9.52%</span></div></td>
+      <td><span class='v-tag'>0.040 億</span></td>
+    </tr>
+    <tr>
+      <td>09:06:57</td>
+      <td>048459</td>
+      <td><div class='stock-box'><span class='s-name'>台達電永豐56購05(048459)</span><br><span class='r-tag'>流通比: 24.82%</span></div></td>
+      <td><span class='v-tag'>0.040 億</span></td>
+    </tr>
+    <tr>
+      <td>09:07:02</td>
+      <td>048801</td>
+      <td><div class='stock-box'><span class='s-name'>華泰群益56購01(048801)</span><br><span class='r-tag'>流通比: 41.74%</span></div></td>
+      <td><span class='v-tag'>0.040 億</span></td>
+    </tr>
+    <tr>
+      <td>09:07:08</td>
+      <td>049310</td>
+      <td><div class='stock-box'><span class='s-name'>大同元富56購01(049310)</span><br><span class='r-tag'>流通比: 21.12%</span></div></td>
+      <td><span class='v-tag'>0.040 億</span></td>
+    </tr>
+    <tr>
+      <td>09:07:13</td>
+      <td>049539</td>
+      <td><div class='stock-box'><span class='s-name'>東元國泰57購01(049539)</span><br><span class='r-tag'>流通比: 34.40%</span></div></td>
+      <td><span class='v-tag'>0.040 億</span></td>
+    </tr>
+    <tr>
+      <td>09:07:19</td>
+      <td>050303</td>
+      <td><div class='stock-box'><span class='s-name'>全新國泰57購01(050303)</span><br><span class='r-tag'>流通比: 24.44%</span></div></td>
+      <td><span class='v-tag'>0.040 億</span></td>
+    </tr>
+    <tr>
+      <td>09:07:24</td>
+      <td>051379</td>
+      <td><div class='stock-box'><span class='s-name'>超豐富邦57購01(051379)</span><br><span class='r-tag'>流通比: 39.78%</span></div></td>
+      <td><span class='v-tag'>0.040 億</span></td>
+    </tr>
+    <tr>
+      <td>09:07:29</td>
+      <td>052613</td>
+      <td><div class='stock-box'><span class='s-name'>國巨元富57購02(052613)</span><br><span class='r-tag'>流通比: 20.76%</span></div></td>
+      <td><span class='v-tag'>0.040 億</span></td>
+    </tr>
+    <tr>
+      <td>09:07:35</td>
+      <td>071593</td>
+      <td><div class='stock-box'><span class='s-name'>臺股指凱基51購04(071593)</span><br><span class='r-tag'>流通比: 30%</span></div></td>
+      <td><span class='v-tag'>0.040 億</span></td>
+    </tr>
+    <tr>
+      <td>09:07:40</td>
+      <td>049709</td>
+      <td><div class='stock-box'><span class='s-name'>美時元富59購01(049709)</span><br><span class='r-tag'>流通比: 76.92%</span></div></td>
+      <td><span class='v-tag'>0.030 億</span></td>
+    </tr>
+    <tr>
+      <td>09:07:47</td>
+      <td>049834</td>
+      <td><div class='stock-box'><span class='s-name'>道瓊銀中信66購01(049834)</span><br><span class='r-tag'>流通比: 51.93%</span></div></td>
+      <td><span class='v-tag'>0.030 億</span></td>
+    </tr>
+    <tr>
+      <td>09:07:53</td>
+      <td>050138</td>
+      <td><div class='stock-box'><span class='s-name'>台灣50元大5C購02(050138)</span><br><span class='r-tag'>流通比: 13.24%</span></div></td>
+      <td><span class='v-tag'>0.030 億</span></td>
+    </tr>
+    <tr>
+      <td>09:07:58</td>
+      <td>050282</td>
+      <td><div class='stock-box'><span class='s-name'>至上永豐58購02(050282)</span><br><span class='r-tag'>流通比: 17.04%</span></div></td>
+      <td><span class='v-tag'>0.030 億</span></td>
+    </tr>
+    <tr>
+      <td>09:08:03</td>
+      <td>050286</td>
+      <td><div class='stock-box'><span class='s-name'>道瓊銀元富56購01(050286)</span><br><span class='r-tag'>流通比: 28.36%</span></div></td>
+      <td><span class='v-tag'>0.030 億</span></td>
+    </tr>
+    <tr>
+      <td>09:08:09</td>
+      <td>050541</td>
+      <td><div class='stock-box'><span class='s-name'>道瓊銀凱基5C購01(050541)</span><br><span class='r-tag'>流通比: 10.32%</span></div></td>
+      <td><span class='v-tag'>0.030 億</span></td>
+    </tr>
+    <tr>
+      <td>09:08:14</td>
+      <td>050606</td>
+      <td><div class='stock-box'><span class='s-name'>道瓊銀元大57購03(050606)</span><br><span class='r-tag'>流通比: 20.12%</span></div></td>
+      <td><span class='v-tag'>0.030 億</span></td>
+    </tr>
+    <tr>
+      <td>09:08:20</td>
+      <td>050798</td>
+      <td><div class='stock-box'><span class='s-name'>台積電永豐61購03(050798)</span><br><span class='r-tag'>流通比: 67.26%</span></div></td>
+      <td><span class='v-tag'>0.030 億</span></td>
+    </tr>
+    <tr>
+      <td>09:08:27</td>
+      <td>051263</td>
+      <td><div class='stock-box'><span class='s-name'>群創統一65購02(051263)</span><br><span class='r-tag'>流通比: 33.88%</span></div></td>
+      <td><span class='v-tag'>0.030 億</span></td>
+    </tr>
+    <tr>
+      <td>09:08:32</td>
+      <td>051340</td>
+      <td><div class='stock-box'><span class='s-name'>道瓊銀群益61購01(051340)</span><br><span class='r-tag'>流通比: 71.10%</span></div></td>
+      <td><span class='v-tag'>0.030 億</span></td>
+    </tr>
+    <tr>
+      <td>09:08:39</td>
+      <td>051446</td>
+      <td><div class='stock-box'><span class='s-name'>道瓊銀元富57購03(051446)</span><br><span class='r-tag'>流通比: 22.62%</span></div></td>
+      <td><span class='v-tag'>0.030 億</span></td>
+    </tr>
+    <tr>
+      <td>09:08:44</td>
+      <td>051483</td>
+      <td><div class='stock-box'><span class='s-name'>超豐元大57購02(051483)</span><br><span class='r-tag'>流通比: 69.66%</span></div></td>
+      <td><span class='v-tag'>0.030 億</span></td>
+    </tr>
+    <tr>
+      <td>09:08:51</td>
+      <td>051629</td>
+      <td><div class='stock-box'><span class='s-name'>旺宏兆豐61購01(051629)</span><br><span class='r-tag'>流通比: 24.54%</span></div></td>
+      <td><span class='v-tag'>0.030 億</span></td>
+    </tr>
+    <tr>
+      <td>09:08:56</td>
+      <td>051662</td>
+      <td><div class='stock-box'><span class='s-name'>川湖元大57購06(051662)</span><br><span class='r-tag'>流通比: 25.36%</span></div></td>
+      <td><span class='v-tag'>0.030 億</span></td>
+    </tr>
+    <tr>
+      <td>09:09:02</td>
+      <td>051812</td>
+      <td><div class='stock-box'><span class='s-name'>台積電元大5A購04(051812)</span><br><span class='r-tag'>流通比: 100.00%</span></div></td>
+      <td><span class='v-tag'>0.030 億</span></td>
+    </tr>
+    <tr>
+      <td>09:09:08</td>
+      <td>051851</td>
+      <td><div class='stock-box'><span class='s-name'>永光群益57購01(051851)</span><br><span class='r-tag'>流通比: 20.28%</span></div></td>
+      <td><span class='v-tag'>0.030 億</span></td>
+    </tr>
+    <tr>
+      <td>09:09:14</td>
+      <td>052094</td>
+      <td><div class='stock-box'><span class='s-name'>長興富邦57購01(052094)</span><br><span class='r-tag'>流通比: 63.60%</span></div></td>
+      <td><span class='v-tag'>0.030 億</span></td>
+    </tr>
+    <tr>
+      <td>09:09:21</td>
+      <td>072125</td>
+      <td><div class='stock-box'><span class='s-name'>華城統一62購01(072125)</span><br><span class='r-tag'>流通比: 90.61%</span></div></td>
+      <td><span class='v-tag'>0.030 億</span></td>
+    </tr>
+    <tr>
+      <td>09:09:27</td>
+      <td>077726</td>
+      <td><div class='stock-box'><span class='s-name'>聯電統一54購02(077726)</span><br><span class='r-tag'>流通比: 56.34%</span></div></td>
+      <td><span class='v-tag'>0.030 億</span></td>
     </tr>
   </tbody>
 </table>
