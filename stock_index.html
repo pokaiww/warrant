@@ -1,225 +1,31 @@
 
             <!DOCTYPE html>
-            <html lang="zh-TW">
+            <html>
             <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Sniper Dashboard</title>
+                <meta charset="UTF-8"><meta http-equiv="refresh" content="60">
                 <style>
-                    body {
-                        margin: 0; padding: 20px; font-family: 'Segoe UI', 'PingFang TC', sans-serif;
-                        background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
-                        background-size: cover; color: #333;
-                    }
-                    .glass-container {
-                        background: rgba(255, 255, 255, 0.7);
-                        backdrop-filter: blur(15px);
-                        -webkit-backdrop-filter: blur(15px);
-                        border-radius: 20px;
-                        border: 1px solid rgba(255, 255, 255, 0.3);
-                        max-width: 1100px; margin: auto; padding: 30px;
-                        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-                    }
-                    h1 { text-align: center; color: #1a5f7a; letter-spacing: 2px; text-shadow: 1px 1px 2px rgba(255,255,255,0.5); }
-                    .update-time { text-align: center; font-size: 0.9em; color: #555; margin-bottom: 20px; }
-                    table { width: 100%; border-collapse: separate; border-spacing: 0 10px; }
-                    th { padding: 15px; text-align: left; color: #444; border-bottom: 2px solid rgba(0,0,0,0.05); }
-                    td { padding: 15px; background: rgba(255, 255, 255, 0.5); }
-                    tr td:first-child { border-radius: 10px 0 0 10px; }
-                    tr td:last-child { border-radius: 0 10px 10px 0; }
-                    .badge { background: #1a5f7a; color: white; padding: 4px 8px; border-radius: 5px; font-family: monospace; }
-                    .stock-name { font-weight: bold; color: #0369a1; font-size: 1.1em; }
-                    .warrant-info { font-size: 0.85em; color: #444; }
-                    .price-info { text-align: right; }
-                    .alert-row td { background: rgba(255, 120, 120, 0.4) !important; border: 1.5px solid #ff4444; }
-                    @media (max-width: 600px) { .warrant-info { display: none; } }
+                    body { background: #f8fafc; font-family: sans-serif; padding: 20px; }
+                    .container { max-width: 1400px; margin: auto; display: flex; gap: 20px; }
+                    .section { flex: 1; background: white; border-radius: 12px; padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+                    table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+                    th { background: #f1f5f9; padding: 10px; font-size: 0.9em; }
+                    td { padding: 12px 8px; border-bottom: 1px solid #f1f5f9; text-align: center; }
                 </style>
             </head>
             <body>
-                <div class="glass-container">
-                    <h1>🎯 Sniper Vision</h1>
-                    <div class="update-time">最後更新：2026-01-19 11:01:57</div>
-                    <table>
-                        <thead>
-                            <tr><th>代號</th><th>標的 (4碼)</th><th>權證說明</th><th style="text-align:right">成交金額</th></tr>
-                        </thead>
-                        <tbody>
-                <tr class="">
-                    <td><span class="badge">050014</span></td>
-                    <td class="stock-name">國巨</td>
-                    <td class="warrant-info">國巨元富5C購02
-(050014)</td>
-                    <td class="price-info"><b>1,600 萬</b><br><small>占比 36%</small></td>
-                </tr>
-                <tr class="alert-row">
-                    <td><span class="badge">051783</span></td>
-                    <td class="stock-name">道瓊銀</td>
-                    <td class="warrant-info">道瓊銀凱基57購02
-(051783)</td>
-                    <td class="price-info"><b>1,600 萬</b><br><small>占比 89%</small></td>
-                </tr>
-                <tr class="alert-row">
-                    <td><span class="badge">049073</span></td>
-                    <td class="stock-name">世芯</td>
-                    <td class="warrant-info">世芯永豐56購08
-(049073)</td>
-                    <td class="price-info"><b>1,200 萬</b><br><small>占比 100%</small></td>
-                </tr>
-                <tr class="">
-                    <td><span class="badge">049034</span></td>
-                    <td class="stock-name">臺股指</td>
-                    <td class="warrant-info">臺股指群益56購13
-(049034)</td>
-                    <td class="price-info"><b>900 萬</b><br><small>占比 41%</small></td>
-                </tr>
-                <tr class="alert-row">
-                    <td><span class="badge">051666</span></td>
-                    <td class="stock-name">台積電 (2330)</td>
-                    <td class="warrant-info">台積電元大5A購03
-(051666)</td>
-                    <td class="price-info"><b>800 萬</b><br><small>占比 50%</small></td>
-                </tr>
-                <tr class="">
-                    <td><span class="badge">702635</span></td>
-                    <td class="stock-name">富喬 (1815)</td>
-                    <td class="warrant-info">富喬元富56購03
-(702635)</td>
-                    <td class="price-info"><b>800 萬</b><br><small>占比 30%</small></td>
-                </tr>
-                <tr class="alert-row">
-                    <td><span class="badge">044483</span></td>
-                    <td class="stock-name">大同 (2371)</td>
-                    <td class="warrant-info">大同元富55購02
-(044483)</td>
-                    <td class="price-info"><b>800 萬</b><br><small>占比 100%</small></td>
-                </tr>
-                <tr class="">
-                    <td><span class="badge">042111</span></td>
-                    <td class="stock-name">國巨</td>
-                    <td class="warrant-info">國巨國票55購02
-(042111)</td>
-                    <td class="price-info"><b>700 萬</b><br><small>占比 16%</small></td>
-                </tr>
-                <tr class="alert-row">
-                    <td><span class="badge">040430</span></td>
-                    <td class="stock-name">宇瞻 (8271)</td>
-                    <td class="warrant-info">宇瞻國票55購02
-(040430)</td>
-                    <td class="price-info"><b>600 萬</b><br><small>占比 100%</small></td>
-                </tr>
-                <tr class="">
-                    <td><span class="badge">052624</span></td>
-                    <td class="stock-name">欣興 (3037)</td>
-                    <td class="warrant-info">欣興元富57購03
-(052624)</td>
-                    <td class="price-info"><b>600 萬</b><br><small>占比 35%</small></td>
-                </tr>
-                <tr class="">
-                    <td><span class="badge">037638</span></td>
-                    <td class="stock-name">臺股指</td>
-                    <td class="warrant-info">臺股指群益55購12
-(037638)</td>
-                    <td class="price-info"><b>600 萬</b><br><small>占比 27%</small></td>
-                </tr>
-                <tr class="alert-row">
-                    <td><span class="badge">738045</span></td>
-                    <td class="stock-name">勤凱 (4760)</td>
-                    <td class="warrant-info">勤凱元大53購01
-(738045)</td>
-                    <td class="price-info"><b>600 萬</b><br><small>占比 100%</small></td>
-                </tr>
-                <tr class="alert-row">
-                    <td><span class="badge">048093</span></td>
-                    <td class="stock-name">電子類</td>
-                    <td class="warrant-info">電子類群益56購01
-(048093)</td>
-                    <td class="price-info"><b>500 萬</b><br><small>占比 100%</small></td>
-                </tr>
-                <tr class="alert-row">
-                    <td><span class="badge">046493</span></td>
-                    <td class="stock-name">漢翔 (2634)</td>
-                    <td class="warrant-info">漢翔群益56購01
-(046493)</td>
-                    <td class="price-info"><b>400 萬</b><br><small>占比 100%</small></td>
-                </tr>
-                <tr class="">
-                    <td><span class="badge">046805</span></td>
-                    <td class="stock-name">南亞 (1303)</td>
-                    <td class="warrant-info">南亞兆豐5C購01
-(046805)</td>
-                    <td class="price-info"><b>400 萬</b><br><small>占比 29%</small></td>
-                </tr>
-                <tr class="">
-                    <td><span class="badge">052613</span></td>
-                    <td class="stock-name">國巨</td>
-                    <td class="warrant-info">國巨元富57購02
-(052613)</td>
-                    <td class="price-info"><b>400 萬</b><br><small>占比 9%</small></td>
-                </tr>
-                <tr class="">
-                    <td><span class="badge">077085</span></td>
-                    <td class="stock-name">臺股指</td>
-                    <td class="warrant-info">臺股指凱基56購04
-(077085)</td>
-                    <td class="price-info"><b>400 萬</b><br><small>占比 18%</small></td>
-                </tr>
-                <tr class="alert-row">
-                    <td><span class="badge">088917</span></td>
-                    <td class="stock-name">奇鋐 (3017)</td>
-                    <td class="warrant-info">奇鋐群益51購07
-(088917)</td>
-                    <td class="price-info"><b>400 萬</b><br><small>占比 100%</small></td>
-                </tr>
-                <tr class="alert-row">
-                    <td><span class="badge">039120</span></td>
-                    <td class="stock-name">惠特 (6706)</td>
-                    <td class="warrant-info">惠特元富5A購01
-(039120)</td>
-                    <td class="price-info"><b>400 萬</b><br><small>占比 57%</small></td>
-                </tr>
-                <tr class="alert-row">
-                    <td><span class="badge">040201</span></td>
-                    <td class="stock-name">元金2X</td>
-                    <td class="warrant-info">元金2X凱基55購02
-(040201)</td>
-                    <td class="price-info"><b>400 萬</b><br><small>占比 100%</small></td>
-                </tr>
-                <tr class="">
-                    <td><span class="badge">042463</span></td>
-                    <td class="stock-name">國巨</td>
-                    <td class="warrant-info">國巨元富54購14
-(042463)</td>
-                    <td class="price-info"><b>400 萬</b><br><small>占比 9%</small></td>
-                </tr>
-                <tr class="alert-row">
-                    <td><span class="badge">043256</span></td>
-                    <td class="stock-name">華城 (1519)</td>
-                    <td class="warrant-info">華城兆豐57購01
-(043256)</td>
-                    <td class="price-info"><b>400 萬</b><br><small>占比 57%</small></td>
-                </tr>
-                <tr class="alert-row">
-                    <td><span class="badge">702041</span></td>
-                    <td class="stock-name">臺慶科 (3357)</td>
-                    <td class="warrant-info">臺慶科國泰56購01
-(702041)</td>
-                    <td class="price-info"><b>400 萬</b><br><small>占比 100%</small></td>
-                </tr>
-                <tr class="alert-row">
-                    <td><span class="badge">703575</span></td>
-                    <td class="stock-name">佶優 (5452)</td>
-                    <td class="warrant-info">佶優凱基57購01
-(703575)</td>
-                    <td class="price-info"><b>400 萬</b><br><small>占比 100%</small></td>
-                </tr>
-                <tr class="alert-row">
-                    <td><span class="badge">034203</span></td>
-                    <td class="stock-name">健策 (3653)</td>
-                    <td class="warrant-info">健策國票54購01
-(034203)</td>
-                    <td class="price-info"><b>400 萬</b><br><small>占比 100%</small></td>
-                </tr></tbody>
-                    </table>
+                <h1 style="text-align:center; color:#0369a1;">🎯 Sniper Dashboard (4碼代號明細版)</h1>
+                <div class="container">
+                    <div class="section">
+                        <h2>🔍 權證大單明細 (含標的代號)</h2>
+                        <table>
+                            <thead><tr><th>權證代號</th><th>標的(4碼)</th><th>名稱/流通</th><th>成交金額</th></tr></thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                    <div class="section" style="flex: 0.4;">
+                        <h2>🏆 標的火力榜</h2>
+                        <table></table>
+                    </div>
                 </div>
             </body>
             </html>
