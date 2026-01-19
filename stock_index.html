@@ -3,210 +3,278 @@
             <html>
             <head>
                 <meta charset="UTF-8">
-                <meta http-equiv="refresh" content="60">
                 <style>
                     body {
-                        background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), 
-                                    url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1920&q=80');
-                        background-size: cover; background-attachment: fixed; color: #1e293b; font-family: sans-serif; padding: 20px;
+                        margin: 0; padding: 40px 20px;
+                        background: url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+                        background-size: cover;
+                        font-family: 'PingFang TC', sans-serif;
                     }
-                    .container { max-width: 1400px; margin: auto; display: flex; gap: 20px; flex-wrap: wrap; }
-                    .section { flex: 1; min-width: 500px; background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(20px); 
-                               border-radius: 20px; padding: 25px; border: 1px solid white; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
-                    h2 { color: #0369a1; text-align: center; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; }
-                    .sniper-table { width: 100%; border-collapse: separate; border-spacing: 0 8px; }
-                    .sniper-table td { background: rgba(255, 255, 255, 0.4); padding: 12px; text-align: center; border-radius: 10px; }
-                    
-                    /* 亮燈樣式: 占比 > 50% 且 流通 < 20% */
-                    .highlight-row td { 
-                        background: rgba(255, 87, 34, 0.15) !important; 
-                        border: 2px solid #ff5722 !important;
-                        font-weight: bold;
+                    .glass-card {
+                        max-width: 850px; margin: auto;
+                        background: rgba(255, 255, 255, 0.4);
+                        backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+                        border-radius: 30px; padding: 40px;
+                        box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+                        border: 1px solid rgba(255,255,255,0.4);
                     }
-                    
-                    .s-name { font-weight: 600; font-size: 0.9em; }
-                    .s-name-main { font-weight: 800; color: #0369a1; font-size: 1.2em; }
-                    .v-tag { padding: 5px 10px; border-radius: 6px; font-weight: bold; }
-                    .normal-tag { background: #f0f9ff; color: #0369a1; }
-                    .warning-tag { background: #fff7ed; color: #ea580c; border: 1px solid #fed7aa; }
-                    .v-tag-stock { background: #ffffff; color: #0f172a; padding: 8px 15px; border-radius: 8px; font-weight: 800; border: 1px solid #e2e8f0; }
+                    h1 { text-align: center; color: #1a5f7a; letter-spacing: 4px; margin-bottom: 5px; }
+                    .update-time { text-align: center; color: #555; font-size: 0.9em; margin-bottom: 30px; }
+                    table { width: 100%; border-collapse: collapse; }
+                    th { text-align: left; padding: 15px; color: #666; border-bottom: 2px solid rgba(0,0,0,0.1); }
+                    td { padding: 20px 15px; }
                 </style>
             </head>
             <body>
-                <h1 style="text-align:center; color:#0369a1;">🎯 Sniper Dashboard (Focus Mode)</h1>
-                <p style="text-align:center; color:#64748b;">🚨 亮燈提醒：單檔占比 > 50% 且 流通 < 20% | 更新：2026-01-19 11:19:31</p>
-                <div class="container">
-                    <div class="section">
-                        <h2>🔍 權證即時明細</h2>
-                        <table class="sniper-table">
-                            <thead><tr><th>代號</th><th>標的</th><th>名稱/流通</th><th>金額</th></tr></thead>
-                            <tbody><tr class=''><td><code>050014</code></td><td><b>國巨</b></td><td><div class='s-name'>國巨元富5C購02(050014)</div><div class='r-tag'>流通 38.16%</div></td><td><span class='v-tag normal-tag'>1600 萬 <small>(11%)</small></span></td></tr><tr class=''><td><code>051783</code></td><td><b>道瓊銀</b></td><td><div class='s-name'>道瓊銀凱基57購02(051783)</div><div class='r-tag'>流通 79.88%</div></td><td><span class='v-tag normal-tag'>1600 萬 <small>(24%)</small></span></td></tr><tr class=''><td><code>049073</code></td><td><b>世芯</b></td><td><div class='s-name'>世芯永豐56購08(049073)</div><div class='r-tag'>流通 72.68%</div></td><td><span class='v-tag normal-tag'>1400 萬 <small>(29%)</small></span></td></tr><tr class=''><td><code>044483</code></td><td><b>大同</b></td><td><div class='s-name'>大同元富55購02(044483)</div><div class='r-tag'>流通 64.17%</div></td><td><span class='v-tag normal-tag'>1000 萬 <small>(28%)</small></span></td></tr><tr class=''><td><code>049034</code></td><td><b>臺股指</b></td><td><div class='s-name'>臺股指群益56購13(049034)</div><div class='r-tag'>流通 51.80%</div></td><td><span class='v-tag normal-tag'>900 萬 <small>(11%)</small></span></td></tr><tr class=''><td><code>051666</code></td><td><b>台積電</b></td><td><div class='s-name'>台積電元大5A購03(051666)</div><div class='r-tag'>流通 42.86%</div></td><td><span class='v-tag normal-tag'>800 萬 <small>(15%)</small></span></td></tr><tr class=''><td><code>052337</code></td><td><b>聯電</b></td><td><div class='s-name'>聯電群益57購02(052337)</div><div class='r-tag'>流通 18.74%</div></td><td><span class='v-tag normal-tag'>800 萬 <small>(10%)</small></span></td></tr><tr class=''><td><code>702635</code></td><td><b>富喬</b></td><td><div class='s-name'>富喬元富56購03(702635)</div><div class='r-tag'>流通 54.72%</div></td><td><span class='v-tag normal-tag'>800 萬 <small>(19%)</small></span></td></tr><tr class=''><td><code>040430</code></td><td><b>宇瞻</b></td><td><div class='s-name'>宇瞻國票55購02(040430)</div><div class='r-tag'>流通 95.36%</div></td><td><span class='v-tag normal-tag'>700 萬 <small>(33%)</small></span></td></tr><tr class=''><td><code>042111</code></td><td><b>國巨</b></td><td><div class='s-name'>國巨國票55購02(042111)</div><div class='r-tag'>流通 20.65%</div></td><td><span class='v-tag normal-tag'>700 萬 <small>(5%)</small></span></td></tr><tr class=''><td><code>052624</code></td><td><b>欣興</b></td><td><div class='s-name'>欣興元富57購03(052624)</div><div class='r-tag'>流通 0.04%</div></td><td><span class='v-tag normal-tag'>600 萬 <small>(14%)</small></span></td></tr><tr class=''><td><code>037638</code></td><td><b>臺股指</b></td><td><div class='s-name'>臺股指群益55購12(037638)</div><div class='r-tag'>流通 33.24%</div></td><td><span class='v-tag normal-tag'>600 萬 <small>(8%)</small></span></td></tr><tr class=''><td><code>738045</code></td><td><b>勤凱</b></td><td><div class='s-name'>勤凱元大53購01(738045)</div><div class='r-tag'>流通 80.62%</div></td><td><span class='v-tag normal-tag'>600 萬 <small>(33%)</small></span></td></tr><tr class=''><td><code>077726</code></td><td><b>聯電</b></td><td><div class='s-name'>聯電統一54購02(077726)</div><div class='r-tag'>流通 56.34%</div></td><td><span class='v-tag normal-tag'>500 萬 <small>(6%)</small></span></td></tr><tr class=''><td><code>041554</code></td><td><b>臺股指</b></td><td><div class='s-name'>臺股指元大54購32(041554)</div><div class='r-tag'>流通 43.72%</div></td><td><span class='v-tag normal-tag'>500 萬 <small>(6%)</small></span></td></tr><tr class=''><td><code>043245</code></td><td><b>欣興</b></td><td><div class='s-name'>欣興永豐57購01(043245)</div><div class='r-tag'>流通 4.10%</div></td><td><span class='v-tag normal-tag'>500 萬 <small>(11%)</small></span></td></tr><tr class=''><td><code>043530</code></td><td><b>愛普</b></td><td><div class='s-name'>愛普元大56購03(043530)</div><div class='r-tag'>流通 10.61%</div></td><td><span class='v-tag normal-tag'>500 萬 <small>(17%)</small></span></td></tr><tr class=''><td><code>045582</code></td><td><b>電子類</b></td><td><div class='s-name'>電子類凱基55購03(045582)</div><div class='r-tag'>流通 35.52%</div></td><td><span class='v-tag normal-tag'>500 萬 <small>(13%)</small></span></td></tr><tr class=''><td><code>048093</code></td><td><b>電子類</b></td><td><div class='s-name'>電子類群益56購01(048093)</div><div class='r-tag'>流通 24.10%</div></td><td><span class='v-tag normal-tag'>500 萬 <small>(13%)</small></span></td></tr><tr class=''><td><code>045581</code></td><td><b>電子類</b></td><td><div class='s-name'>電子類凱基55購02(045581)</div><div class='r-tag'>流通 11.87%</div></td><td><span class='v-tag normal-tag'>400 萬 <small>(11%)</small></span></td></tr><tr class=''><td><code>046493</code></td><td><b>漢翔</b></td><td><div class='s-name'>漢翔群益56購01(046493)</div><div class='r-tag'>流通 98.86%</div></td><td><span class='v-tag normal-tag'>400 萬 <small>(33%)</small></span></td></tr><tr class=''><td><code>046805</code></td><td><b>南亞</b></td><td><div class='s-name'>南亞兆豐5C購01(046805)</div><div class='r-tag'>流通 68.84%</div></td><td><span class='v-tag normal-tag'>400 萬 <small>(10%)</small></span></td></tr><tr class=''><td><code>047215</code></td><td><b>南亞</b></td><td><div class='s-name'>南亞富邦58購02(047215)</div><div class='r-tag'>流通 6.08%</div></td><td><span class='v-tag normal-tag'>400 萬 <small>(10%)</small></span></td></tr><tr class=''><td><code>039120</code></td><td><b>惠特</b></td><td><div class='s-name'>惠特元富5A購01(039120)</div><div class='r-tag'>流通 80.51%</div></td><td><span class='v-tag normal-tag'>400 萬 <small>(19%)</small></span></td></tr><tr class=''><td><code>040201</code></td><td><b>元金2X</b></td><td><div class='s-name'>元金2X凱基55購02(040201)</div><div class='r-tag'>流通 52.24%</div></td><td><span class='v-tag normal-tag'>400 萬 <small>(33%)</small></span></td></tr><tr class=''><td><code>042463</code></td><td><b>國巨</b></td><td><div class='s-name'>國巨元富54購14(042463)</div><div class='r-tag'>流通 69.03%</div></td><td><span class='v-tag normal-tag'>400 萬 <small>(3%)</small></span></td></tr><tr class=''><td><code>043256</code></td><td><b>華城</b></td><td><div class='s-name'>華城兆豐57購01(043256)</div><div class='r-tag'>流通 84.92%</div></td><td><span class='v-tag normal-tag'>400 萬 <small>(19%)</small></span></td></tr><tr class=''><td><code>737737</code></td><td><b>富喬</b></td><td><div class='s-name'>富喬元大54購06(737737)</div><div class='r-tag'>流通 61.51%</div></td><td><span class='v-tag normal-tag'>400 萬 <small>(10%)</small></span></td></tr><tr class=''><td><code>052336</code></td><td><b>聯電</b></td><td><div class='s-name'>聯電群益57購01(052336)</div><div class='r-tag'>流通 7.12%</div></td><td><span class='v-tag normal-tag'>400 萬 <small>(5%)</small></span></td></tr><tr class=''><td><code>052613</code></td><td><b>國巨</b></td><td><div class='s-name'>國巨元富57購02(052613)</div><div class='r-tag'>流通 20.76%</div></td><td><span class='v-tag normal-tag'>400 萬 <small>(3%)</small></span></td></tr></tbody>
-                        </table>
-                    </div>
-                    <div class="section">
-                        <h2>🏆 今日標的火力累積</h2>
-                        <table border="1" class="dataframe sniper-table">
-  <thead>
-    <tr style="text-align: right;">
-      <th>排行</th>
-      <th>標的</th>
-      <th>累積</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td><div class='s-name-main'>國巨</div></td>
-      <td><span class='v-tag-stock'>14,700 萬</span></td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td><div class='s-name-main'>臺股指</div></td>
-      <td><span class='v-tag-stock'>8,000 萬</span></td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td><div class='s-name-main'>聯電</div></td>
-      <td><span class='v-tag-stock'>8,000 萬</span></td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td><div class='s-name-main'>道瓊銀</div></td>
-      <td><span class='v-tag-stock'>6,600 萬</span></td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td><div class='s-name-main'>台積電</div></td>
-      <td><span class='v-tag-stock'>5,200 萬</span></td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td><div class='s-name-main'>世芯</div></td>
-      <td><span class='v-tag-stock'>4,800 萬</span></td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td><div class='s-name-main'>欣興</div></td>
-      <td><span class='v-tag-stock'>4,400 萬</span></td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td><div class='s-name-main'>富喬</div></td>
-      <td><span class='v-tag-stock'>4,200 萬</span></td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td><div class='s-name-main'>南亞</div></td>
-      <td><span class='v-tag-stock'>4,200 萬</span></td>
-    </tr>
-    <tr>
-      <td>10</td>
-      <td><div class='s-name-main'>電子類</div></td>
-      <td><span class='v-tag-stock'>3,800 萬</span></td>
-    </tr>
-    <tr>
-      <td>11</td>
-      <td><div class='s-name-main'>大同</div></td>
-      <td><span class='v-tag-stock'>3,600 萬</span></td>
-    </tr>
-    <tr>
-      <td>12</td>
-      <td><div class='s-name-main'>愛普</div></td>
-      <td><span class='v-tag-stock'>3,000 萬</span></td>
-    </tr>
-    <tr>
-      <td>13</td>
-      <td><div class='s-name-main'>宇瞻</div></td>
-      <td><span class='v-tag-stock'>2,100 萬</span></td>
-    </tr>
-    <tr>
-      <td>14</td>
-      <td><div class='s-name-main'>惠特</div></td>
-      <td><span class='v-tag-stock'>2,100 萬</span></td>
-    </tr>
-    <tr>
-      <td>15</td>
-      <td><div class='s-name-main'>華城</div></td>
-      <td><span class='v-tag-stock'>2,100 萬</span></td>
-    </tr>
-    <tr>
-      <td>16</td>
-      <td><div class='s-name-main'>群創</div></td>
-      <td><span class='v-tag-stock'>2,100 萬</span></td>
-    </tr>
-    <tr>
-      <td>17</td>
-      <td><div class='s-name-main'>勤凱</div></td>
-      <td><span class='v-tag-stock'>1,800 萬</span></td>
-    </tr>
-    <tr>
-      <td>18</td>
-      <td><div class='s-name-main'>創見</div></td>
-      <td><span class='v-tag-stock'>1,800 萬</span></td>
-    </tr>
-    <tr>
-      <td>19</td>
-      <td><div class='s-name-main'>金寶</div></td>
-      <td><span class='v-tag-stock'>1,500 萬</span></td>
-    </tr>
-    <tr>
-      <td>20</td>
-      <td><div class='s-name-main'>超豐</div></td>
-      <td><span class='v-tag-stock'>1,300 萬</span></td>
-    </tr>
-    <tr>
-      <td>21</td>
-      <td><div class='s-name-main'>漢翔</div></td>
-      <td><span class='v-tag-stock'>1,200 萬</span></td>
-    </tr>
-    <tr>
-      <td>22</td>
-      <td><div class='s-name-main'>元金2X</div></td>
-      <td><span class='v-tag-stock'>1,200 萬</span></td>
-    </tr>
-    <tr>
-      <td>23</td>
-      <td><div class='s-name-main'>奇鋐</div></td>
-      <td><span class='v-tag-stock'>1,200 萬</span></td>
-    </tr>
-    <tr>
-      <td>24</td>
-      <td><div class='s-name-main'>健策</div></td>
-      <td><span class='v-tag-stock'>1,200 萬</span></td>
-    </tr>
-    <tr>
-      <td>25</td>
-      <td><div class='s-name-main'>美時</div></td>
-      <td><span class='v-tag-stock'>1,200 萬</span></td>
-    </tr>
-    <tr>
-      <td>26</td>
-      <td><div class='s-name-main'>臺慶科</div></td>
-      <td><span class='v-tag-stock'>1,200 萬</span></td>
-    </tr>
-    <tr>
-      <td>27</td>
-      <td><div class='s-name-main'>佶優</div></td>
-      <td><span class='v-tag-stock'>1,200 萬</span></td>
-    </tr>
-    <tr>
-      <td>28</td>
-      <td><div class='s-name-main'>華通</div></td>
-      <td><span class='v-tag-stock'>1,200 萬</span></td>
-    </tr>
-    <tr>
-      <td>29</td>
-      <td><div class='s-name-main'>南茂</div></td>
-      <td><span class='v-tag-stock'>1,200 萬</span></td>
-    </tr>
-    <tr>
-      <td>30</td>
-      <td><div class='s-name-main'>中興電</div></td>
-      <td><span class='v-tag-stock'>1,100 萬</span></td>
-    </tr>
-  </tbody>
-</table>
-                    </div>
+                <div class="glass-card">
+                    <h1>🎯 主力權證追蹤</h1>
+                    <div class="update-time">最後更新：2026-01-19 11:23:21</div>
+                    <table>
+                        <thead>
+                            <tr><th>標的 (4碼)</th><th>權證名稱 / 代號</th><th style="text-align:right">成交金額</th></tr>
+                        </thead>
+                        <tbody>
+                <tr >
+                    <td style="color:#004d99; font-weight:800; font-size:1.1em; border-bottom:1px solid rgba(0,0,0,0.05);">國巨</td>
+                    <td style="border-bottom:1px solid rgba(0,0,0,0.05);">
+                        <div style="font-weight:bold; color:#333;">國巨元富5C購02</div>
+                        <div style="color:#666; font-size:0.85em; margin:2px 0;">050014</div>
+                        <span style="font-size:0.8em; background:rgba(0,0,0,0.05); padding:2px 6px; border-radius:4px;">流通 38.16%</span>
+                    </td>
+                    <td style="text-align:right; border-bottom:1px solid rgba(0,0,0,0.05);">
+                        <b style="color:#1a5f7a;">1,600 萬</b><br>
+                        <small style="color:#777;">占比 33%</small>
+                    </td>
+                </tr>
+                <tr style='background:rgba(255,87,34,0.15);'>
+                    <td style="color:#004d99; font-weight:800; font-size:1.1em; border-bottom:1px solid rgba(0,0,0,0.05);">道瓊銀</td>
+                    <td style="border-bottom:1px solid rgba(0,0,0,0.05);">
+                        <div style="font-weight:bold; color:#333;">道瓊銀凱基57購02</div>
+                        <div style="color:#666; font-size:0.85em; margin:2px 0;">051783</div>
+                        <span style="font-size:0.8em; background:rgba(0,0,0,0.05); padding:2px 6px; border-radius:4px;">流通 79.88%</span>
+                    </td>
+                    <td style="text-align:right; border-bottom:1px solid rgba(0,0,0,0.05);">
+                        <b style="color:#1a5f7a;">1,600 萬</b><br>
+                        <small style="color:#777;">占比 89%</small>
+                    </td>
+                </tr>
+                <tr style='background:rgba(255,87,34,0.15);'>
+                    <td style="color:#004d99; font-weight:800; font-size:1.1em; border-bottom:1px solid rgba(0,0,0,0.05);">世芯</td>
+                    <td style="border-bottom:1px solid rgba(0,0,0,0.05);">
+                        <div style="font-weight:bold; color:#333;">世芯永豐56購08</div>
+                        <div style="color:#666; font-size:0.85em; margin:2px 0;">049073</div>
+                        <span style="font-size:0.8em; background:rgba(0,0,0,0.05); padding:2px 6px; border-radius:4px;">流通 72.68%</span>
+                    </td>
+                    <td style="text-align:right; border-bottom:1px solid rgba(0,0,0,0.05);">
+                        <b style="color:#1a5f7a;">1,400 萬</b><br>
+                        <small style="color:#777;">占比 100%</small>
+                    </td>
+                </tr>
+                <tr style='background:rgba(255,87,34,0.15);'>
+                    <td style="color:#004d99; font-weight:800; font-size:1.1em; border-bottom:1px solid rgba(0,0,0,0.05);">大同 (2371)</td>
+                    <td style="border-bottom:1px solid rgba(0,0,0,0.05);">
+                        <div style="font-weight:bold; color:#333;">大同元富55購02</div>
+                        <div style="color:#666; font-size:0.85em; margin:2px 0;">044483</div>
+                        <span style="font-size:0.8em; background:rgba(0,0,0,0.05); padding:2px 6px; border-radius:4px;">流通 64.17%</span>
+                    </td>
+                    <td style="text-align:right; border-bottom:1px solid rgba(0,0,0,0.05);">
+                        <b style="color:#1a5f7a;">1,000 萬</b><br>
+                        <small style="color:#777;">占比 100%</small>
+                    </td>
+                </tr>
+                <tr >
+                    <td style="color:#004d99; font-weight:800; font-size:1.1em; border-bottom:1px solid rgba(0,0,0,0.05);">臺股指</td>
+                    <td style="border-bottom:1px solid rgba(0,0,0,0.05);">
+                        <div style="font-weight:bold; color:#333;">臺股指群益56購13</div>
+                        <div style="color:#666; font-size:0.85em; margin:2px 0;">049034</div>
+                        <span style="font-size:0.8em; background:rgba(0,0,0,0.05); padding:2px 6px; border-radius:4px;">流通 51.80%</span>
+                    </td>
+                    <td style="text-align:right; border-bottom:1px solid rgba(0,0,0,0.05);">
+                        <b style="color:#1a5f7a;">900 萬</b><br>
+                        <small style="color:#777;">占比 31%</small>
+                    </td>
+                </tr>
+                <tr style='background:rgba(255,87,34,0.15);'>
+                    <td style="color:#004d99; font-weight:800; font-size:1.1em; border-bottom:1px solid rgba(0,0,0,0.05);">台積電 (2330)</td>
+                    <td style="border-bottom:1px solid rgba(0,0,0,0.05);">
+                        <div style="font-weight:bold; color:#333;">台積電元大5A購03</div>
+                        <div style="color:#666; font-size:0.85em; margin:2px 0;">051666</div>
+                        <span style="font-size:0.8em; background:rgba(0,0,0,0.05); padding:2px 6px; border-radius:4px;">流通 42.86%</span>
+                    </td>
+                    <td style="text-align:right; border-bottom:1px solid rgba(0,0,0,0.05);">
+                        <b style="color:#1a5f7a;">800 萬</b><br>
+                        <small style="color:#777;">占比 50%</small>
+                    </td>
+                </tr>
+                <tr >
+                    <td style="color:#004d99; font-weight:800; font-size:1.1em; border-bottom:1px solid rgba(0,0,0,0.05);">聯電 (2303)</td>
+                    <td style="border-bottom:1px solid rgba(0,0,0,0.05);">
+                        <div style="font-weight:bold; color:#333;">聯電群益57購02</div>
+                        <div style="color:#666; font-size:0.85em; margin:2px 0;">052337</div>
+                        <span style="font-size:0.8em; background:rgba(0,0,0,0.05); padding:2px 6px; border-radius:4px;">流通 18.74%</span>
+                    </td>
+                    <td style="text-align:right; border-bottom:1px solid rgba(0,0,0,0.05);">
+                        <b style="color:#1a5f7a;">800 萬</b><br>
+                        <small style="color:#777;">占比 25%</small>
+                    </td>
+                </tr>
+                <tr style='background:rgba(255,87,34,0.15);'>
+                    <td style="color:#004d99; font-weight:800; font-size:1.1em; border-bottom:1px solid rgba(0,0,0,0.05);">富喬 (1815)</td>
+                    <td style="border-bottom:1px solid rgba(0,0,0,0.05);">
+                        <div style="font-weight:bold; color:#333;">富喬元富56購03</div>
+                        <div style="color:#666; font-size:0.85em; margin:2px 0;">702635</div>
+                        <span style="font-size:0.8em; background:rgba(0,0,0,0.05); padding:2px 6px; border-radius:4px;">流通 54.72%</span>
+                    </td>
+                    <td style="text-align:right; border-bottom:1px solid rgba(0,0,0,0.05);">
+                        <b style="color:#1a5f7a;">800 萬</b><br>
+                        <small style="color:#777;">占比 67%</small>
+                    </td>
+                </tr>
+                <tr style='background:rgba(255,87,34,0.15);'>
+                    <td style="color:#004d99; font-weight:800; font-size:1.1em; border-bottom:1px solid rgba(0,0,0,0.05);">宇瞻 (8271)</td>
+                    <td style="border-bottom:1px solid rgba(0,0,0,0.05);">
+                        <div style="font-weight:bold; color:#333;">宇瞻國票55購02</div>
+                        <div style="color:#666; font-size:0.85em; margin:2px 0;">040430</div>
+                        <span style="font-size:0.8em; background:rgba(0,0,0,0.05); padding:2px 6px; border-radius:4px;">流通 95.36%</span>
+                    </td>
+                    <td style="text-align:right; border-bottom:1px solid rgba(0,0,0,0.05);">
+                        <b style="color:#1a5f7a;">700 萬</b><br>
+                        <small style="color:#777;">占比 100%</small>
+                    </td>
+                </tr>
+                <tr >
+                    <td style="color:#004d99; font-weight:800; font-size:1.1em; border-bottom:1px solid rgba(0,0,0,0.05);">國巨</td>
+                    <td style="border-bottom:1px solid rgba(0,0,0,0.05);">
+                        <div style="font-weight:bold; color:#333;">國巨國票55購02</div>
+                        <div style="color:#666; font-size:0.85em; margin:2px 0;">042111</div>
+                        <span style="font-size:0.8em; background:rgba(0,0,0,0.05); padding:2px 6px; border-radius:4px;">流通 20.65%</span>
+                    </td>
+                    <td style="text-align:right; border-bottom:1px solid rgba(0,0,0,0.05);">
+                        <b style="color:#1a5f7a;">700 萬</b><br>
+                        <small style="color:#777;">占比 14%</small>
+                    </td>
+                </tr>
+                <tr >
+                    <td style="color:#004d99; font-weight:800; font-size:1.1em; border-bottom:1px solid rgba(0,0,0,0.05);">欣興 (3037)</td>
+                    <td style="border-bottom:1px solid rgba(0,0,0,0.05);">
+                        <div style="font-weight:bold; color:#333;">欣興元富57購03</div>
+                        <div style="color:#666; font-size:0.85em; margin:2px 0;">052624</div>
+                        <span style="font-size:0.8em; background:rgba(0,0,0,0.05); padding:2px 6px; border-radius:4px;">流通 0.04%</span>
+                    </td>
+                    <td style="text-align:right; border-bottom:1px solid rgba(0,0,0,0.05);">
+                        <b style="color:#1a5f7a;">600 萬</b><br>
+                        <small style="color:#777;">占比 27%</small>
+                    </td>
+                </tr>
+                <tr >
+                    <td style="color:#004d99; font-weight:800; font-size:1.1em; border-bottom:1px solid rgba(0,0,0,0.05);">聯電 (2303)</td>
+                    <td style="border-bottom:1px solid rgba(0,0,0,0.05);">
+                        <div style="font-weight:bold; color:#333;">聯電統一54購02</div>
+                        <div style="color:#666; font-size:0.85em; margin:2px 0;">077726</div>
+                        <span style="font-size:0.8em; background:rgba(0,0,0,0.05); padding:2px 6px; border-radius:4px;">流通 56.34%</span>
+                    </td>
+                    <td style="text-align:right; border-bottom:1px solid rgba(0,0,0,0.05);">
+                        <b style="color:#1a5f7a;">600 萬</b><br>
+                        <small style="color:#777;">占比 19%</small>
+                    </td>
+                </tr>
+                <tr >
+                    <td style="color:#004d99; font-weight:800; font-size:1.1em; border-bottom:1px solid rgba(0,0,0,0.05);">臺股指</td>
+                    <td style="border-bottom:1px solid rgba(0,0,0,0.05);">
+                        <div style="font-weight:bold; color:#333;">臺股指群益55購12</div>
+                        <div style="color:#666; font-size:0.85em; margin:2px 0;">037638</div>
+                        <span style="font-size:0.8em; background:rgba(0,0,0,0.05); padding:2px 6px; border-radius:4px;">流通 33.24%</span>
+                    </td>
+                    <td style="text-align:right; border-bottom:1px solid rgba(0,0,0,0.05);">
+                        <b style="color:#1a5f7a;">600 萬</b><br>
+                        <small style="color:#777;">占比 21%</small>
+                    </td>
+                </tr>
+                <tr style='background:rgba(255,87,34,0.15);'>
+                    <td style="color:#004d99; font-weight:800; font-size:1.1em; border-bottom:1px solid rgba(0,0,0,0.05);">勤凱 (4760)</td>
+                    <td style="border-bottom:1px solid rgba(0,0,0,0.05);">
+                        <div style="font-weight:bold; color:#333;">勤凱元大53購01</div>
+                        <div style="color:#666; font-size:0.85em; margin:2px 0;">738045</div>
+                        <span style="font-size:0.8em; background:rgba(0,0,0,0.05); padding:2px 6px; border-radius:4px;">流通 80.62%</span>
+                    </td>
+                    <td style="text-align:right; border-bottom:1px solid rgba(0,0,0,0.05);">
+                        <b style="color:#1a5f7a;">600 萬</b><br>
+                        <small style="color:#777;">占比 100%</small>
+                    </td>
+                </tr>
+                <tr >
+                    <td style="color:#004d99; font-weight:800; font-size:1.1em; border-bottom:1px solid rgba(0,0,0,0.05);">臺股指</td>
+                    <td style="border-bottom:1px solid rgba(0,0,0,0.05);">
+                        <div style="font-weight:bold; color:#333;">臺股指元大54購32</div>
+                        <div style="color:#666; font-size:0.85em; margin:2px 0;">041554</div>
+                        <span style="font-size:0.8em; background:rgba(0,0,0,0.05); padding:2px 6px; border-radius:4px;">流通 43.72%</span>
+                    </td>
+                    <td style="text-align:right; border-bottom:1px solid rgba(0,0,0,0.05);">
+                        <b style="color:#1a5f7a;">500 萬</b><br>
+                        <small style="color:#777;">占比 17%</small>
+                    </td>
+                </tr>
+                <tr >
+                    <td style="color:#004d99; font-weight:800; font-size:1.1em; border-bottom:1px solid rgba(0,0,0,0.05);">欣興 (3037)</td>
+                    <td style="border-bottom:1px solid rgba(0,0,0,0.05);">
+                        <div style="font-weight:bold; color:#333;">欣興永豐57購01</div>
+                        <div style="color:#666; font-size:0.85em; margin:2px 0;">043245</div>
+                        <span style="font-size:0.8em; background:rgba(0,0,0,0.05); padding:2px 6px; border-radius:4px;">流通 4.10%</span>
+                    </td>
+                    <td style="text-align:right; border-bottom:1px solid rgba(0,0,0,0.05);">
+                        <b style="color:#1a5f7a;">500 萬</b><br>
+                        <small style="color:#777;">占比 23%</small>
+                    </td>
+                </tr>
+                <tr style='background:rgba(255,87,34,0.15);'>
+                    <td style="color:#004d99; font-weight:800; font-size:1.1em; border-bottom:1px solid rgba(0,0,0,0.05);">愛普</td>
+                    <td style="border-bottom:1px solid rgba(0,0,0,0.05);">
+                        <div style="font-weight:bold; color:#333;">愛普元大56購03</div>
+                        <div style="color:#666; font-size:0.85em; margin:2px 0;">043530</div>
+                        <span style="font-size:0.8em; background:rgba(0,0,0,0.05); padding:2px 6px; border-radius:4px;">流通 10.61%</span>
+                    </td>
+                    <td style="text-align:right; border-bottom:1px solid rgba(0,0,0,0.05);">
+                        <b style="color:#1a5f7a;">500 萬</b><br>
+                        <small style="color:#777;">占比 62%</small>
+                    </td>
+                </tr>
+                <tr >
+                    <td style="color:#004d99; font-weight:800; font-size:1.1em; border-bottom:1px solid rgba(0,0,0,0.05);">電子類</td>
+                    <td style="border-bottom:1px solid rgba(0,0,0,0.05);">
+                        <div style="font-weight:bold; color:#333;">電子類凱基55購03</div>
+                        <div style="color:#666; font-size:0.85em; margin:2px 0;">045582</div>
+                        <span style="font-size:0.8em; background:rgba(0,0,0,0.05); padding:2px 6px; border-radius:4px;">流通 35.52%</span>
+                    </td>
+                    <td style="text-align:right; border-bottom:1px solid rgba(0,0,0,0.05);">
+                        <b style="color:#1a5f7a;">500 萬</b><br>
+                        <small style="color:#777;">占比 36%</small>
+                    </td>
+                </tr>
+                <tr >
+                    <td style="color:#004d99; font-weight:800; font-size:1.1em; border-bottom:1px solid rgba(0,0,0,0.05);">電子類</td>
+                    <td style="border-bottom:1px solid rgba(0,0,0,0.05);">
+                        <div style="font-weight:bold; color:#333;">電子類群益56購01</div>
+                        <div style="color:#666; font-size:0.85em; margin:2px 0;">048093</div>
+                        <span style="font-size:0.8em; background:rgba(0,0,0,0.05); padding:2px 6px; border-radius:4px;">流通 24.10%</span>
+                    </td>
+                    <td style="text-align:right; border-bottom:1px solid rgba(0,0,0,0.05);">
+                        <b style="color:#1a5f7a;">500 萬</b><br>
+                        <small style="color:#777;">占比 36%</small>
+                    </td>
+                </tr>
+                <tr >
+                    <td style="color:#004d99; font-weight:800; font-size:1.1em; border-bottom:1px solid rgba(0,0,0,0.05);">電子類</td>
+                    <td style="border-bottom:1px solid rgba(0,0,0,0.05);">
+                        <div style="font-weight:bold; color:#333;">電子類凱基55購02</div>
+                        <div style="color:#666; font-size:0.85em; margin:2px 0;">045581</div>
+                        <span style="font-size:0.8em; background:rgba(0,0,0,0.05); padding:2px 6px; border-radius:4px;">流通 11.87%</span>
+                    </td>
+                    <td style="text-align:right; border-bottom:1px solid rgba(0,0,0,0.05);">
+                        <b style="color:#1a5f7a;">400 萬</b><br>
+                        <small style="color:#777;">占比 29%</small>
+                    </td>
+                </tr></tbody>
+                    </table>
                 </div>
             </body>
             </html>
